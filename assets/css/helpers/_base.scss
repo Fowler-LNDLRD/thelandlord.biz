@@ -1,0 +1,16 @@
+body {
+	background-color: var(--bs-black);
+	color: var(--bs-light);
+}
+
+a {
+	text-decoration: none;
+	color: var(--bs-light);
+	&:hover {
+		color: var(--bs-warning);
+	}
+}
+
+img {
+	max-width: 100%;
+}

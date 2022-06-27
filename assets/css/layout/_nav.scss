@@ -1,0 +1,15 @@
+.menu {
+	margin-left: auto;
+	&-list {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+	}
+	&-item {
+		margin-left: 1rem;
+	}
+	&-link {
+		color: var(--bs-light);
+	}
+}

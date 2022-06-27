@@ -1,0 +1,26 @@
+.team {
+	&-list {
+	}
+	&-item {
+		margin-bottom: 4rem;
+		text-align: center;
+	}
+	&-img {
+		border-radius: 50%;
+		width: 8rem;
+		display: block;
+		margin: auto;
+		margin-bottom: 0.75rem;
+	}
+	&-name {
+		display: block;
+		margin-bottom: 0.5rem;
+		font-size: 1.125rem;
+	}
+	&-title {
+		font-size: 0.875rem;
+		margin-bottom: 0.5rem;
+	}
+	&-link {
+	}
+}

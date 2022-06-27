@@ -1,0 +1,28 @@
+- name: Fowler
+  title: Co-Founder - Lead Dev
+  link: https://www.linkedin.com/in/jfowler1234
+  img: /files/img/team/fowler.jpg
+- name: Fab
+  title: Co-Founder - VP of Operations
+  link: https://www.linkedin.com/in/fabio-vincenti-5a99b614/
+  img: /files/img/team/fab.png
+- name: Alan
+  title: Head of Logistics
+  link: false
+  img: /files/img/team/alan.png
+- name: Adrian
+  title: Director of Content
+  link: http://www.linkedin.com/in/adrian-cliffe-46496820a
+  img: /files/img/team/adrian.jpg
+- name: Harry
+  title: Crypto Analyst and Pub SME
+  link: http://www.linkedin.com/in/harry-dennison-576458100
+  img: /files/img/team/harry.jpg
+- name: Alessandro
+  title: Community & Relationship Manager
+  link: false
+  img: /files/img/team/default.jpg
+- name: Jimmy
+  title: Chief Financial Officer
+  link: false
+  img: /files/img/team/default.jpg

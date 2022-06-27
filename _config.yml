@@ -1,7 +1,10 @@
-title: The Landlord
-description: "description"
-baseurl: ""
-url: ""
+title: 'The Landlord'
+description: 'description'
+baseurl: ''
+url: ''
 
-plugins:
-  - jekyll-feed
+sass:
+    sass_dir: assets/css
+
+exclude:
+    - README.md
