@@ -11,7 +11,8 @@ permalink: /
 	<div class="row team-list justify-content-center">
 		{% for item in site.data.team %}
 		<div class="col-3 team-item">
-			<img class="team-img" src="{{item.img}}" alt="{{item.name}} - {{item.title}} at Landlord Token" />
+			<img class="team-img" src="{{site.baseurl}}{{item.img}}"
+				alt="{{item.name}} - {{item.title}} at Landlord Token" />
 			<h4 class="team-name">{{item.name}}</h4>
 			<div class="team-title">{{item.title}}</div>
 			<a href="{{item.link}}" class="team-link">
