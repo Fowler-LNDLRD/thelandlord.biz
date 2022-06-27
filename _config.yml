@@ -1,0 +1,7 @@
+title: The Landlord
+description: "description"
+baseurl: ""
+url: ""
+
+plugins:
+  - jekyll-feed
