@@ -1,5 +1,11 @@
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 1.5rem 0;
+	z-index: 1000;
+
 	.container {
 		display: flex;
 		align-items: center;
