@@ -1,0 +1,25 @@
+.contract {
+	margin-top: 1rem;
+	margin-bottom: 5rem;
+	position: relative;
+
+	display: flex;
+	align-items: center;
+
+	&-title {
+		text-transform: uppercase;
+		display: block;
+		font-size: 0.75rem;
+		user-select: none;
+	}
+	&-code {
+		padding: 1rem;
+		width: auto;
+		display: inline-block;
+		border: 2px solid #555;
+		border-radius: 0.5rem;
+		font-size: 0.875rem;
+		letter-spacing: 1px;
+		font-family: 'Courier New', Courier, monospace;
+	}
+}

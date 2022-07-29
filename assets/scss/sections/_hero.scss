@@ -1,5 +1,6 @@
 .hero {
 	height: 100vh;
+
 	// padding-top: 5rem;
 
 	background-color: #000;
@@ -7,10 +8,22 @@
 	background-position: 0 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	z-index: -1;
+	z-index: 50;
 	display: flex;
 
 	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 10rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		background-image: linear-gradient(360deg, transparent, rgba(#000, 0.8));
+	}
+
+	&::after {
 		content: '';
 		display: block;
 		width: 100%;
@@ -36,6 +49,8 @@
 		text-align: justify;
 		font-size: 2.75rem;
 		letter-spacing: 1px;
+		position: relative;
+		z-index: 100;
 		span {
 			display: block;
 			&:last-child {
@@ -50,10 +65,82 @@
 		max-width: 100%;
 		text-align: justify;
 		margin-bottom: 2rem;
-		font-size: 1rem;
-		line-height: 1.8;
+		font-size: 0.9875rem;
+		line-height: 1.7;
 	}
 	&-btns {
 		margin-bottom: 0;
+	}
+
+	&-social {
+		&-link {
+			opacity: 0.6;
+
+			&:hover {
+				opacity: 1;
+				.bi-twitter {
+					color: #1d9bf0;
+				}
+				.bi-telegram {
+					color: #2945e6;
+				}
+				.bi-instagram {
+					color: #5851db;
+				}
+				.bi-play-fill {
+					color: #f82c2c;
+				}
+			}
+		}
+	}
+
+	&-contract {
+		margin-bottom: 2rem;
+		position: relative;
+		&-title {
+			display: block;
+			text-transform: uppercase;
+			font-size: 0.75rem;
+			position: absolute;
+			left: 1rem;
+			top: -0.5rem;
+			background-color: #111;
+			padding: 0 0.625rem;
+			line-height: 1.25rem;
+			font-weight: 500;
+			border-radius: 1rem;
+			color: orange;
+			user-select: none;
+		}
+		&-code {
+			border: 2px solid rgba(orange, 1);
+			font-weight: 500;
+			padding: 0 1.5rem;
+			height: 3rem;
+			border-radius: 0.5rem;
+			font-size: 0.75rem;
+			line-height: 2.75rem;
+			letter-spacing: 1px;
+			display: inline-block;
+		}
+	}
+
+	&-social {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+
+		&-item {
+		}
+
+		&-link {
+			width: 2.5rem;
+			height: 2.375rem;
+			display: block;
+			text-align: center;
+			svg {
+				height: 100%;
+			}
+		}
 	}
 }

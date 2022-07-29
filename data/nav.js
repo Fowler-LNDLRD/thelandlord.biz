@@ -15,6 +15,7 @@ const nav = [
 		title: 'Store',
 		url: '/',
 	},
+
 	{
 		title: 'Whitepaper',
 		url: '/',

@@ -1,3 +1,5 @@
+import social from '../data/social';
+
 const Hero = () => {
 	return (
 		<section className="hero">
@@ -10,13 +12,28 @@ const Hero = () => {
 					tokenomics power-up one truly unique token and will really drive forward the Pub industry.
 				</p>
 
-				<div className="hero-btns d-flex">
+				<div className="hero-contract">
+					<span className="hero-contract-title">Contract</span>
+					<span className="hero-contract-code">0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694</span>
+				</div>
+
+				<div className="hero-btns d-flex align-items-center">
 					<a href="/" className="btn btn-warning me-3">
 						How To Buy
 					</a>
 					<a href="/" className="btn btn-dark">
 						Whitepaper
 					</a>
+
+					<ul className="hero-social d-flex ms-4">
+						{social?.map((item, index) => (
+							<li className="hero-social-item" key={index}>
+								<a className="hero-social-link" href={item.url} title={item.title}>
+									{item?.icon}
+								</a>
+							</li>
+						))}
+					</ul>
 				</div>
 			</article>
 		</section>

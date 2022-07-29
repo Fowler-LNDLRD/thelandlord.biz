@@ -57,7 +57,6 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all ease-in-out 0.25s;
-	box-shadow: 0 0 3rem 0rem rgba(#000, 0.3);
 
 	&-item {
 		background-color: rgba(#fff, 0.7);
@@ -93,5 +92,7 @@
 		transition: all ease-in-out 0.25s;
 		font-size: 0.875rem;
 		color: #000;
+		font-weight: 500;
+		text-shadow: 0;
 	}
 }
