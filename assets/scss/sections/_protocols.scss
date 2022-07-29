@@ -1,0 +1,33 @@
+// protocols
+.protocols {
+	&-item {
+		background-color: #000;
+		height: 100%;
+		padding: 3rem;
+		border-radius: 1rem;
+		border: 3px solid orange;
+		position: relative;
+		z-index: 10;
+	}
+
+	&-percent {
+		color: orange;
+		display: block;
+	}
+	&-title {
+		overflow: hidden;
+		position: relative;
+		display: block;
+		margin: 1rem 0;
+		.letter {
+			display: inline-block;
+			line-height: 1em;
+			opacity: 0;
+		}
+	}
+	&-desc {
+		font-size: 0.875rem;
+		color: #aaa;
+		margin-bottom: 0;
+	}
+}

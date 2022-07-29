@@ -1,7 +1,7 @@
 const Pubs = () => {
 	return (
-		<section class="pubs">
-			<div class="container">something...</div>
+		<section className="pubs">
+			<div className="container">something...</div>
 		</section>
 	);
 };
