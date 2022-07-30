@@ -1,10 +1,9 @@
 .beers {
 	background-color: #111;
-	min-height: 30rem;
-	padding-top: 15rem;
+	padding-top: 7rem;
 	padding-bottom: 7rem;
-	margin-top: -7rem;
 	color: #ccc;
+	border-bottom: 1px solid #191919;
 
 	&-title {
 		font-weight: 700;
@@ -25,7 +24,6 @@
 	}
 
 	&-btns {
-		margin-bottom: 4rem;
 		a {
 			color: rgba(#fff, 0.5);
 			text-transform: capitalize;
@@ -46,6 +44,14 @@
 					transform: translate(3px, -1px);
 				}
 			}
+		}
+	}
+
+	&-slide {
+		&-img {
+			max-height: 20rem;
+			display: block;
+			margin: auto;
 		}
 	}
 }

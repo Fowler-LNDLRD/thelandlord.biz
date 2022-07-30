@@ -1,9 +1,34 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css/bundle';
+
 const Beers = () => {
 	return (
 		<section className="beers">
 			<div className="container">
-				<div className="row">
-					<div className="col-6"></div>
+				<div className="row align-items-center">
+					<div className="col-6">
+						<Swiper slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper">
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer1.png" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer3.png" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer1.png" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/beers/beer3.png" />
+							</SwiperSlide>
+						</Swiper>
+					</div>
 					<div className="col-6">
 						<h2 className="beers-title">Landlord Beers</h2>
 						<p className="beers-desc">
