@@ -1,9 +1,9 @@
 .beers {
 	background-color: #111;
-	padding-top: 7rem;
+	padding-top: 12rem;
 	padding-bottom: 7rem;
 	color: #ccc;
-	border-bottom: 1px solid #191919;
+	// border-bottom: 1px solid #191919;
 
 	&-title {
 		font-weight: 700;
@@ -50,6 +50,8 @@
 	&-slide {
 		&-img {
 			max-height: 20rem;
+			max-width: 100%;
+			filter: drop-shadow(15px 9px 24px rgba(0, 0, 0, 0.5));
 			display: block;
 			margin: auto;
 		}

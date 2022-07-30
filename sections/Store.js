@@ -1,6 +1,9 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/bundle';
+
 const Store = () => {
 	return (
-		<section className="beers">
+		<section className="store">
 			<div className="container">
 				<div className="row">
 					<div className="col-6">
@@ -21,7 +24,25 @@ const Store = () => {
 							</a>
 						</div>
 					</div>
-					<div className="col-6"></div>
+					<div className="col-6">
+						<Swiper slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper">
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/store/01.jpg" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/store/02.jpg" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/store/03.jpg" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/store/04.jpg" />
+							</SwiperSlide>
+							<SwiperSlide>
+								<img className="beers-slide-img" src="/files/img/store/05.jpg" />
+							</SwiperSlide>
+						</Swiper>
+					</div>
 				</div>
 			</div>
 		</section>

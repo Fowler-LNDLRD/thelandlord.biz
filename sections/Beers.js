@@ -1,22 +1,10 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
-
-import 'swiper/css/bundle';
-
 const Beers = () => {
 	return (
 		<section className="beers">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-6">
-						<Swiper slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper">
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer.png" />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
-							</SwiperSlide>
-						</Swiper>
+						<img className="beers-slide-img" src="/files/img/beers/beer.png" />
 					</div>
 					<div className="col-6">
 						<h2 className="beers-title">Landlord Beers</h2>
