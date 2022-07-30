@@ -5,7 +5,7 @@ const Hero = () => {
 		<section className="hero">
 			<article className="container">
 				<h1 className="hero-title">
-					<span>Worlds first</span> <span>crypto pubs</span>
+					<span>World's first crypto</span> <span>pubs & beers</span>
 				</h1>
 				<p className="hero-desc">
 					The Landlord Token(LNDLRD) drives the whole Landlord ecosystem. A BEP-20 token that incorporates 3 fantastic protocols into it's smart contract. Together, it's
