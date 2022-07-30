@@ -11,7 +11,7 @@ const Beers = () => {
 					<div className="col-6">
 						<Swiper slidesPerView={1} spaceBetween={30} loop={true} className="mySwiper">
 							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer1.png" />
+								<img className="beers-slide-img" src="/files/img/beers/beer.png" />
 							</SwiperSlide>
 							<SwiperSlide>
 								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
@@ -20,6 +20,7 @@ const Beers = () => {
 					</div>
 					<div className="col-6">
 						<h2 className="beers-title">Landlord Beers</h2>
+						{process.env.customKey}
 						<p className="beers-desc">
 							We will create and sell some of the finest craft beers and ales. These will be available to purchase from the Online store with fiat or the crypto of
 							your choice. Profits will be used to buy back and burn LNDLRD.
