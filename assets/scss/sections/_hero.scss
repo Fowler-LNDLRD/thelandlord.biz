@@ -116,11 +116,11 @@
 			line-height: 1.25rem;
 			font-weight: 500;
 			border-radius: 1rem;
-			color: orange;
+			color: $brand;
 			user-select: none;
 		}
 		&-code {
-			border: 2px solid rgba(orange, 1);
+			border: 2px solid rgba($brand, 1);
 			font-weight: 500;
 			padding: 0 1.5rem;
 			height: 3rem;
