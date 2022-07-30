@@ -1,12 +1,17 @@
 body {
 	background-color: var(--bs-black);
 	color: var(--bs-light);
+	cursor: default;
+}
+::selection {
+	background-color: rgba(#000, 0.4);
+	color: $brand;
 }
 
-// .container {
-// 	width: 1024px;
-// 	max-width: 100%;
-// }
+.container {
+	width: 1024px;
+	max-width: 100%;
+}
 
 a {
 	text-decoration: none;

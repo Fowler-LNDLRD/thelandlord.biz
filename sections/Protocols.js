@@ -11,7 +11,7 @@ const Protocols = () => {
 								Pub <span>Protocol</span>
 							</h3>
 							<p className="protocols-desc">
-								3% will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract
+								3% will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.
 							</p>
 						</article>
 					</div>
@@ -23,8 +23,7 @@ const Protocols = () => {
 								Pints <span>Protocol</span>
 							</h3>
 							<p className="protocols-desc">
-								The Pints protocol is our auto liquidity function. This allows us to automatically grow our liquidity by taking 3% of each transaction and putting
-								it into our liquidity pool adding stability to the LNDLRD value.
+								Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the LNDLRD value.
 							</p>
 						</article>
 					</div>
@@ -36,8 +35,7 @@ const Protocols = () => {
 								Shots <span>Protocol</span>
 							</h3>
 							<p className="protocols-desc">
-								The shots protocol is our reflection function and rewards all LNDLRD holders with passive income. This will be rewarded to holders in BUSD every
-								hour as long as you are holding at least $50 worth of $LNDLRD Tokens.
+								Rewarding all LNDLRD holders with passive income. in BUSD every hour as long as you are holding at least $50 worth of $LNDLRD Tokens.
 							</p>
 						</article>
 					</div>

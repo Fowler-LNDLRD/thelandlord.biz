@@ -1,39 +1,37 @@
 // protocols
 .protocols {
+	position: relative;
+	z-index: 1000;
 	&-item {
 		background-color: #000;
 		height: 100%;
 		padding: 3rem;
 		border-radius: 2rem;
-		border: 3px solid $brand;
+		// border: 3px solid $brand;
 		position: relative;
 		z-index: 10;
+		box-shadow: 1rem -1rem 5rem rgba(#fff, 0.1);
+		border-top: 1px solid #333;
 	}
 
 	&-percent {
 		color: $brand;
 		display: block;
+		font-size: 1.5rem;
 	}
+
 	&-title {
 		overflow: hidden;
 		position: relative;
 		display: block;
 		margin: 1rem 0;
-		span {
-			// &:last-child {
-			// 	opacity: 0.4;
-			// 	font-weight: 300;
-			// }
-		}
-		.letter {
-			display: inline-block;
-			line-height: 1em;
-			opacity: 0;
-		}
+		font-weight: 700;
+		font-size: 1.5rem;
 	}
 	&-desc {
 		font-size: 0.875rem;
-		color: #aaa;
+		color: #ccc;
 		margin-bottom: 0;
+		line-height: 1.8;
 	}
 }
