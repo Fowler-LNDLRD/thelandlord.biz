@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
 
 import 'swiper/css/bundle';
 
@@ -14,18 +15,6 @@ const Beers = () => {
 							</SwiperSlide>
 							<SwiperSlide>
 								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer3.png" />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer1.png" />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer2.png" />
-							</SwiperSlide>
-							<SwiperSlide>
-								<img className="beers-slide-img" src="/files/img/beers/beer3.png" />
 							</SwiperSlide>
 						</Swiper>
 					</div>
