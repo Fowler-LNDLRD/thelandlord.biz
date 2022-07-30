@@ -1,2 +1,47 @@
 .store {
+	background-color: #111;
+
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	.swiper {
+		border-radius: 1rem;
+	}
+	.swiper-slide {
+		border-radius: 1rem;
+		position: relative;
+		overflow: hidden;
+	}
+
+	&-slider {
+		min-height: 20rem;
+		width: 100%;
+		border-radius: 1rem;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+			background-image: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.8));
+		}
+
+		h4 {
+			font-size: 0.75rem;
+			text-align: center;
+			position: absolute;
+			bottom: 2rem;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+		}
+	}
 }

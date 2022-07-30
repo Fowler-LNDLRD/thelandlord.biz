@@ -17,8 +17,8 @@ export default function Home() {
 			<Protocols />
 			<Pubs />
 			<Beers />
-			<Store />
-			<Shill />
+			{/* <Store />
+			<Shill /> */}
 		</>
 	);
 }
