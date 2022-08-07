@@ -1,0 +1,40 @@
+.section {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+	&-brand {
+		color: $dark;
+		background-color: $brand;
+	}
+
+	&-dark {
+		color: $light;
+		background-color: $dark;
+	}
+
+	&-light {
+		color: $dark;
+		background-color: $light;
+	}
+
+	&-title {
+		font-weight: 700;
+		letter-spacing: -1px;
+		margin-bottom: 1.5rem;
+		font-size: 3rem;
+		text-transform: capitalize;
+		color: inherit;
+	}
+
+	&-desc {
+		font-weight: 500;
+		margin-bottom: 1rem;
+		font-size: 1rem;
+		line-height: 1.7;
+		margin-bottom: 1.5rem;
+		text-align: justify;
+
+		&.-center {
+			text-align-last: center;
+		}
+	}
+}

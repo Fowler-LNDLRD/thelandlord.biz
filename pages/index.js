@@ -18,8 +18,8 @@ export default function Home() {
 			<Pubs />
 			<Beers />
 			<Pos />
-			<Store />
-			<Shill />
+			{/* <Store /> */}
+			{/* <Shill /> */}
 		</>
 	);
 }

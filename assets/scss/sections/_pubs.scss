@@ -1,25 +1,10 @@
 .pubs {
-	background-color: $brand;
 	min-height: 30rem;
-	padding-top: 20rem;
+	padding-top: 15rem;
 	margin-top: -7rem;
-	color: #111;
-
-	&-title {
-		font-weight: 700;
-		letter-spacing: -1px;
-		margin-bottom: 1.5rem;
-		font-size: 3rem;
-		text-transform: capitalize;
-		color: #000;
-	}
-
-	&-desc {
-		font-weight: 500;
-		margin-bottom: 1rem;
-		font-size: 1rem;
-		line-height: 1.7;
-		margin-bottom: 1.5rem;
-		text-align: justify;
+	&-img {
+		max-height: 20rem;
+		max-width: 100%;
+		filter: drop-shadow(15px 9px 24px rgba(0, 0, 0, 0.5));
 	}
 }
