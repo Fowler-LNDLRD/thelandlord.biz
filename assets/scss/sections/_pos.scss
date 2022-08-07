@@ -1,4 +1,23 @@
 .pos {
+	background-color: #000;
+	position: relative;
+	.container {
+		z-index: 2;
+		position: relative;
+	}
+
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 0;
+		background-image: linear-gradient(180deg, #111, transparent);
+	}
+
 	&-figure {
 		position: relative;
 		text-align: center;
