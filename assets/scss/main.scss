@@ -1,4 +1,5 @@
 @import 'helpers/variables';
+@import 'helpers/mixins';
 @import 'helpers/root';
 @import 'helpers/base';
 
@@ -6,6 +7,7 @@
 @import 'layout/nav';
 
 @import 'components/buttons';
+@import 'components/links';
 
 @import 'sections/hero';
 @import 'sections/contract';

@@ -31,22 +31,22 @@ const Store = () => {
 					<div className="col-6">
 						<Swiper pagination={true} modules={[Pagination]} slidesPerView={1} spaceBetween={10} loop={true} className="mySwiper">
 							<SwiperSlide>
-								<div className="store-slider" style={{ 'background-image': 'url(/files/img/store/01.jpg)' }}>
+								<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/01.jpg)' }}>
 									<h4>Landlord Short-sleeve unisex</h4>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
-								<div className="store-slider" style={{ 'background-image': 'url(/files/img/store/02.jpg)' }}>
+								<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/02.jpg)' }}>
 									<h4>Landlord Short-sleeve unisex</h4>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
-								<div className="store-slider" style={{ 'background-image': 'url(/files/img/store/03.jpg)' }}>
+								<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/03.jpg)' }}>
 									<h4>Landlord Short-sleeve unisex</h4>
 								</div>
 							</SwiperSlide>
 							<SwiperSlide>
-								<div className="store-slider" style={{ 'background-image': 'url(/files/img/store/04.jpg)' }}>
+								<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/04.jpg)' }}>
 									<h4>Landlord Short-sleeve unisex</h4>
 								</div>
 							</SwiperSlide>

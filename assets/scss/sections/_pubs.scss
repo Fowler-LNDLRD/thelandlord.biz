@@ -1,8 +1,7 @@
 .pubs {
-	// background-color: #eaeaea;
 	background-color: $brand;
 	min-height: 30rem;
-	padding-top: 15rem;
+	padding-top: 20rem;
 	margin-top: -7rem;
 	color: #111;
 
@@ -12,6 +11,7 @@
 		margin-bottom: 1.5rem;
 		font-size: 3rem;
 		text-transform: capitalize;
+		color: #000;
 	}
 
 	&-desc {
@@ -21,41 +21,5 @@
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
 		text-align: justify;
-	}
-
-	&-btns {
-		margin-bottom: 4rem;
-		a {
-			color: rgba(#000, 0.5);
-			text-transform: capitalize;
-			font-weight: 500;
-			display: inline-block;
-			border-radius: 0.5rem;
-			transition: all ease 0.25s;
-
-			svg {
-				vertical-align: middle;
-				transform: translateY(-1px);
-			}
-
-			&:hover {
-				color: #000;
-
-				svg {
-					transform: translate(3px, -1px);
-				}
-			}
-		}
-	}
-
-	&-figure {
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-image: url('/files/img/pubs-beer.png');
-		background-repeat: no-repeat;
-		background-size: 80%;
-		background-position: center top;
-		border-radius: 1rem;
 	}
 }

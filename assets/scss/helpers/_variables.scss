@@ -4,3 +4,16 @@ $success: #198754;
 $danger: #dc3545;
 $warning: #fd7e14;
 $info: #0d6efd;
+
+$dark: #111;
+$light: #f3f3f3;
+
+$colors: (
+	'brand': $brand,
+	'success': $success,
+	'danger': $danger,
+	'warning': $warning,
+	'info': $info,
+	'dark': $dark,
+	'light': $light,
+);
