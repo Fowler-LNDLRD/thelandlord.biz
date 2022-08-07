@@ -11,7 +11,7 @@ const Pos = () => {
 							The Landlord have started developing a unique and intuitive crypto <u>Point of Sale system</u>. This will allow bars, pubs, clubs and cafes to
 							successfully take orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.
 						</p>
-						<LinkArrow href="/" dir="right" className="link link-info">
+						<LinkArrow href="/" dir="right" className="link link-brand">
 							About Landlord POS
 						</LinkArrow>
 					</div>

@@ -13,7 +13,7 @@ const Store = () => {
 			<div className="container">
 				<div className="d-flex align-items-center mb-5">
 					<h2 className="section-title m-0  me-auto">Landlord Store</h2>
-					<LinkArrow href="/" dir="right" className="link link-info">
+					<LinkArrow href="/" dir="right" className="link link-brand">
 						All Products
 					</LinkArrow>
 				</div>
@@ -21,40 +21,55 @@ const Store = () => {
 
 			<div className="swiper-overflow-container">
 				<div className="container">
-					<Swiper navigation={true} slidesPerView={3} centeredSlides={false} modules={[Navigation]} spaceBetween={32} loop={false} className="mySwiper">
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/01.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
+					<Swiper navigation={false} slidesPerView={3} centeredSlides={false} modules={[Navigation]} spaceBetween={32} loop={false} className="mySwiper">
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/01.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">Unisex Hoodie</h3>
+								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/02.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/02.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">Pint Glass</h3>
+								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/03.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/03.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">HODL Baseball Cap</h3>
+								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/04.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/04.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">Unisex Hoodie</h3>
+								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/02.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/03.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
-							</div>
-						</SwiperSlide>
-						<SwiperSlide>
-							<div className="store-slider" style={{ backgroundImage: 'url(/files/img/store/04.jpg)' }}>
-								{/* <h4>Landlord Short-sleeve unisex</h4> */}
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/05.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">Pint Glass</h3>
+								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
 					</Swiper>
