@@ -28,7 +28,7 @@ const Store = () => {
 							</figure>
 							<div className="store-details">
 								<span className="store-details-new">new</span>
-								<h3 className="store-details-title">Unisex Hoodie</h3>
+								<h3 className="store-details-title">Sweater</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
@@ -38,8 +38,8 @@ const Store = () => {
 							</figure>
 							<div className="store-details">
 								<span className="store-details-new">new</span>
-								<h3 className="store-details-title">Pint Glass</h3>
-								<div className="store-details-price">£20.00</div>
+								<h3 className="store-details-title">White Cap</h3>
+								<div className="store-details-price">£23.00</div>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="store-item">
@@ -48,8 +48,8 @@ const Store = () => {
 							</figure>
 							<div className="store-details">
 								<span className="store-details-new">new</span>
-								<h3 className="store-details-title">HODL Baseball Cap</h3>
-								<div className="store-details-price">£20.00</div>
+								<h3 className="store-details-title">Pint Glass</h3>
+								<div className="store-details-price">£18.50</div>
 							</div>
 						</SwiperSlide>
 						<SwiperSlide className="store-item">
@@ -58,7 +58,7 @@ const Store = () => {
 							</figure>
 							<div className="store-details">
 								<span className="store-details-new">new</span>
-								<h3 className="store-details-title">Unisex Hoodie</h3>
+								<h3 className="store-details-title">Sweater</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
@@ -68,7 +68,17 @@ const Store = () => {
 							</figure>
 							<div className="store-details">
 								<span className="store-details-new">new</span>
-								<h3 className="store-details-title">Pint Glass</h3>
+								<h3 className="store-details-title">Coasters</h3>
+								<div className="store-details-price">£20.00</div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide className="store-item">
+							<figure>
+								<img src="/files/img/store/06.png" />
+							</figure>
+							<div className="store-details">
+								<span className="store-details-new">new</span>
+								<h3 className="store-details-title">White Mug</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
 						</SwiperSlide>
