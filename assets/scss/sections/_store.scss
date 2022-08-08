@@ -1,56 +1,89 @@
 .store {
 	position: relative;
-	background-color: #000;
-	padding-top: 5rem;
-	padding-bottom: 7rem;
-
+	background-color: #111;
 	.swiper-overflow-container {
-		overflow-x: hidden;
-		.swiper {
-			overflow: visible;
-		}
-		.container {
-			overflow: visible;
-		}
-		.swiper-container {
-			overflow: visible;
-		}
+	}
+	.swiper {
+		padding: 0 2rem;
+	}
+	// .swiper-overflow-container {
+	// 	overflow-x: hidden;
+	// 	.swiper {
+	// 		overflow: visible;
+	// 	}
+	// 	.container {
+	// 		overflow: visible;
+	// 	}
+	// 	.swiper-container {
+	// 		overflow: visible;
+	// 	}
+	// }
+
+	.section-header {
+		margin-bottom: 5rem;
 	}
 
 	.section-title {
-		font-size: 2.5rem;
+		color: #fafafa;
 	}
 
 	&-item {
-		background: #090909;
+		background: #eee;
+		background-image: linear-gradient(180deg, #000, #000);
 		height: 100%;
-		border-radius: 0.25rem;
-		color: #fff;
+		border-radius: 1rem;
+		color: #ccc;
+		display: block;
+		// border: 2px solid transparent;
+		transition: all ease 0.25s;
+		overflow: hidden;
+		position: relative;
+
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-image: linear-gradient(180deg, #e5e5e5, #d5d5d5);
+			opacity: 0;
+			transition: all ease 0.25s;
+		}
+
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
+			color: #000;
+		}
 
 		figure {
-			min-height: 17rem;
-			padding: 1rem;
+			padding: 2rem 1rem 1rem;
 			display: flex;
 		}
 
 		img {
 			margin: auto;
 			display: block;
-			filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+			filter: drop-shadow(0 0 2rem rgba(#000, 0.4));
 		}
 	}
 
 	&-details {
-		padding: 0 2rem 2rem;
-
+		padding: 1rem 2.5rem 2.5rem;
+		position: relative;
+		z-index: 100;
 		&-new {
 			font-size: 0.75rem;
 			text-transform: uppercase;
-			color: $brand;
+			opacity: 0.6;
+			display: none;
 		}
 		&-title {
 			font-size: 1.25rem;
-			font-weight: 500;
+			font-weight: 700;
 			margin: 0.5rem 0;
 		}
 

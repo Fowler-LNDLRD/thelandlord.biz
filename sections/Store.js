@@ -11,7 +11,7 @@ const Store = () => {
 	return (
 		<section className="store section">
 			<div className="container">
-				<div className="d-flex align-items-center mb-5">
+				<div className="d-flex align-items-center section-header">
 					<h2 className="section-title m-0  me-auto">Landlord Store</h2>
 					<LinkArrow href="/" dir="right" className="link link-brand">
 						All Products
@@ -20,9 +20,32 @@ const Store = () => {
 			</div>
 
 			<div className="swiper-overflow-container">
-				<div className="container">
-					<Swiper navigation={false} slidesPerView={3} centeredSlides={false} modules={[Navigation]} spaceBetween={32} loop={false} className="mySwiper">
-						<SwiperSlide className="store-item">
+				<Swiper
+					navigation={false}
+					breakpoints={{
+						640: {
+							slidesPerView: 2,
+						},
+						768: {
+							slidesPerView: 3,
+						},
+						1024: {
+							slidesPerView: 4,
+						},
+						1400: {
+							slidesPerView: 6,
+						},
+					}}
+					centeredSlidesBounds={true}
+					centeredSlides={true}
+					modules={[Navigation]}
+					spaceBetween={32}
+					centerInsufficientSlides={true}
+					loop={false}
+					className="mySwiper"
+				>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/01.png" />
 							</figure>
@@ -31,8 +54,10 @@ const Store = () => {
 								<h3 className="store-details-title">Sweater</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
-						</SwiperSlide>
-						<SwiperSlide className="store-item">
+						</a>
+					</SwiperSlide>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/02.png" />
 							</figure>
@@ -41,8 +66,10 @@ const Store = () => {
 								<h3 className="store-details-title">White Cap</h3>
 								<div className="store-details-price">£23.00</div>
 							</div>
-						</SwiperSlide>
-						<SwiperSlide className="store-item">
+						</a>
+					</SwiperSlide>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/03.png" />
 							</figure>
@@ -51,8 +78,10 @@ const Store = () => {
 								<h3 className="store-details-title">Pint Glass</h3>
 								<div className="store-details-price">£18.50</div>
 							</div>
-						</SwiperSlide>
-						<SwiperSlide className="store-item">
+						</a>
+					</SwiperSlide>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/04.png" />
 							</figure>
@@ -61,8 +90,10 @@ const Store = () => {
 								<h3 className="store-details-title">Sweater</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
-						</SwiperSlide>
-						<SwiperSlide className="store-item">
+						</a>
+					</SwiperSlide>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/05.png" />
 							</figure>
@@ -71,8 +102,10 @@ const Store = () => {
 								<h3 className="store-details-title">Coasters</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
-						</SwiperSlide>
-						<SwiperSlide className="store-item">
+						</a>
+					</SwiperSlide>
+					<SwiperSlide>
+						<a href="/" className="store-item">
 							<figure>
 								<img src="/files/img/store/06.png" />
 							</figure>
@@ -81,9 +114,9 @@ const Store = () => {
 								<h3 className="store-details-title">White Mug</h3>
 								<div className="store-details-price">£20.00</div>
 							</div>
-						</SwiperSlide>
-					</Swiper>
-				</div>
+						</a>
+					</SwiperSlide>
+				</Swiper>
 			</div>
 		</section>
 	);
