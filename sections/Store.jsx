@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 
 const Store = () => {
 	return (
-		<section className="store section">
+		<section className="store section  section-dark">
 			<div className="container">
 				<div className="d-flex align-items-center section-header">
 					<h2 className="section-title m-0  me-auto">Landlord Store</h2>

@@ -1,24 +1,15 @@
 .store {
 	position: relative;
-	background-color: #111;
 	padding-top: 5rem;
+	padding-bottom: 10rem;
+	background: $dark;
+
 	.swiper-overflow-container {
 	}
+
 	.swiper {
-		padding: 2rem;
+		padding: 3rem 2rem;
 	}
-	// .swiper-overflow-container {
-	// 	overflow-x: hidden;
-	// 	.swiper {
-	// 		overflow: visible;
-	// 	}
-	// 	.container {
-	// 		overflow: visible;
-	// 	}
-	// 	.swiper-container {
-	// 		overflow: visible;
-	// 	}
-	// }
 
 	.section-header {
 		margin-bottom: 5rem;
@@ -41,10 +32,14 @@
 		width: 100%;
 		border: 1px solid transparent;
 
+		box-shadow: 0 0 10rem rgba(#888, 0.05);
+		border-top: 1px solid #333;
+
 		&:hover {
 			color: $brand;
 			transform: scale(1.02);
 			box-shadow: 0 0 2rem rgba(#000, 0.15);
+
 			.store-details-label {
 				opacity: 0.6;
 			}

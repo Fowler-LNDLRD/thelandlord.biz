@@ -2,7 +2,7 @@ import LinkArrow from '../components/LinkArrow';
 
 const Pos = () => {
 	return (
-		<section className="pos section section-dark">
+		<section className="pos section">
 			<div className="container">
 				<div className="row justify-content-md-center align-items-center">
 					<div className="col-9 text-center">

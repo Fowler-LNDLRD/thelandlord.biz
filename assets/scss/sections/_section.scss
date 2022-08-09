@@ -1,6 +1,7 @@
 .section {
 	padding-top: 10rem;
 	padding-bottom: 10rem;
+
 	&-brand {
 		color: $dark;
 		background-color: $brand;
@@ -8,7 +9,7 @@
 
 	&-dark {
 		color: $light;
-		background-color: $dark;
+		background-color: rgba(#fff, 0.03);
 	}
 
 	&-light {
