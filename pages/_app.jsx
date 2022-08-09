@@ -1,5 +1,5 @@
 import '../assets/scss/main.scss';
-import Nav from '../layouts/Nav';
+import Nav from '../components/Nav';
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -19,7 +19,91 @@ function MyApp({ Component, pageProps }) {
 			<Component {...pageProps} />
 
 			<footer className="footer">
-				<nav></nav>
+				<div className="container">
+					<div className="row">
+						<div className="col-3">
+							<h4>General</h4>
+							<nav className="footer-nav">
+								<a className="footer-nav-link" href="/">
+									Whitepaper
+								</a>
+								<a className="footer-nav-link" href="/">
+									Audit
+								</a>
+								<a className="footer-nav-link" href="/">
+									Liquidity Lock
+								</a>
+								<a className="footer-nav-link" href="/">
+									Team
+								</a>
+								<a className="footer-nav-link" href="/">
+									FAQ
+								</a>
+							</nav>
+						</div>
+						<div className="col-3">
+							<h4>About</h4>
+							<nav className="footer-nav">
+								<a className="footer-nav-link" href="/">
+									Pubs
+								</a>
+								<a className="footer-nav-link" href="/">
+									Beers
+								</a>
+								<a className="footer-nav-link" href="/">
+									POS System
+								</a>
+								<a className="footer-nav-link" href="/">
+									NFT Collections
+								</a>
+								<a className="footer-nav-link" href="/">
+									Earn Tokens
+								</a>
+							</nav>
+						</div>
+						<div className="col-3">
+							<h4>Links</h4>
+							<nav className="footer-nav">
+								<a className="footer-nav-link" href="/">
+									Contract
+								</a>
+								<a className="footer-nav-link" href="/">
+									CoinMarketCap
+								</a>
+								<a className="footer-nav-link" href="/">
+									CoinGecko
+								</a>
+								<a className="footer-nav-link" href="/">
+									Chart
+								</a>
+								<a className="footer-nav-link" href="/">
+									BscScan
+								</a>
+							</nav>
+						</div>
+						<div className="col-3">
+							<h4>Community</h4>
+							<nav className="footer-nav">
+								<a className="footer-nav-link" href="/">
+									Telegram Group
+								</a>
+								<a className="footer-nav-link" href="/">
+									Telegram Group
+								</a>
+								<a className="footer-nav-link" href="/">
+									Twitter
+								</a>
+								<a className="footer-nav-link" href="/">
+									YouTube
+								</a>
+								<a className="footer-nav-link" href="/">
+									Contact
+								</a>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div className="footer-copyright">&copy; 2022 - TheLandlord.biz</div>
 			</footer>
 		</>
 	);
