@@ -26,6 +26,13 @@
 
 			transition: all ease-in-out 0.25s;
 
+			svg {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: 0.5rem;
+				transform: translateY(-1px);
+			}
+
 			&:hover {
 				padding-left: 0.25rem;
 			}

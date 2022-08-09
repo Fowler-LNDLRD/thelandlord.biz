@@ -1,5 +1,6 @@
 import '../assets/scss/main.scss';
 import Nav from '../components/Nav';
+import { Telegram, Youtube, EnvelopeFill, Twitter } from 'react-bootstrap-icons';
 
 function MyApp({ Component, pageProps }) {
 	return (
@@ -85,25 +86,26 @@ function MyApp({ Component, pageProps }) {
 							<h4>Community</h4>
 							<nav className="footer-nav">
 								<a className="footer-nav-link" href="/">
-									Telegram Group
+									<Telegram size="16" /> Telegram Group
 								</a>
 								<a className="footer-nav-link" href="/">
-									Telegram Group
+									<Telegram size="16" /> Telegram Channel
 								</a>
 								<a className="footer-nav-link" href="/">
-									Twitter
+									<Twitter size="16" /> Twitter
 								</a>
 								<a className="footer-nav-link" href="/">
+									<Youtube size="16" />
 									YouTube
 								</a>
 								<a className="footer-nav-link" href="/">
-									Contact
+									<EnvelopeFill size="16" /> Contact
 								</a>
 							</nav>
 						</div>
 					</div>
 				</div>
-				<div className="footer-copyright">&copy; 2022 - TheLandlord.biz</div>
+				<div className="footer-copyright">&copy; {new Date().getFullYear().toString()} - TheLandlord.biz</div>
 			</footer>
 		</>
 	);
