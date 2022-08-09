@@ -1,0 +1,79 @@
+.shill {
+	position: relative;
+	&::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 0;
+		background-image: linear-gradient(180deg, #111, transparent);
+		z-index: -1;
+	}
+
+	.swiper {
+		overflow: visible;
+	}
+	&-wrap {
+		width: 18rem;
+		max-width: 100%;
+		margin: auto;
+		overflow: visible;
+	}
+	&-card {
+		min-height: 23rem;
+		border-radius: 1rem;
+		text-align: center;
+		width: 20rem;
+		background: linear-gradient(to bottom, #fff, #ddd);
+		box-shadow: 0 0 0.5rem rgba(#000, 0.3);
+		color: #111;
+		position: relative;
+		display: flex;
+	}
+	&-inner {
+		margin: auto;
+		padding-right: 2rem;
+		padding-left: 2rem;
+	}
+
+	&-avatar {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+		display: block;
+		margin: 0 auto;
+		border: 5px solid rgba(#000, 0.1);
+	}
+	&-username {
+		font-weight: 500;
+		font-size: 1.25rem;
+		margin: 1rem 0 2rem;
+	}
+	&-points {
+		font-size: 1.125rem;
+		font-weight: 300;
+		margin: 0;
+	}
+	&-lndlrd {
+		font-size: 1.125rem;
+		font-weight: 300;
+		margin: 0;
+	}
+
+	&-main {
+		&-svg {
+			color: $info;
+		}
+		&-desc {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			font-weight: 500;
+			font-size: 1.25rem;
+		}
+		&-swpie {
+		}
+	}
+}

@@ -5,6 +5,7 @@
 
 @import 'layout/header';
 @import 'layout/nav';
+@import 'layout/footer';
 
 @import 'components/buttons';
 @import 'components/links';
@@ -18,5 +19,6 @@
 @import 'sections/beers';
 @import 'sections/store';
 @import 'sections/pos';
+@import 'sections/shill';
 
 @import 'pages/home';
