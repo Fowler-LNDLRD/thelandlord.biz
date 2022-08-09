@@ -17,10 +17,16 @@ const Pos = () => {
 					</div>
 				</div>
 
-				<figure className="pos-figure">
-					<img className="pos-figure-img" src="/files/img/ipadpro.png" />
-					<span></span>
-				</figure>
+				<div className="device-wrapper">
+					<div className="device" data-device="iPhone5" data-orientation="portrait" data-color="black">
+						<div className="screen"></div>
+					</div>
+				</div>
+
+				<div className="pos-figure">
+					<img className="pos-figure-img" src="/files/img/ipad.png" />
+					<div className="pos-app">x</div>
+				</div>
 			</div>
 		</section>
 	);
