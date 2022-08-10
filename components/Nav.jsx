@@ -3,7 +3,7 @@ import menu from '../data/nav';
 import { useRouter } from 'next/router';
 import { ChevronDown } from 'react-bootstrap-icons';
 
-const Nav = () => {
+const Nav = ({ isActive }) => {
 	const router = useRouter();
 	const currentRoute = router.pathname;
 
@@ -16,7 +16,7 @@ const Nav = () => {
 	};
 
 	return (
-		<nav className="menu d-none d-md-flex">
+		<nav className={`menu d-md-flex ${isActive ? 'active' : ''}`}>
 			<ul className="menu-list">
 				{nav.map((item, index) => (
 					<li className={'menu-item' + (item.sub && item.subOpen ? ' -open' : '')} key={index}>
