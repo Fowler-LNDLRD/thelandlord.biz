@@ -20,3 +20,56 @@
 		}
 	}
 }
+
+.nav-toggle {
+	// background-color: red;
+	background: none;
+	border: 0;
+	width: 3rem;
+	height: 3rem;
+	padding: 0;
+	text-align: center;
+
+	.line {
+		width: 1.5rem;
+		border-radius: 0.5rem;
+		height: 3px;
+		background-color: #fff;
+		display: block;
+		margin: 0 auto;
+		position: relative;
+
+		transition-property: transform, top;
+		transition-delay: 0ms, 160ms;
+		transition-duration: 200ms;
+	}
+	.line-1 {
+		top: -4px;
+	}
+	.line-2 {
+		top: 4px;
+	}
+
+	&.active {
+		.line {
+			background-color: $brand;
+			top: 0;
+		}
+
+		.line-1 {
+			top: 1.5px;
+
+			transform: rotateZ(45deg);
+			transition-property: top, transform;
+			transition-delay: 0ms, 160ms;
+			transition-duration: 200ms;
+		}
+		.line-2 {
+			top: -1.5px;
+			transform: rotateZ(-45deg);
+			transition-property: top, transform;
+			transition-delay: 0ms, 160ms;
+			transition-duration: 200ms;
+		}
+	}
+}

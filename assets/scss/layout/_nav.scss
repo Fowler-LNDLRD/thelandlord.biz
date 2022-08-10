@@ -9,7 +9,8 @@
 
 	&-item {
 		position: relative;
-		&:hover {
+
+		&.-open {
 			.submenu {
 				opacity: 1;
 				visibility: visible;
@@ -17,9 +18,6 @@
 
 			.menu-link {
 				color: $brand;
-				&.-sub {
-					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='$brand' viewBox='0 0 16 16'%3E%3Cpath fillRule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /%3E%3C/svg%3E") !important;
-				}
 			}
 		}
 	}
@@ -35,12 +33,10 @@
 		border-radius: 0.25rem;
 		transition: all ease-in-out 0.125s;
 		text-align: center;
+		cursor: pointer;
 
-		&.-sub {
-			padding-right: 1.5rem;
-			background-repeat: no-repeat;
-			background-position: right center;
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fillRule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /%3E%3C/svg%3E");
+		svg {
+			margin-left: 0.5rem;
 		}
 	}
 }

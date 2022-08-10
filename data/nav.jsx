@@ -4,46 +4,42 @@ const nav = [
 		url: '/',
 	},
 	{
-		title: 'Pubs',
-		url: '/',
-	},
-	{
-		title: 'Beers',
-		url: '/',
-	},
-	{
 		title: 'Store',
-		url: '/',
+		url: '/store',
 	},
 
 	{
 		title: 'Whitepaper',
-		url: '/',
+		url: '/whitepaper',
 	},
-
+	{
+		title: 'Audit',
+		url: '/audit',
+	},
+	{
+		title: 'Roadmap',
+		url: '/roadmap',
+	},
 	{
 		title: 'About',
-		url: '/',
+		sub: true,
+		subOpen: false,
 		submenu: [
 			{
-				title: 'Roadmap',
-				url: '/',
-			},
-			{
 				title: 'Team',
-				url: '/',
+				url: '/team',
 			},
 			{
-				title: 'Audit',
-				url: '/',
+				title: 'AMAs',
+				url: '/ama',
 			},
 			{
 				title: 'FAQ',
-				url: '/',
+				url: '/faq',
 			},
 			{
 				title: 'Contact us',
-				url: '/',
+				url: '/contact',
 			},
 		],
 	},
