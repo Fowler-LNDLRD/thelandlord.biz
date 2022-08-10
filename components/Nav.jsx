@@ -1,47 +1,17 @@
-import { useState } from 'react';
-import menu from '../data/nav';
+import nav from '../data/nav';
 import { useRouter } from 'next/router';
-import { ChevronDown } from 'react-bootstrap-icons';
 
 const Nav = ({ isActive }) => {
 	const router = useRouter();
 	const currentRoute = router.pathname;
-
-	const [nav, setNav] = useState(menu);
-
-	const changeNav = (index) => {
-		const cNav = [...nav];
-		cNav[index].subOpen = !cNav[index].subOpen;
-		setNav(cNav);
-	};
-
 	return (
-		<nav className={`menu d-md-flex ${isActive ? 'active' : ''}`}>
-			<ul className="menu-list">
+		<nav className={`header-nav me-auto d-md-flex ${isActive ? 'active' : ''}`}>
+			<ul className="header-nav-list">
 				{nav.map((item, index) => (
-					<li className={'menu-item' + (item.sub && item.subOpen ? ' -open' : '')} key={index}>
-						<a
-							onClick={() => item.sub && changeNav(index)}
-							href={item.url}
-							className={(item.submenu ? 'menu-link -sub' : 'menu-link') + (currentRoute === item.url ? ' active' : '')}
-						>
+					<li className="header-nav-item" key={index}>
+						<a href={item.url} className={currentRoute === item.url ? 'header-nav-link active' : 'header-nav-link'}>
 							{item.title}
-
-							{item.submenu && <ChevronDown />}
 						</a>
-						{item.submenu && (
-							<>
-								<ul className="submenu">
-									{item.submenu.map((sub, subIndex) => (
-										<li className="submenu-item" key={subIndex}>
-											<a className="submenu-link" href={sub.url}>
-												{sub.title}
-											</a>
-										</li>
-									))}
-								</ul>
-							</>
-						)}
 					</li>
 				))}
 			</ul>

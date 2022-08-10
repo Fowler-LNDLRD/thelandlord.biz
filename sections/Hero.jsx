@@ -1,5 +1,3 @@
-import social from '../data/social';
-
 const Hero = () => {
 	return (
 		<section className="hero">
@@ -24,16 +22,6 @@ const Hero = () => {
 					<a href="/" className="btn btn-dark">
 						Whitepaper
 					</a>
-
-					<ul className="hero-social d-flex ms-4">
-						{social?.map((item, index) => (
-							<li className="hero-social-item" key={index}>
-								<a className="hero-social-link" href={item.url} title={item.title}>
-									{item?.icon}
-								</a>
-							</li>
-						))}
-					</ul>
 				</div>
 			</article>
 		</section>

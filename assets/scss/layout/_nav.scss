@@ -1,52 +1,33 @@
-.menu {
-	margin-left: auto;
-
-	&.active {
-		opacity: 1;
-		visibility: visible;
-	}
-
+.header-nav {
 	&-list {
-		list-style: none;
-		padding: 0;
-		margin: 0;
 		display: flex;
 	}
 
 	&-item {
 		position: relative;
-
-		&.-open {
-			.submenu {
-				opacity: 1;
-				visibility: visible;
-			}
-
-			.menu-link {
-				color: $brand;
-			}
-		}
+		margin-right: 2rem;
 	}
 
 	&-link {
 		display: block;
-		color: var(--bs-light);
 		font-size: 0.875rem;
-		text-shadow: 1px 1px 2px #000;
-		padding: 0 1rem;
+		padding: 0;
 		height: 2.5rem;
 		line-height: 2.5rem;
-		border-radius: 0.25rem;
 		transition: all ease-in-out 0.125s;
 		text-align: center;
 		cursor: pointer;
+		font-weight: 300;
+		color: #ccc;
 
-		svg {
-			margin-left: 0.5rem;
+		&:hover {
+			color: #fff;
 		}
 	}
+}
 
-	@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+	.header-nav {
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -76,65 +57,6 @@
 			text-align: left;
 			padding-left: 2rem;
 			position: relative;
-
-			svg {
-				position: absolute;
-				top: 50%;
-				right: 2rem;
-				transform: translateY(-50%);
-			}
 		}
-	}
-}
-
-.submenu {
-	position: absolute;
-	top: 100%;
-	right: 0;
-	list-style-type: none;
-	padding: 0;
-	margin: 0;
-	width: 12rem;
-	padding-top: 1rem;
-	opacity: 0;
-	visibility: hidden;
-	transition: all ease-in-out 0.25s;
-
-	&-item {
-		background-color: rgba(#fff, 0.7);
-		transition: all ease-in-out 0.25s;
-		&:first-child {
-			border-top-right-radius: 0.5rem;
-			border-top-left-radius: 0.5rem;
-		}
-
-		&:last-child {
-			border-bottom-right-radius: 0.5rem;
-			border-bottom-left-radius: 0.5rem;
-		}
-
-		&:not(:last-child) {
-			border-bottom: 1px solid rgba(#000, 0.1);
-		}
-
-		&:hover {
-			background-color: rgba(#fff, 0.8);
-			&:not(:last-child) {
-				border-bottom: 1px solid rgba(#000, 0.2);
-			}
-			.submenu-link {
-				color: #000;
-			}
-		}
-	}
-	&-link {
-		line-height: 2rem;
-		display: block;
-		padding: 0.5rem 1.25rem;
-		transition: all ease-in-out 0.25s;
-		font-size: 0.875rem;
-		color: #000;
-		font-weight: 500;
-		text-shadow: 0;
 	}
 }

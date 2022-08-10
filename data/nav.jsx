@@ -1,9 +1,5 @@
 const nav = [
 	{
-		title: 'Home',
-		url: '/',
-	},
-	{
 		title: 'Store',
 		url: '/store',
 	},
@@ -21,28 +17,29 @@ const nav = [
 		url: '/roadmap',
 	},
 	{
-		title: 'About',
-		sub: true,
-		subOpen: false,
-		submenu: [
-			{
-				title: 'Team',
-				url: '/team',
-			},
-			{
-				title: 'AMAs',
-				url: '/ama',
-			},
-			{
-				title: 'FAQ',
-				url: '/faq',
-			},
-			{
-				title: 'Contact us',
-				url: '/contact',
-			},
-		],
+		title: 'Team',
+		url: '/team',
 	},
+	{
+		title: 'AMAs',
+		url: '/ama',
+	},
+	{
+		title: 'FAQ',
+		url: '/faq',
+	},
+	{
+		title: 'Support',
+		url: '/contact',
+	},
+	// {
+	// 	title: 'About',
+	// 	sub: true,
+	// 	subOpen: false,
+	// 	submenu: [
+
+	// 	],
+	// },
 ];
 
 export default nav;

@@ -1,0 +1,11 @@
+.header-logo {
+	color: var(--bs-warning);
+	transition: color ease 0.25s;
+	margin-right: 2.5rem;
+	&:hover {
+		color: #fff;
+		&-svg {
+			fill: #fff;
+		}
+	}
+}
