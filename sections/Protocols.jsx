@@ -4,7 +4,7 @@ const Protocols = () => {
 			<div className="container">
 				<h2 className="protocols-title d-none">Protocols</h2>
 				<div className="row">
-					<div className="col-4">
+					<div className="col-md-4">
 						<article className="protocols-item">
 							<span className="protocols-percent">3%</span>
 							<h3 className="protocols-title">
@@ -16,7 +16,7 @@ const Protocols = () => {
 						</article>
 					</div>
 
-					<div className="col-4">
+					<div className="col-md-4">
 						<article className="protocols-item">
 							<span className="protocols-percent">3%</span>
 							<h3 className="protocols-title">
@@ -28,7 +28,7 @@ const Protocols = () => {
 						</article>
 					</div>
 
-					<div className="col-4">
+					<div className="col-md-4">
 						<article className="protocols-item">
 							<span className="protocols-percent">2%</span>
 							<h3 className="protocols-title">
