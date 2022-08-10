@@ -6,6 +6,7 @@ import Pubs from '../sections/Pubs';
 import Pos from '../sections/Pos';
 import Shill from '../sections/Shill';
 import Store from '../sections/Store';
+import Certs from '../sections/Certs';
 
 export default function Home() {
 	return (
@@ -20,6 +21,7 @@ export default function Home() {
 			<Pos />
 			<Store />
 			<Shill />
+			{/* <Certs /> */}
 		</>
 	);
 }
