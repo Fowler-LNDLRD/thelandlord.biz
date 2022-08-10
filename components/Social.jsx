@@ -1,6 +1,6 @@
 const Social = () => {
 	return (
-		<ul className="header-social">
+		<ul className="header-social ms-auto">
 			<li className="header-social-item">
 				<a className="header-social-link" target="_blank" title="Telegram" href="https://t.me/TheLandlordToken">
 					<svg width="21" height="21" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
