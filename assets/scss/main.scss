@@ -10,15 +10,15 @@
 @import 'components/buttons';
 @import 'components/links';
 
-@import 'sections/section';
-@import 'sections/hero';
-@import 'sections/contract';
-@import 'sections/protocols';
-@import 'sections/pubs';
-@import 'sections/team';
-@import 'sections/beers';
-@import 'sections/store';
-@import 'sections/pos';
-@import 'sections/shill';
+@import 'sections/home/section';
+@import 'sections/home/hero';
+@import 'sections/home/contract';
+@import 'sections/home/protocols';
+@import 'sections/home/pubs';
+@import 'sections/home/team';
+@import 'sections/home/beers';
+@import 'sections/home/store';
+@import 'sections/home/pos';
+@import 'sections/home/shill';
 
 @import 'pages/home';

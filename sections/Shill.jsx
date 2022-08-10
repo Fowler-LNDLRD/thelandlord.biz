@@ -21,7 +21,7 @@ const Shill = () => {
 		<section className="shill section">
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-md-6">
+					<div className="col-md-6 col-lg-5">
 						<h2 className="section-title">Earn Landlord</h2>
 						<p className="section-desc">
 							There are many ways that you can earn LNDLRD, one way is to Tweet about Landlord Token earn LNDLRD. We have made an app that makes it easy to tweet and
@@ -31,7 +31,7 @@ const Shill = () => {
 							Join Now
 						</LinkArrow>
 					</div>
-					<div className="col-md-6 d-flex">
+					<div className="col-md-6 col-lg-7 d-flex">
 						<div className="shill-wrap">
 							<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper">
 								<SwiperSlide className={`shill-card shill-main-card`}>
