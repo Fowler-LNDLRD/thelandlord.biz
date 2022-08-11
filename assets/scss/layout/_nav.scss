@@ -59,7 +59,7 @@
 			transition: all ease 0.55s;
 			visibility: hidden;
 			opacity: 0;
-			border-top: 1px solid #111;
+			border-top: 1px solid #222;
 
 			display: block;
 			position: relative;
@@ -71,7 +71,9 @@
 
 		&-link {
 			padding: 0 1.5rem;
-			border-bottom: 1px solid #111;
+			border-bottom: 1px solid #222;
+			font-size: 0.9875rem;
+			letter-spacing: 0;
 		}
 	}
 }
