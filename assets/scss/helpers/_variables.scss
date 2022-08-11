@@ -1,19 +1,34 @@
 $brand: #ffc107;
-
 $success: #198754;
 $danger: #dc3545;
 $warning: #fd7e14;
 $info: #0d6efd;
-
 $dark: #111;
 $light: #f3f3f3;
 
-$colors: (
-	'brand': $brand,
-	'success': $success,
-	'danger': $danger,
-	'warning': $warning,
-	'info': $info,
-	'dark': $dark,
-	'light': $light,
+//
+$prefix: '';
+
+// body
+$body-bg: #000;
+$body-color: $light;
+
+// links
+$link-color: $light;
+$link-decoration: none;
+$link-hover-color: #fff;
+
+//
+$container-max-widths: (
+	lg: 1024px,
 );
+
+// fonts
+$font-family-sans-serif: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji',
+	'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji' !default;
+
+// btn
+$input-btn-padding-y: 0.5rem;
+$input-btn-padding-x: 1rem;
+$btn-font-weight: 400;
+$input-btn-focus-box-shadow: 0;

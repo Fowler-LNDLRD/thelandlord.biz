@@ -3,9 +3,40 @@
 
 // Include any default variable overrides here
 
+@import 'variables';
+
 @import '../../../node_modules/bootstrap/scss/variables';
 
 // Include any default map overrides here
+
+$colors: (
+	'black': $black,
+	'white': $white,
+);
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+	'brand': $brand,
+	'primary': $primary,
+	'success': $success,
+	'warning': $warning,
+	'danger': $danger,
+	'light': $light,
+	'dark': $dark,
+	// 'secondary': $secondary,
+	// 'info': $info,,,
+);
+
+$spacers: (
+	0: 0,
+	1: $spacer,
+	2: $spacer * 2,
+	3: $spacer * 3,
+	4: $spacer * 4,
+	5: $spacer * 5,
+);
+
+// $theme-colors: map-remove($colors, 'teal');
 
 @import '../../../node_modules/bootstrap/scss/maps';
 
