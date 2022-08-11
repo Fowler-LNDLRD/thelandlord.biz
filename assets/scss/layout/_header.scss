@@ -3,7 +3,6 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 0.5rem 0;
 	z-index: 10000;
 	background-color: rgba(#000, 0.7);
 
@@ -30,9 +29,13 @@
 		margin: 0;
 	}
 
+	a:focus-visible {
+		transition: none;
+		outline: 2px solid rgba($info, 0.6);
+	}
+
 	@media screen and (max-width: 767px) {
 		z-index: 10000;
-		padding: 0.25rem;
 		background-color: #000;
 		.container {
 			z-index: 100;
