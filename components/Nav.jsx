@@ -1,11 +1,11 @@
 import nav from '../data/nav';
 import { useRouter } from 'next/router';
 
-const Nav = ({ isActive }) => {
+const Nav = ({ className }) => {
 	const router = useRouter();
 	const currentRoute = router.pathname;
 	return (
-		<nav className={`header-nav me-auto d-md-flex ${isActive ? 'active' : ''}`}>
+		<nav className={'header-nav d-md-flex' + className}>
 			<ul className="header-nav-list">
 				{nav.map((item, index) => (
 					<li className="header-nav-item" key={index}>

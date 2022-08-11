@@ -25,6 +25,10 @@ const nav = [
 		url: '/ama',
 	},
 	{
+		title: 'Earn',
+		url: '/earn',
+	},
+	{
 		title: 'FAQ',
 		url: '/faq',
 	},

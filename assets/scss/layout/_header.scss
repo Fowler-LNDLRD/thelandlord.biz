@@ -35,8 +35,31 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		z-index: 10000;
-		background-color: #000;
+		transition-property: background-color;
+		transition-delay: 0.4s;
+		transition-duration: 0.5s;
+
+		&::before {
+			transition-property: background-color;
+			transition-delay: 0.4s;
+			transition-duration: 0.5s;
+		}
+
+		&.nav-active {
+			background-color: #000;
+			transition-property: background-color;
+			transition-delay: 0s;
+			transition-duration: 0.3s;
+
+			&::before {
+				background-color: #000;
+
+				transition-property: background-color;
+				transition-delay: 0s;
+				transition-duration: 0.3s;
+			}
+		}
+
 		.container {
 			z-index: 100;
 		}

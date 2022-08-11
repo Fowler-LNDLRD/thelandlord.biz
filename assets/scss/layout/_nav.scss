@@ -1,17 +1,20 @@
 .header-nav {
+	flex: 1;
+
 	&-list {
-		width: 100%;
 		display: flex;
+		width: 100%;
 	}
 
 	&-item {
+		flex-grow: 1;
 		position: relative;
+		text-align: center;
 	}
 
 	&-link {
 		display: block;
 		font-size: 0.875rem;
-		padding: 0 1rem;
 		height: 3rem;
 		line-height: 3rem;
 		transition: all ease-in-out 0.125s;
@@ -28,44 +31,42 @@
 @media screen and (max-width: 767px) {
 	.header-nav {
 		position: fixed;
-		top: 3.5rem;
+		top: 3rem;
 		left: 0;
 		background-color: #000;
 		width: 100%;
-		bottom: 100%;
-		border-top: 1px solid #111;
-		opacity: 0;
-		visibility: hidden;
 		overflow: hidden;
-		transition: all ease-in-out 0.25s;
+		height: 0;
+
+		transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
 
 		&.active {
+			height: 100%;
 			overflow: auto;
-			bottom: 0;
-			opacity: 1;
-			visibility: visible;
 
 			.header-nav-list {
-				transform: translateY(0);
+				transition: all ease 0.55s;
+				opacity: 1;
+				visibility: visible;
 			}
 		}
 
 		&-list {
-			transition: all ease-in-out 0.25s;
+			transition: all ease 0.55s;
+			visibility: hidden;
+			opacity: 0;
+			border-top: 1px solid #111;
 
 			display: block;
 			position: relative;
-			transform: translateY(2rem);
 		}
 
 		&-item {
-			margin-right: 0;
+			text-align: left;
 		}
 
 		&-link {
 			padding: 0 1.5rem;
-			height: 3rem;
-			line-height: 3rem;
 			border-bottom: 1px solid #111;
 		}
 	}

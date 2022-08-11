@@ -4,14 +4,13 @@
 	&-item {
 		position: relative;
 		&:not(:last-child) {
-			margin-right: 1rem;
 		}
 	}
 
 	&-link {
 		display: block;
-		height: 2.5rem;
-		line-height: 2.5rem;
+		height: 3rem;
+		width: 2.5rem;
 		transition: all ease-in-out 0.125s;
 		text-align: center;
 		cursor: pointer;
@@ -19,6 +18,10 @@
 		color: #ccc;
 		&:hover {
 			color: #fff;
+		}
+
+		svg {
+			height: 100%;
 		}
 	}
 }

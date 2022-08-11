@@ -17,10 +17,10 @@ const Header = () => {
 	};
 
 	return (
-		<header className="header">
+		<header className={'header' + (toggle ? ' nav-active' : '')}>
 			<div className="container">
 				<Logo />
-				<Nav isActive={toggle} />
+				<Nav className={toggle ? ' active' : ''} />
 				<Social />
 				<button className={toggle ? 'nav-toggle active d-md-none' : 'nav-toggle d-md-none'} onClick={() => toggleNav()}>
 					<span className="lines">
