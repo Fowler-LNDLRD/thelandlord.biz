@@ -14,16 +14,20 @@
 
 	&-link {
 		display: block;
-		font-size: 0.875rem;
+		font-size: 0.8125rem;
+		letter-spacing: 0.5px;
 		height: 3rem;
 		line-height: 3rem;
 		transition: all ease-in-out 0.125s;
 		cursor: pointer;
 		font-weight: 300;
-		color: #ccc;
+		color: #fff;
+		opacity: 0.8;
 
 		&:hover {
 			color: #fff;
+			text-shadow: 0 0 0 white;
+			opacity: 1;
 		}
 	}
 }
