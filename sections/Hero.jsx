@@ -12,6 +12,8 @@ const Hero = () => {
 				<a className="hero-btn btn btn-brand" href="/">
 					How To Buy
 				</a>
+
+				<button className="hero-btn btn btn-link ms-1">Contract</button>
 			</article>
 		</section>
 	);

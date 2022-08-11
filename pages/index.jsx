@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Beers from '../sections/Beers';
 import Hero from '../sections/Hero';
-import Protocols from '../sections/Protocols';
+import Tokenomics from '../sections/Tokenomics';
 import Pubs from '../sections/Pubs';
 import Pos from '../sections/Pos';
 import Shill from '../sections/Shill';
@@ -15,9 +15,9 @@ export default function Home() {
 				<title>The Landlord Token</title>
 			</Head>
 			<Hero />
-			{/* <Protocols />
-			<Pubs />
+			<Tokenomics />
 			<Beers />
+			{/* <Pubs />
 			<Pos />
 			<Store />
 			<Shill /> */}
