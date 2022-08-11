@@ -15,12 +15,12 @@ export default function Home() {
 				<title>The Landlord Token</title>
 			</Head>
 			<Hero />
-			<Protocols />
+			{/* <Protocols />
 			<Pubs />
 			<Beers />
 			<Pos />
 			<Store />
-			<Shill />
+			<Shill /> */}
 			{/* <Certs /> */}
 		</>
 	);
