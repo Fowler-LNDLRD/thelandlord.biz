@@ -96,6 +96,18 @@
 	}
 }
 
+@media screen and (max-height: 750px) and (min-height: 650px) {
+	.hero {
+		min-height: 100vh;
+		padding: 0;
+		display: flex;
+		.container {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
 	.hero {
 		padding-top: 7rem;
