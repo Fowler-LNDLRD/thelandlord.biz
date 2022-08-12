@@ -3,7 +3,10 @@ const nav = [
 		title: 'Store',
 		url: '/store',
 	},
-
+	{
+		title: 'Buy',
+		url: '/buy',
+	},
 	{
 		title: 'Whitepaper',
 		url: '/whitepaper',
@@ -32,18 +35,6 @@ const nav = [
 		title: 'FAQ',
 		url: '/faq',
 	},
-	{
-		title: 'Support',
-		url: '/contact',
-	},
-	// {
-	// 	title: 'About',
-	// 	sub: true,
-	// 	subOpen: false,
-	// 	submenu: [
-
-	// 	],
-	// },
 ];
 
 export default nav;

@@ -17,7 +17,7 @@ const Protocols = () => {
 			<div className="container">
 				<h2 className="tokenomics-title section-title">Tokenomics</h2>
 				<p className="tokenomics-desc section-desc">
-					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to a 8% tax so will require 9% slippage.
+					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
 
 				{/* <div className="d-flex align-items-center justify-content-center">

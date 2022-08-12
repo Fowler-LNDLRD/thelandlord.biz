@@ -101,6 +101,14 @@
 		}
 	}
 
+	@media screen and (max-width: 767px) {
+		padding-top: 5rem;
+
+		&-protocols {
+			margin-top: -2rem;
+		}
+	}
+
 	&-contract {
 		display: inline-block;
 		max-width: 100%;
