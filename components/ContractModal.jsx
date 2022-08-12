@@ -15,7 +15,7 @@ const ContractModal = () => {
 			<div className="modal-dialog modal-dialog-centered">
 				<div className="modal-content contract-modal">
 					<div className="contract-modal-title">Contract</div>
-					<p className="contract-modal-desc">V2 Contract with 8% Tax and 9% Slippage.</p>
+					<p className="contract-modal-desc">V2 Contract with 8% Tax or 9% Slippage.</p>
 					<div onClick={() => copyToClipboard()} className={'contract-modal-code' + (copied ? ' copied' : '')}>
 						{copied ? 'Copied!' : process.env.NEXT_PUBLIC_CONTRACT}
 					</div>
