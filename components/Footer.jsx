@@ -47,13 +47,13 @@ const Footer = () => {
 						<h4>Links</h4>
 						<nav className="footer-nav">
 							<a className="footer-nav-link" href="/">
-								Contract
-							</a>
-							<a className="footer-nav-link" href="/">
 								CoinMarketCap
 							</a>
 							<a className="footer-nav-link" href="/">
 								CoinGecko
+							</a>
+							<a className="footer-nav-link" href="/">
+								Nomics
 							</a>
 							<a className="footer-nav-link" href="/">
 								Chart
