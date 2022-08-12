@@ -1,8 +1,16 @@
 .pos {
 	position: relative;
 	overflow: hidden;
-	padding-top: 7rem;
-	border-bottom: 1px solid #0a0a0a;
+	padding-top: 8rem;
+	border-bottom: 1px solid #000;
+	border-top: 1px solid #111;
+
+	.section-desc {
+		width: 47rem;
+		max-width: 100%;
+		margin: 0 auto 1.5rem;
+	}
+
 	.container {
 		z-index: 2;
 		min-height: 600px;
@@ -34,18 +42,4 @@
 			filter: drop-shadow(0 0 3rem rgba(#444, 0.1));
 		}
 	}
-
-	// &-app {
-	// 	background-color: #000;
-	// 	display: block;
-	// 	height: 100%;
-	// 	width: 100%;
-	// 	position: absolute;
-	// 	border-radius: 1rem;
-	// 	border: 2px solid #222;
-	// 	top: 28px;
-	// 	width: 810px;
-	// 	left: 50%;
-	// 	transform: translateX(-50%);
-	// }
 }

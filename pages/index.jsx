@@ -21,10 +21,14 @@ export default function Home() {
 			<Hero />
 			<Tokenomics />
 			<Beers />
-			{/* <Pubs />
+			<Pubs />
 			<Pos />
+			{/*
 			<Store />
-			<Shill /> */}
+			<Shill />
+
+
+			 */}
 			{/* <Certs /> */}
 		</>
 	);

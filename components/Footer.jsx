@@ -3,7 +3,7 @@ const Footer = () => {
 		<footer className="footer">
 			<div className="container">
 				<div className="row">
-					<div className="col-md-3">
+					<div className="col-md-3 mb-3 mb-md-0">
 						<h4>General</h4>
 						<nav className="footer-nav">
 							<a className="footer-nav-link" href="/">
@@ -23,7 +23,7 @@ const Footer = () => {
 							</a>
 						</nav>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 mb-3 mb-md-0">
 						<h4>About</h4>
 						<nav className="footer-nav">
 							<a className="footer-nav-link" href="/">
@@ -43,7 +43,7 @@ const Footer = () => {
 							</a>
 						</nav>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 mb-3 mb-md-0">
 						<h4>Links</h4>
 						<nav className="footer-nav">
 							<a className="footer-nav-link" href="/">

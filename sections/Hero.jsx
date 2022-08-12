@@ -22,7 +22,7 @@ const Hero = () => {
 						crypto <span>pubs &amp; beers</span>
 					</h1>
 					<p className="hero-desc">
-						The Landlord ($LNDLRD) is much more than BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
+						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFT's and much more.
 					</p>
 					<a className="hero-btn btn btn-brand" href="/">
