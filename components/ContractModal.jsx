@@ -7,7 +7,16 @@ const ContractModal = () => {
 		navigator.clipboard.writeText(process.env.NEXT_PUBLIC_CONTRACT);
 		setCopied(true);
 
-		setTimeout(() => setCopied(false), 5000);
+		const tooltip = bootstrap.Tooltip.getInstance('#contractModelCode');
+		if (tooltip) {
+			tooltip.hide();
+			tooltip.disable();
+		}
+
+		setTimeout(() => {
+			setCopied(false);
+			tooltip.enable();
+		}, 5000);
 	};
 	return (
 		<div className="modal fade" id="contractModal" tabIndex="-1" aria-labelledby="contractModalLabel" aria-hidden="true">
@@ -16,7 +25,14 @@ const ContractModal = () => {
 				<div className="modal-content contract-modal">
 					<div className="contract-modal-title">Contract</div>
 					<p className="contract-modal-desc">V2 Contract with 8% Tax or 9% Slippage.</p>
-					<div onClick={() => copyToClipboard()} className={'contract-modal-code' + (copied ? ' copied' : '')}>
+					<div
+						data-bs-toggle="tooltip"
+						data-bs-placement="bottom"
+						data-bs-title="Click to copy!"
+						onClick={() => copyToClipboard()}
+						id="contractModelCode"
+						className={'contract-modal-code' + (copied ? ' copied' : '')}
+					>
 						{copied ? 'Copied!' : process.env.NEXT_PUBLIC_CONTRACT}
 					</div>
 				</div>

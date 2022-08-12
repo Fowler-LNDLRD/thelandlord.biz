@@ -6,7 +6,10 @@ import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
 	useEffect(() => {
-		require('bootstrap/dist/js/bootstrap.bundle.min.js');
+		window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
+
+		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+		const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 	}, []);
 
 	return (
