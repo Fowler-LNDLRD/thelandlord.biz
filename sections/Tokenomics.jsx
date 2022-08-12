@@ -34,7 +34,7 @@ const Protocols = () => {
 									Pub <span>Protocol</span>
 								</h3>
 								<p className="tokenomics-item-desc">
-									3% will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.
+									This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.
 								</p>
 							</article>
 						</SwiperSlide>
@@ -57,7 +57,7 @@ const Protocols = () => {
 									Shots <span>Protocol</span>
 								</h3>
 								<p className="tokenomics-item-desc">
-									Rewarding all Landlord Token holders with passive $BUSD income if they are holding at least $50 worth of $LNDLRD Tokens.
+									Rewarding all the Landlord Token holders with passive $BUSD income if they are holding at least $50 worth of $LNDLRD Tokens.
 								</p>
 							</article>
 						</SwiperSlide>
