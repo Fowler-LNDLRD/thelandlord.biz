@@ -110,7 +110,7 @@
 
 @media screen and (max-height: 800px) and (min-height: 460px) {
 	.hero {
-		min-height: var(--hero-height);
+		min-height: var(--hero-height, 100vh);
 		padding: 3rem 0 0 0;
 		display: flex;
 		.container {
