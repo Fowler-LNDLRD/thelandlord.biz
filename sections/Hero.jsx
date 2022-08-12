@@ -2,13 +2,15 @@ import { useEffect } from 'react';
 
 const Hero = () => {
 	const documentHeight = () => {
-		const doc = document.getElementById('hero');
-		doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+		if (window.innerHeight > 460 && window.innerHeight < 799 && window.innerWidth > 768) {
+			const doc = document.getElementById('hero');
+			doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+		}
 	};
 
 	useEffect(() => {
 		documentHeight();
-		window.addEventListener('resize', () => window.innerHeight > 460 && window.innerHeight < 800 && documentHeight());
+		window.addEventListener('resize', documentHeight);
 	}, []);
 
 	return (

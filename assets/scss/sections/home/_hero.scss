@@ -108,7 +108,7 @@
 	}
 }
 
-@media screen and (max-height: 800px) and (min-height: 460px) {
+@media screen and (max-height: 799px) and (min-height: 460px) and (min-width: 768px) {
 	.hero {
 		min-height: var(--hero-height, 100vh);
 		padding: 3rem 0 0 0;
