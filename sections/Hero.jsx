@@ -1,6 +1,18 @@
+import { useEffect } from 'react';
+
 const Hero = () => {
+	const documentHeight = () => {
+		const doc = document.getElementById('hero');
+		doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+	};
+
+	useEffect(() => {
+		documentHeight();
+		window.addEventListener('resize', () => window.innerHeight > 460 && window.innerHeight < 800 && documentHeight());
+	}, []);
+
 	return (
-		<section className="hero">
+		<section className="hero" id="hero">
 			<article className="container">
 				<h1 className="hero-title">
 					crypto <span>pubs &amp; beers</span>
