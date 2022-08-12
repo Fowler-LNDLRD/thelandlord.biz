@@ -5,8 +5,8 @@ const Protocols = () => {
 	return (
 		<section className="tokenomics">
 			<div className="container">
-				<h2 className="tokenomics-title section-title">Tokenomics</h2>
-				<p className="tokenomics-desc section-desc">
+				<h2 className="tokenomics-title section-title text-start text-md-center">Tokenomics</h2>
+				<p className="tokenomics-desc section-desc text-start text-md-center">
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
 
