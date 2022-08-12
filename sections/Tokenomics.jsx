@@ -1,17 +1,7 @@
-import { useState } from 'react';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper';
 
 const Protocols = () => {
-	const [copied, setCopied] = useState(false);
-
-	const copyToClipboard = () => {
-		navigator.clipboard.writeText(process.env.NEXT_PUBLIC_CONTRACT);
-		setCopied(true);
-
-		setTimeout(() => setCopied(false), 5000);
-	};
 	return (
 		<section className="tokenomics">
 			<div className="container">
@@ -20,11 +10,6 @@ const Protocols = () => {
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
 
-				{/* <div className="d-flex align-items-center justify-content-center">
-					<div className={'tokenomics-contract' + (copied ? ' copied' : '')} onClick={() => copyToClipboard()}>
-						{process.env.NEXT_PUBLIC_CONTRACT}
-					</div>
-				</div> */}
 				<div className="tokenomics-protocols">
 					<Swiper
 						navigation={true}
