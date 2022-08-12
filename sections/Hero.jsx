@@ -22,8 +22,8 @@ const Hero = () => {
 						crypto <span>pubs &amp; beers</span>
 					</h1>
 					<p className="hero-desc">
-						The Landlord Token ($LNDLRD) is a BEP-20 token with 3 fantastic protocols. Together, it's tokenomics power-up one truly unique token and will really drive
-						forward the Pub industry.
+						The Landlord ($LNDLRD) is much more than BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
+						NFT's and much more.
 					</p>
 					<a className="hero-btn btn btn-brand" href="/">
 						How To Buy
