@@ -8,7 +8,7 @@ const Beers = () => {
 					<div className="col-md-6 text-center text-md-start mb-5 mb-md-0">
 						<img className="beers-img" src="/files/img/beers/beer.png" />
 					</div>
-					<div className="col-md-6 ps-0 ps-md-2">
+					<div className="col-md-6 ps-0 ps-md-2 text-center text-md-start">
 						<h2 className="section-title">Landlord Beers</h2>
 						<p className="section-desc mb-1">
 							We have formed a partnership with Crafty Brewery in the UK to release the first Landlord craft beer REKT which is an amazing Pilsner. This will be
