@@ -57,7 +57,7 @@ const Protocols = () => {
 									Shots <span>Protocol</span>
 								</h3>
 								<p className="tokenomics-item-desc">
-									Rewarding all LNDLRD holders with passive income. in BUSD every hour as long as you are holding at least $50 worth of $LNDLRD Tokens.
+									Rewarding all Landlord Token holders with passive $BUSD income if they are holding at least $50 worth of $LNDLRD Tokens.
 								</p>
 							</article>
 						</SwiperSlide>
