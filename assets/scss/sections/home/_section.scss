@@ -1,6 +1,6 @@
 .section {
-	padding-top: 10rem;
-	padding-bottom: 10rem;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
 
 	background-color: #0a0a0a;
 
@@ -38,8 +38,8 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		padding-top: 7rem;
-		padding-bottom: 7rem;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
 		&-title {
 			font-size: 2.25rem;
 		}
