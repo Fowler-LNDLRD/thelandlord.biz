@@ -27,9 +27,9 @@
 			height: 3rem;
 			font-size: 1rem;
 			line-height: 3rem;
-			color: #fff;
+			color: #000;
 			font-weight: 600;
-			border-left: 1px solid #ffffff30;
+			border-left: 1px solid rgba(#000, 0.1);
 		}
 	}
 
@@ -43,7 +43,6 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		top: 10%;
 		opacity: 0;
 		visibility: hidden;
 		transition: all ease-in-out 0.25s;
@@ -51,7 +50,11 @@
 		&.active {
 			opacity: 1;
 			visibility: visible;
-			top: 0;
+
+			.papp-modal-content {
+				transform: translateY(0);
+				opacity: 1;
+			}
 		}
 
 		&-overlay {
@@ -69,6 +72,8 @@
 			top: 2rem;
 		}
 		&-content {
+			transform: translateY(3rem);
+			transition: all ease 0.1s 0.2s;
 			background-color: #111;
 			border-top: 1px solid #333;
 			padding: 2.5rem;
@@ -76,6 +81,7 @@
 			border-radius: 1rem;
 			position: relative;
 			z-index: 1005;
+			opacity: 0;
 		}
 	}
 }

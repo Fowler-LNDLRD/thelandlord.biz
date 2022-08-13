@@ -6,6 +6,7 @@ const POS = () => {
 	const [cart, setCart] = useState([]);
 	const [cartShow, setCartShow] = useState(false);
 	const [cartTotal, setCartTotal] = useState(0);
+	const [search, setSearch] = useState('');
 
 	const addProduct = (item) => {
 		let nowCart = [...cart];
@@ -63,10 +64,13 @@ const POS = () => {
 		<section className="papp">
 			<div className="row">
 				<div className="col-10">
-					<input type="text" className="form-control papp-search" placeholder="Find products..." />
+					<div className="position-relative">
+						<input type="text" onChange={(e) => setSearch(e.target.value)} value={search} className="form-control papp-search" placeholder="Find products..." />
+						<button onClick={() => setSearch('')} hidden={search.length === 0} className="btn-close position-absolute top-0 end-0 h-100 p-0 px-1"></button>
+					</div>
 				</div>
 				<div className="col-2">
-					<button className={'d-flex btn w-100 papp-cart-btn' + (cart.length !== 0 ? ' btn-success' : ' btn-dark')} onClick={() => setCartShow(!cartShow)}>
+					<button className={'d-flex btn w-100 papp-cart-btn btn-brand'} onClick={() => setCartShow(!cartShow)}>
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="mx-auto" viewBox="0 0 16 16">
 							<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
 						</svg>
@@ -76,15 +80,22 @@ const POS = () => {
 			</div>
 
 			<div className="row">
-				{products.map((item) => (
-					<div className="col-3" key={item.id} onClick={() => addProduct(item)}>
-						<div className="papp-product">
-							<img className="papp-product-img" src={`/files/img/papp/${item.img}`} alt={item.title} />
-							<div className="papp-product-title">{item.title}</div>
-							<div className="papp-product-price">${item.price}</div>
+				{products
+					.filter((item) => {
+						if (!search) return true;
+						if (item.title.toLowerCase().includes(search)) {
+							return true;
+						}
+					})
+					.map((item) => (
+						<div className="col-3" key={item.id} onClick={() => addProduct(item)}>
+							<div className="papp-product">
+								<img className="papp-product-img" src={`/files/img/papp/${item.img}`} alt={item.title} />
+								<div className="papp-product-title">{item.title}</div>
+								<div className="papp-product-price">${item.price}</div>
+							</div>
 						</div>
-					</div>
-				))}
+					))}
 			</div>
 
 			<div className={'papp-modal' + (cartShow ? ' active' : '')}>
