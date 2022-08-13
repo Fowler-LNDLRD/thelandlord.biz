@@ -2,7 +2,7 @@ import LinkArrow from '../components/LinkArrow';
 
 const Pubs = () => {
 	return (
-		<section className="pubs section">
+		<section className="pubs section section-dark">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-6 text-center text-md-start pe-0 pe-md-3 mb-3 mb-md-0">
