@@ -65,13 +65,7 @@ const POS = () => {
 			<div className="row">
 				<div className="col-10">
 					<div className="position-relative">
-						<input
-							type="text"
-							onChange={(e) => setSearch(e.target.value.toLowerCase())}
-							value={search}
-							className="form-control papp-search"
-							placeholder="Find products..."
-						/>
+						<input type="text" onChange={(e) => setSearch(e.target.value)} value={search} className="form-control papp-search" placeholder="Find products..." />
 						<button onClick={() => setSearch('')} hidden={search.length === 0} className="btn-close position-absolute top-0 end-0 h-100 p-0 px-1"></button>
 					</div>
 				</div>
@@ -89,7 +83,7 @@ const POS = () => {
 				{products
 					.filter((item) => {
 						if (!search) return true;
-						if (item.title.toLowerCase().includes(search)) {
+						if (item.title.toLowerCase().includes(search.toLowerCase())) {
 							return true;
 						}
 					})
