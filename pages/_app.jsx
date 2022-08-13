@@ -1,6 +1,6 @@
 import '../assets/scss/main.scss';
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Foot from '../components/Foot';
 
 import { useEffect } from 'react';
 
@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
 		<>
 			<Header />
 			<Component {...pageProps} />
-			<Footer />
+			<Foot />
 		</>
 	);
 }
