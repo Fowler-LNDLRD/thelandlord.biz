@@ -9,5 +9,5 @@
 		"**/.next": true,
 		"**/node_modules": true
 	},
-	"cSpell.words": ["LNDLRD", "Swiper"]
+	"cSpell.words": ["LNDLRD", "papp", "Swiper"]
 }

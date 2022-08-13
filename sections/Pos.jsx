@@ -1,5 +1,6 @@
 import LinkArrow from '../components/LinkArrow';
 import Ipad from '../components/Ipad';
+import POS from '../components/POS';
 
 const Pos = () => {
 	return (
@@ -15,12 +16,9 @@ const Pos = () => {
 						<div className="screen"></div>
 					</div>
 				</div>
-				{/*
-				<div className="pos-figure">
-					<img className="pos-figure-img" src="/files/img/ipad.png" />
-				</div> */}
-
-				<Ipad></Ipad>
+				<Ipad>
+					<POS />
+				</Ipad>
 			</div>
 		</section>
 	);

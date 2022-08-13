@@ -1,0 +1,68 @@
+const posProducts = [
+	{
+		id: 0,
+		img: 'stella.png',
+		title: 'Stella (Pint)',
+		price: 6,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 1,
+		img: 'guinness.png',
+		title: 'Guinness (Pint)',
+		price: 7,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 2,
+		img: 'perrier.png',
+		title: 'Perrier (Bottle)',
+		price: 4,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 3,
+		img: 'fanta.png',
+		title: 'Fanta (Pint)',
+		price: 3,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 4,
+		img: 'coke.png',
+		title: 'Coke (Pint)',
+		price: 3,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 5,
+		img: 'coke.png',
+		title: 'Coke (Half)',
+		price: 2,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 6,
+		img: 'cokezero.png',
+		title: 'Coke Zero (Pint)',
+		price: 3,
+		stock: 5,
+		added: 0,
+	},
+	{
+		id: 7,
+		img: 'cokezero.png',
+		title: 'Coke Zero (Half)',
+		price: 2,
+		stock: 5,
+		added: 0,
+	},
+];
+
+export default posProducts;
