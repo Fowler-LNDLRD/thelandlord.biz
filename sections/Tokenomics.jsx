@@ -57,7 +57,7 @@ const Protocols = () => {
 									Shots <span>Protocol</span>
 								</h3>
 								<p className="tokenomics-item-desc">
-									Rewarding all the Landlord Token holders with passive $BUSD income if they are holding at least $50 worth of $LNDLRD Tokens.
+									Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens.
 								</p>
 							</article>
 						</SwiperSlide>

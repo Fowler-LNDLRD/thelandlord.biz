@@ -2,6 +2,9 @@
 	border-bottom: 1px solid #000;
 	padding-top: 8rem;
 	padding-bottom: 8rem;
+	width: 100%;
+	overflow: hidden;
+
 	&-img {
 		max-width: 100%;
 		// filter: drop-shadow(15px 9px 24px rgba(0, 0, 0, 0.5));
