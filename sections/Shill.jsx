@@ -21,16 +21,18 @@ const Shill = () => {
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-6 col-lg-5">
-						<h2 className="section-title">Earn Landlord</h2>
-						<p className="section-desc">
+						<h2 className="section-title text-center text-md-start">Earn Landlord</h2>
+						<p className="section-desc text-center text-md-start">
 							There are many ways that you can earn LNDLRD, one way is to Tweet about Landlord Token earn LNDLRD. We have made an app that makes it easy to tweet and
 							keep track of your points and rewards.
 						</p>
-						<LinkArrow href="/" dir="right" className="link link-brand">
-							Join Now
-						</LinkArrow>
+						<div className="text-center text-md-start">
+							<LinkArrow href="/" dir="right" className="link link-brand">
+								Join Now
+							</LinkArrow>
+						</div>
 					</div>
-					<div className="col-md-6 col-lg-7 d-flex">
+					<div className="col-md-6 col-lg-7 d-flex mt-3 mt-md-0">
 						<div className="shill-wrap">
 							<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper">
 								<SwiperSlide className={`shill-card shill-main-card`}>
@@ -42,13 +44,13 @@ const Shill = () => {
 											43,300,000 $LNDLRD <br /> earned today.
 										</div>
 										<div className="shill-main-swipe">
-											Swipe Left
 											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16">
 												<path
 													fillRule="evenodd"
 													d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
 												/>
 											</svg>
+											Swipe Left
 										</div>
 									</div>
 								</SwiperSlide>

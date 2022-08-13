@@ -23,13 +23,11 @@ export default function Home() {
 			<Beers />
 			<Pubs />
 			<Pos />
+			<Shill />
 			{/*
 			<Store />
-			<Shill />
-
-
-			 */}
-			{/* <Certs /> */}
+			<Certs />
+			*/}
 		</>
 	);
 }

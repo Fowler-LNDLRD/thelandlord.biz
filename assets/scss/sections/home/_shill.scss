@@ -1,7 +1,6 @@
 .shill {
 	position: relative;
-	padding-bottom: 6rem;
-	padding-top: 6rem;
+	overflow: hidden;
 
 	.swiper {
 		overflow: visible;
@@ -11,17 +10,24 @@
 		max-width: 100%;
 		margin: auto;
 		overflow: visible;
+
+		@media screen and (max-width: 459px) {
+			width: 16rem;
+		}
 	}
 	&-card {
-		min-height: 23rem;
 		border-radius: 1rem;
 		text-align: center;
+		min-height: 23rem;
 		width: 20rem;
 		background: linear-gradient(to bottom, #fff, #ddd);
 		box-shadow: 0 0 0.5rem rgba(#000, 0.3);
 		color: #111;
 		position: relative;
 		display: flex;
+		@media screen and (max-width: 459px) {
+			min-height: 20rem;
+		}
 	}
 	&-inner {
 		margin: auto;
