@@ -19,18 +19,21 @@ const POS = () => {
 				price: item.price,
 				added: 1,
 			});
-
-			setCartTotal(cartTotal + item.price);
 		}
+		setCartTotal(cartTotal + item.price);
 		setCart(nowCart);
 	};
 
 	const removeItem = (item) => {
 		let nowCart = [...cart];
 		nowCart = nowCart.filter((c) => c.id !== item.id);
+		if (nowCart.length === 0) {
+			setCartShow(false);
+			setCartTotal(0);
+		} else {
+			setCartTotal(cartTotal - item.price * item.added);
+		}
 		setCart(nowCart);
-		setCartTotal(cartTotal - item.price);
-		if (nowCart.length === 0) setCartShow(false);
 	};
 
 	const lessItem = (item) => {
@@ -41,15 +44,18 @@ const POS = () => {
 		} else {
 			removeItem(item);
 		}
-		setCartTotal(cartTotal - item.price);
-		if (nowCart.length === 0) setCartShow(false);
+		if (nowCart.length === 0) {
+			setCartShow(false);
+			setCartTotal(0);
+		} else {
+			setCartTotal(cartTotal - item.price);
+		}
 	};
 
 	const moreItem = (item) => {
 		let nowCart = [...cart];
 		nowCart = nowCart.map((c) => (c.id === item.id ? { ...c, added: c.added + 1 } : c));
 		setCartTotal(cartTotal + item.price);
-
 		setCart(nowCart);
 	};
 
