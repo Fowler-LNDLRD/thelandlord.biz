@@ -26,7 +26,7 @@ const Pubs = () => {
 						</LinkArrow> */}
 					</div>
 
-					<div className="col-md-6 d-center text-md-block">
+					<div className="col-md-6 text-center text-md-end">
 						<img className="pubs-img" src="/files/img/coaster.png" />
 					</div>
 				</div>
