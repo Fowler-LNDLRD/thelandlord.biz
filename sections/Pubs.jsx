@@ -5,7 +5,7 @@ const Pubs = () => {
 		<section className="pubs section">
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-md-6 text-center text-md-start pe-0 pe-md-3">
+					<div className="col-md-6 text-center text-md-start pe-0 pe-md-3 mb-3 mb-md-0">
 						<h2 className="section-title">Landlord Pubs</h2>
 
 						<p className="section-desc">
@@ -26,7 +26,9 @@ const Pubs = () => {
 						</LinkArrow> */}
 					</div>
 
-					<div className="col-md-6 text-end d-none d-md-block"></div>
+					<div className="col-md-6 d-center text-md-block">
+						<img className="pubs-img" src="/files/img/coaster.png" />
+					</div>
 				</div>
 			</div>
 		</section>

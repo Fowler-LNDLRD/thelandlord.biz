@@ -11,14 +11,14 @@ const Pos = () => {
 					The Landlord have started developing a unique and intuitive crypto <u>Point of Sale system</u>. This will allow bars, pubs, clubs and cafes to successfully take
 					orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.
 				</p>
-				<div className="device-wrapper">
-					<div className="device" data-device="iPhone5" data-orientation="portrait" data-color="black">
-						<div className="screen"></div>
-					</div>
+				<div className="pos-figure d-flex d-block d-md-none">
+					<img className="pos-figure-img mt-auto" src="/files/img/pos.png" />
 				</div>
-				<Ipad>
-					<POS />
-				</Ipad>
+				<div className="d-none d-md-block">
+					<Ipad>
+						<POS />
+					</Ipad>
+				</div>
 			</div>
 		</section>
 	);

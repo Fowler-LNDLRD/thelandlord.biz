@@ -20,6 +20,10 @@
 			svg {
 				height: 100%;
 			}
+
+			&.flash {
+				box-shadow: 0 0 1rem #ffc107;
+			}
 		}
 
 		&-badge {
