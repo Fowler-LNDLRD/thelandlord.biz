@@ -22,7 +22,10 @@ const Shill = () => {
 				<div className="row align-items-center">
 					<div className="col-md-6 col-lg-5">
 						<h2 className="section-title text-center text-md-start">Earn Landlord</h2>
-						<p className="section-desc text-center text-md-start">You can earn $LNDLRD everyday by just tweeting.</p>
+						<p className="section-desc text-center text-md-start">
+							Landlord Army is an app that we developed to enrich community engagement, and encourage its users to inviting more investors into The Landlord. You can
+							join the Landlord Army and earn $LNDLRD by just Tweeting about it.
+						</p>
 						<div className="text-center text-md-start">
 							<LinkArrow href="/" dir="right" className="link link-brand">
 								Join Now
@@ -41,12 +44,12 @@ const Shill = () => {
 											43,300,000 $LNDLRD <br /> earned today.
 										</div>
 										<div className="shill-main-swipe">
-											<svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" fill="currentColor" className="bi bi-chevron-left" viewBox="0 0 16 16">
+											<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
 												<path
 													fillRule="evenodd"
-													d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+													d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
 												/>
-											</svg>
+											</svg>{' '}
 											Swipe Left
 										</div>
 									</div>
