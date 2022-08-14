@@ -1,6 +1,6 @@
-import LinkArrow from '../components/LinkArrow';
-import Ipad from '../components/Ipad';
-import POS from '../components/POS';
+import LinkArrow from '../../components/LinkArrow';
+import Ipad from '../../components/Ipad';
+import POS from '../../components/POS';
 
 const Pos = () => {
 	return (

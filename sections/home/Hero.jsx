@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import ContractModal from '../components/ContractModal';
+import ContractModal from '../../components/ContractModal';
 
 const Hero = () => {
 	const documentHeight = () => {

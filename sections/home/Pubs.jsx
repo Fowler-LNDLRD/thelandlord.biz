@@ -1,4 +1,4 @@
-import LinkArrow from '../components/LinkArrow';
+import LinkArrow from '../../components/LinkArrow';
 
 const Pubs = () => {
 	return (

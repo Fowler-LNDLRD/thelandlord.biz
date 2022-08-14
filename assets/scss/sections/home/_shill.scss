@@ -63,13 +63,21 @@
 		&-svg {
 			color: $info;
 		}
+
 		&-desc {
 			margin-top: 2rem;
 			margin-bottom: 2rem;
 			font-weight: 500;
 			font-size: 1.25rem;
 		}
-		&-swpie {
+
+		@media screen and (max-width: 459px) {
+			&-desc {
+				font-size: 1rem;
+			}
+			&-swipe {
+				font-size: 1rem;
+			}
 		}
 	}
 }

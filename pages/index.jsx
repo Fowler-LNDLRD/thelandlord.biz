@@ -1,12 +1,10 @@
 import Head from 'next/head';
-import Beers from '../sections/Beers';
-import Hero from '../sections/Hero';
-import Tokenomics from '../sections/Tokenomics';
-import Pubs from '../sections/Pubs';
-import Pos from '../sections/Pos';
-import Shill from '../sections/Shill';
-import Store from '../sections/Store';
-import Certs from '../sections/Certs';
+import Beers from '../sections/home/Beers';
+import Hero from '../sections/home/Hero';
+import Tokenomics from '../sections/home/Tokenomics';
+import Pubs from '../sections/home/Pubs';
+import Pos from '../sections/home/Pos';
+import Shill from '../sections/home/Shill';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -24,10 +22,6 @@ export default function Home() {
 			<Pubs />
 			<Pos />
 			<Shill />
-			{/*
-			<Store />
-			<Certs />
-			*/}
 		</>
 	);
 }

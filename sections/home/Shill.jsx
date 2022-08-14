@@ -1,9 +1,9 @@
-import LinkArrow from '../components/LinkArrow';
+import LinkArrow from '../../components/LinkArrow';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
-import shills from '../data/shills';
+import shills from '../../data/shills';
 
 import 'swiper/css/effect-cards';
 
@@ -22,10 +22,7 @@ const Shill = () => {
 				<div className="row align-items-center">
 					<div className="col-md-6 col-lg-5">
 						<h2 className="section-title text-center text-md-start">Earn Landlord</h2>
-						<p className="section-desc text-center text-md-start">
-							There are many ways that you can earn LNDLRD, one way is to Tweet about Landlord Token earn LNDLRD. We have made an app that makes it easy to tweet and
-							keep track of your points and rewards.
-						</p>
+						<p className="section-desc text-center text-md-start">You can earn $LNDLRD everyday by just tweeting.</p>
 						<div className="text-center text-md-start">
 							<LinkArrow href="/" dir="right" className="link link-brand">
 								Join Now
