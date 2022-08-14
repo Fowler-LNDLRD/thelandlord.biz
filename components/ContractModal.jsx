@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import LinkArrow from './LinkArrow';
 const ContractModal = () => {
 	const [copied, setCopied] = useState(false);
 
@@ -34,6 +34,11 @@ const ContractModal = () => {
 						className={'contract-modal-code' + (copied ? ' copied' : '')}
 					>
 						{copied ? 'Copied!' : process.env.NEXT_PUBLIC_CONTRACT}
+					</div>
+					<div className="contract-modal-link mt-2">
+						<LinkArrow target="_blank" className="link link-brand" dir="right" href={`https://bscscan.com/token/${process.env.NEXT_PUBLIC_CONTRACT}`}>
+							Check it on BscScan
+						</LinkArrow>
 					</div>
 				</div>
 			</div>

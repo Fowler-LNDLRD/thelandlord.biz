@@ -19,6 +19,7 @@ const nav = [
 		title: 'Roadmap',
 		url: '/roadmap',
 	},
+
 	{
 		title: 'Team',
 		url: '/team',
@@ -28,8 +29,23 @@ const nav = [
 		url: '/ama',
 	},
 	{
-		title: 'Earn',
-		url: '/earn',
+		title: 'Links',
+		url: '/',
+		sub: true,
+		submenu: [
+			{
+				title: 'BscScan',
+				url: '/',
+			},
+			{
+				title: 'CoinGecko',
+				url: '/',
+			},
+			{
+				title: 'Nomics',
+				url: 'https://nomics.com/assets/lndlrd-the-landlord',
+			},
+		],
 	},
 	{
 		title: 'FAQ',
