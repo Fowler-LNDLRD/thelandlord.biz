@@ -31,11 +31,3 @@ export default function Home() {
 		</>
 	);
 }
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

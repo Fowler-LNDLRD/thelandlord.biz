@@ -2,7 +2,6 @@ import '../assets/scss/main.scss';
 import Header from '../components/Header';
 import Foot from '../components/Foot';
 
-import { NextIntlProvider } from 'next-intl';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -14,11 +13,11 @@ function MyApp({ Component, pageProps }) {
 	}, []);
 
 	return (
-		<NextIntlProvider messages={pageProps.messages}>
+		<>
 			<Header />
 			<Component {...pageProps} />
 			<Foot />
-		</NextIntlProvider>
+		</>
 	);
 }
 
