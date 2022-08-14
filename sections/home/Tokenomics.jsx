@@ -45,7 +45,7 @@ const Protocols = () => {
 									Pints <span>Protocol</span>
 								</h3>
 								<p className="tokenomics-item-desc">
-									Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the LNDLRD
+									Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD
 									value.
 								</p>
 							</article>
