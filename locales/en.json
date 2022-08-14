@@ -1,10 +1,66 @@
 {
 	"common": {
+		"store": "store",
+		"buy": "buy",
+		"whitepaper": "whitepaper",
+		"audit": "audit",
+		"roadmap": "roadmap",
+		"team": "team",
+		"ama": "AMAs",
+		"earn": "Earn",
+		"faq": "FAQ",
+		"confirm": "confirm",
+		"find-product": "find product",
+
+		"cart": "cart",
+		"empty-cart": "Empty cart, add something!",
+		"total": "total",
+
 		"howToBuy": "How to buy",
 		"contract": "Contract"
 	},
 	"hero": {
 		"title": "crypto <span>pubs & beers</span>",
 		"desc": "The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more."
+	},
+	"tokenomics": {
+		"title": "Tokenomics",
+		"desc": "Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.",
+		"pub": {
+			"title": "Pub Protocol",
+			"desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract."
+		},
+		"pints": {
+			"title": "Pints Protocol",
+			"desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value."
+		},
+		"shots": {
+			"title": "Shots Protocol",
+			"desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens."
+		}
+	},
+	"beers": {
+		"title": "Landlord Beers",
+		"desc-1": "We have formed a partnership with Crafty Brewery in the UK to release the first Landlord craft beer REKT which is an amazing Pilsner. This will be available in several stores in the UK.",
+		"desc-2": "Additional partnerships in other countries will be established and additional beers will be launched and sold via the online store as well as bars across the world.",
+		"desc-3": "Profits will be used to buy back and burn LNDLRD tokens and may be added to liquidity as well.",
+		"link": "About Landlord Beers"
+	},
+	"pubs": {
+		"title": "Landlord Pubs",
+		"desc-1": "Landlord Pubs will be launched initially in the UK and then rolled out worldwide. These will be driven by the $LNDLRD point of sale system providing fast, reliable, and cheap crypto payments.",
+		"desc-2": "All Landlord pubs will accept crypto payments and encourage $LNDLRD holders to pay with their tokens to receive discounted drinks. Holders will also be able to purchase NFTs that unlock additional drink discounts and special offers.",
+		"desc-3": "Landlord Pubs will use cutting edge technology throughout and help drive crypto mass adoption. Profits will be used to buyback and burn tokens and add to liquidity."
+	},
+	"pos": {
+		"title": "Point of sale system",
+		"desc": "The Landlord have started developing a unique and intuitive crypto Point of Sale system. This will allow bars, pubs, clubs and cafes to successfully take orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD."
+	},
+	"shill": {
+		"title": "Earn Landlord",
+		"desc": "There are many ways that you can earn LNDLRD, one way is to Tweet about Landlord Token earn LNDLRD. We have made an app that makes it easy to tweet and keep track of your points and rewards.",
+		"link": "Join Now",
+		"card-title": "earned today",
+		"card-desc": "Swipe Left"
 	}
 }
