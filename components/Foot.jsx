@@ -1,3 +1,5 @@
+import NavLang from './NavLang';
+
 const Foot = () => {
 	return (
 		<footer className="footer">
@@ -62,7 +64,10 @@ const Foot = () => {
 						</a>
 					</div>
 
-					<div className="footer-copyright">&copy; {new Date().getFullYear().toString()}</div>
+					<div className="d-flex align-items-center justify-content-end">
+						<NavLang />
+						<div className="footer-copyright">&copy; {new Date().getFullYear().toString()}</div>
+					</div>
 				</div>
 			</div>
 		</footer>

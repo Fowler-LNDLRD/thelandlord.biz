@@ -1,9 +1,9 @@
 import nav from '../data/nav';
 import { useRouter } from 'next/router';
-
 const Nav = ({ className }) => {
-	const router = useRouter();
-	const currentRoute = router.pathname;
+	const { pathname, locale, locales, asPath } = useRouter();
+	const currentRoute = pathname;
+
 	return (
 		<nav className={'header-nav d-md-flex' + className}>
 			<ul className="header-nav-list">
