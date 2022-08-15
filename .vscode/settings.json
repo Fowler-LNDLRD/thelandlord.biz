@@ -8,5 +8,5 @@
 		"**/Thumbs.db": true,
 		"**/node_modules": true
 	},
-	"cSpell.words": ["LNDLRD", "papp", "Swiper"]
+	"cSpell.words": ["LNDLRD", "papp", "Roadmap", "Swiper"]
 }
