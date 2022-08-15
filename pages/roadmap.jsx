@@ -18,7 +18,34 @@ const Roadmap = () => {
 						measure our performance to help reassure them that not only is the project alive, but it is delivering on committed work.
 					</div>
 				</div>
-				<Swiper slidesPerView={3} spaceBetween={32} className="roadmap-swiper px-2">
+				<Swiper
+					slidesPerView={1}
+					breakpoints={{
+						700: {
+							slidesPerView: 2,
+						},
+						800: {
+							slidesPerView: 3,
+						},
+						1100: {
+							slidesPerView: 4,
+						},
+						1400: {
+							slidesPerView: 5,
+						},
+						1600: {
+							slidesPerView: 6,
+						},
+						1800: {
+							slidesPerView: 8,
+						},
+					}}
+					initialSlide={2}
+					centeredSlides={true}
+					centerInsufficientSlides={true}
+					spaceBetween={32}
+					className="roadmap-swiper px-2"
+				>
 					{roadmap.map((item, index) => (
 						<SwiperSlide key={index}>
 							<div className={`roadmap-item ` + item.status}>

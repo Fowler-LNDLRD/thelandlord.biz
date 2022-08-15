@@ -36,7 +36,7 @@ const roadmap = [
 			{ status: 'done', title: 'Contract Audit by Desert.Finance' },
 			{ status: 'done', title: 'Pre Sale on Pink Sale' },
 			{ status: 'done', title: 'Re launch on PancakeSwap' },
-			{ status: 'done', title: '2.5k Telegram Members' },
+			{ title: '2.5k Telegram Members' },
 			{ title: '700 Twitter Followers' },
 			{ title: '500 Holders' },
 			{ title: '2 Exchange Listings' },
