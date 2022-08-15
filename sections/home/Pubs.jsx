@@ -1,5 +1,3 @@
-import LinkArrow from '../../components/LinkArrow';
-
 const Pubs = () => {
 	return (
 		<section className="pubs section section-dark">
@@ -20,14 +18,10 @@ const Pubs = () => {
 							Landlord Pubs will use cutting edge technology throughout and help drive crypto mass adoption. Profits will be used to buyback and burn tokens and add
 							to liquidity.
 						</p>
-
-						{/* <LinkArrow href="/" dir="right" className="link link-brand">
-							About Landlord Pubs
-						</LinkArrow> */}
 					</div>
 
 					<div className="col-md-6 text-center text-md-end">
-						<img className="pubs-img" src="/files/img/coaster.png" />
+						<img className="pubs-img" src="/files/img/coaster.png" alt="Landlord Pubs" />
 					</div>
 				</div>
 			</div>

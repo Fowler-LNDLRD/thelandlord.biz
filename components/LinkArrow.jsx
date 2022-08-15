@@ -1,4 +1,6 @@
-const LinkArrow = ({ dir, href, className, children, target }) => {
+import Link from 'next/link';
+
+const LinkArrow = ({ dir, href, rel, className, children, target }) => {
 	const ArrowRightShort = () => {
 		return (
 			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-arrow-right-short" viewBox="0 0 16 16">
@@ -10,11 +12,13 @@ const LinkArrow = ({ dir, href, className, children, target }) => {
 		);
 	};
 	return (
-		<a target={target} href={href} className={className}>
-			{dir === 'left' && <ArrowRightShort />}
-			{children}
-			{dir === 'right' && <ArrowRightShort />}
-		</a>
+		<Link target={target} rel={rel} href={href}>
+			<a className={className}>
+				{dir === 'left' && <ArrowRightShort />}
+				{children}
+				{dir === 'right' && <ArrowRightShort />}
+			</a>
+		</Link>
 	);
 };
 export default LinkArrow;

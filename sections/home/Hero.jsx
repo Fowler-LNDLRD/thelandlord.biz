@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+
+import Link from 'next/link';
 import { useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
 
@@ -23,11 +26,11 @@ const Hero = () => {
 					</h1>
 					<p className="hero-desc">
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
-						NFT's and much more.
+						NFTs and much more.
 					</p>
-					<a className="hero-btn btn btn-brand" href="/">
-						How To Buy
-					</a>
+					<Link href="/">
+						<a className="hero-btn btn btn-brand">How To Buy</a>
+					</Link>
 
 					<button className="hero-btn btn btn-dark ms-1" type="button" data-bs-toggle="modal" data-bs-target="#contractModal">
 						Contract

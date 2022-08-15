@@ -1,4 +1,3 @@
-import LinkArrow from '../../components/LinkArrow';
 import Ipad from '../../components/Ipad';
 import POS from '../../components/POS';
 
@@ -12,7 +11,7 @@ const Pos = () => {
 					orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.
 				</p>
 				<div className="pos-figure d-flex d-block d-md-none">
-					<img className="pos-figure-img mt-auto" src="/files/img/pos.png" />
+					<img className="pos-figure-img mt-auto" src="/files/img/pos.png" alt="Point of Sale System" />
 				</div>
 				<div className="d-none d-md-block">
 					<Ipad>

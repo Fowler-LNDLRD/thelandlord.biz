@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react';
-import nav from '../data/nav';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import nav from '../data/nav';
 
 const Nav = ({ className }) => {
 	const router = useRouter();
@@ -31,9 +32,9 @@ const Nav = ({ className }) => {
 				{nav.map((item, index) => (
 					<li className={'header-nav-item'} key={index}>
 						{!item.sub ? (
-							<a href={item.url} className={'header-nav-link' + (currentRoute === item.url ? ' active' : '')}>
-								{item.title}
-							</a>
+							<Link href={item.url}>
+								<a className={'header-nav-link' + (currentRoute === item.url ? ' active' : '')}>{item.title}</a>
+							</Link>
 						) : (
 							<>
 								<a className={'header-nav-link has-sub' + (isActive.key === index ? ' active' : '')} onClick={() => handleToggle(index)}>
@@ -49,9 +50,9 @@ const Nav = ({ className }) => {
 								<ul className={'header-nav-sub' + (isActive.key === index ? ' active' : '')} id={`sub_` + index}>
 									{item.submenu.map((sub, index) => (
 										<li key={index} className="header-nav-sub-item">
-											<a href={sub.url} className="header-nav-sub-link">
-												{sub.title}
-											</a>
+											<Link href={sub.url}>
+												<a className="header-nav-sub-link">{sub.title}</a>
+											</Link>
 										</li>
 									))}
 								</ul>
