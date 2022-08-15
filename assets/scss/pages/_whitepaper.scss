@@ -1,17 +1,16 @@
 .page-whitepaper {
 	padding-top: 5rem;
+	padding-bottom: 5rem;
 
 	&-title {
 		font-weight: 800;
-		margin-bottom: 1.5rem;
 		font-size: 3rem;
 		text-transform: capitalize;
 		color: inherit;
 	}
 
 	&-desc {
-		font-size: 1rem;
 		line-height: 1.7;
-		margin-bottom: 1.5rem;
+		margin-bottom: 2.5rem;
 	}
 }
