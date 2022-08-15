@@ -1,12 +1,8 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
-import dynamic from 'next/dynamic';
-
 import ama from '../data/ama';
 
 const Ama = () => {
-	const ReactPlayer = dynamic(() => import('react-player/youtube'), { ssr: false });
-
 	return (
 		<>
 			<HeadTag title={`AMAs`} />
