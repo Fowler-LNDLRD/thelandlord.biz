@@ -1,8 +1,10 @@
 import Link from 'next/link';
+import HeadTag from '../components/HeadTag';
 
 const whitepaper = () => {
 	return (
 		<>
+			<HeadTag title={`Whitepaper`} />
 			<section className="page page-whitepaper container">
 				<div className="row align-items-center my-auto text-center text-md-start">
 					<div className="col-md-6 mb-5 mb-md-0">
