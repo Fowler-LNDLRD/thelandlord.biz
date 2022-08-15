@@ -30,7 +30,7 @@ const nav = [
 	},
 	{
 		title: 'Links',
-		url: '/',
+		url: '#',
 		sub: true,
 		submenu: [
 			{
