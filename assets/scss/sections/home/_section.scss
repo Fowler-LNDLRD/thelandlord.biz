@@ -2,21 +2,13 @@
 	padding-top: 8rem;
 	padding-bottom: 8rem;
 
-	background-color: #0a0a0a;
-
 	&-brand {
 		color: $dark;
 		background-color: $brand;
 	}
 
 	&-dark {
-		color: $light;
-		background-color: rgba(#fff, 0.03);
-	}
-
-	&-light {
-		color: $dark;
-		background-color: $light;
+		background-color: rgba(#000, 0.15);
 	}
 
 	&-title {

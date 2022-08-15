@@ -3,7 +3,7 @@ import { Navigation, Pagination } from 'swiper';
 
 const Protocols = () => {
 	return (
-		<section className="tokenomics">
+		<section className="tokenomics section section-dark">
 			<div className="container">
 				<h2 className="tokenomics-title section-title text-start text-md-center">Tokenomics</h2>
 				<p className="tokenomics-desc section-desc text-start text-md-center">
