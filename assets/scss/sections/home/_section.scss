@@ -1,6 +1,7 @@
 .section {
 	padding-top: 8rem;
 	padding-bottom: 8rem;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.03);
 
 	&-brand {
 		color: $dark;
@@ -8,7 +9,7 @@
 	}
 
 	&-dark {
-		background-color: rgba(#000, 0.15);
+		background-color: rgba(#000, 0.3);
 	}
 
 	&-title {
