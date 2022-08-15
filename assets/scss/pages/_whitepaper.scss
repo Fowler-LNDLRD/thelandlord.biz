@@ -1,19 +1,4 @@
 .page-whitepaper {
-	padding-top: 8rem;
-	padding-bottom: 8rem;
-
-	&-title {
-		font-weight: 800;
-		font-size: 3rem;
-		text-transform: capitalize;
-		color: inherit;
-	}
-
-	&-desc {
-		line-height: 1.7;
-		margin-bottom: 2.5rem;
-	}
-
 	&-img {
 		filter: drop-shadow(15px 9px 24px rgba(0, 0, 0, 0.5));
 	}

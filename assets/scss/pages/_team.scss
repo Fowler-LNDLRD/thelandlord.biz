@@ -1,8 +1,9 @@
 .team {
 	&-list {
 	}
+
 	&-item {
-		margin-bottom: 4rem;
+		margin-top: 4rem;
 		text-align: center;
 	}
 	&-img {
@@ -18,9 +19,17 @@
 		font-size: 1.125rem;
 	}
 	&-title {
-		font-size: 0.875rem;
-		margin-bottom: 0.5rem;
+		font-size: 0.75rem;
+		opacity: 0.6;
+		margin-bottom: 0.25rem;
 	}
 	&-link {
+		opacity: 0.6;
+		&:first-child {
+			margin-right: 0.75rem;
+		}
+		&:hover {
+			opacity: 1;
+		}
 	}
 }

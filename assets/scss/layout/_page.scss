@@ -1,3 +1,24 @@
 .page {
 	flex-grow: 1;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+
+	&-title {
+		font-weight: 800;
+		font-size: 3rem;
+		text-transform: capitalize;
+		color: inherit;
+	}
+
+	&-desc {
+		line-height: 1.7;
+		margin-bottom: 2.5rem;
+		color: #ccc;
+
+		&-limit {
+			width: 38rem;
+			max-width: 100%;
+			margin: 0 auto 0;
+		}
+	}
 }
