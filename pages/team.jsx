@@ -13,9 +13,9 @@ const Team = () => {
 					and desire to the project.
 				</div>
 
-				<div className="row">
+				<div className="row  justify-content-center">
 					{teamMembers.map((item, index) => (
-						<div key={index} className="col-sm-6 col-md-4 col-lg-3">
+						<div key={index} className="col-6 col-md-4 col-lg-3">
 							<div className="team-item">
 								<img className="team-img" src={`/files/img/team/${item.img ? item.name.toLowerCase() : 'default'}.jpg`} alt={item.name + ' - The Landlord'} />
 								<h3 className="team-name">{item.name}</h3>

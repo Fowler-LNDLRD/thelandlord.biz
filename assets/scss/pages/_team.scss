@@ -12,6 +12,10 @@
 		display: block;
 		margin: auto;
 		margin-bottom: 0.75rem;
+
+		@media screen and (max-width: 399px) {
+			width: 4rem;
+		}
 	}
 	&-name {
 		display: block;
@@ -22,6 +26,14 @@
 		font-size: 0.75rem;
 		opacity: 0.6;
 		margin-bottom: 0.25rem;
+		word-break: keep-all;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		width: 100%;
+		overflow: hidden;
+		@media screen and (max-width: 399px) {
+			font-size: 0.65rem;
+		}
 	}
 	&-link {
 		opacity: 0.6;

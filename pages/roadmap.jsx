@@ -19,13 +19,16 @@ const Roadmap = () => {
 					</div>
 				</div>
 				<Swiper
-					slidesPerView={1}
+					slidesPerView={1.15}
 					breakpoints={{
+						460: {
+							slidesPerView: 1.5,
+						},
 						700: {
-							slidesPerView: 2,
+							slidesPerView: 2.15,
 						},
 						800: {
-							slidesPerView: 3,
+							slidesPerView: 3.5,
 						},
 						1100: {
 							slidesPerView: 4,

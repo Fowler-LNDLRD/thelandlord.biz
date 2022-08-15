@@ -8,14 +8,14 @@ const teamMembers = [
 	},
 	{
 		name: 'Fab',
-		title: 'Co-Founder - VP of Operations',
+		title: 'Co-Founder - VP Operations',
 		twitter: 'https://twitter.com/',
 		linkedin: 'https://linkedin.com/in/fabio-vincenti-5a99b614',
 		img: true,
 	},
 	{
 		name: 'Harry',
-		title: 'Crypto Analyst and Pub SME',
+		title: 'Pub SME',
 		twitter: false,
 		linkedin: 'http://linkedin.com/in/harry-dennison-576458100',
 		img: true,
@@ -36,7 +36,7 @@ const teamMembers = [
 	},
 
 	{
-		name: 'Alessandro Dunninio',
+		name: 'Alessandro',
 		title: 'Community Manager',
 		twitter: 'https://twitter.com/alexdlish',
 		linkedin: false,
@@ -44,7 +44,7 @@ const teamMembers = [
 	},
 	{
 		name: 'Jimmy',
-		title: 'Chief Financial Officer',
+		title: 'CFO',
 		twitter: 'https://twitter.com/SilverX2000',
 		linkedin: false,
 		img: false,
