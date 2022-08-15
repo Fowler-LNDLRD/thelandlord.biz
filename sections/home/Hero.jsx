@@ -8,7 +8,7 @@ const Hero = () => {
 	const documentHeight = () => {
 		if (window.innerHeight > 460 && window.innerHeight < 799 && window.innerWidth > 768) {
 			const doc = document.getElementById('hero');
-			if (doc) doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+			if (doc.style) doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
 		}
 	};
 
