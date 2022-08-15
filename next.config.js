@@ -5,6 +5,7 @@ module.exports = {
 	swcMinify: true,
 	poweredByHeader: false,
 	optimizeFonts: false,
+	pageExtensions: ['jsx', 'js'],
 
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'assets/scss')],

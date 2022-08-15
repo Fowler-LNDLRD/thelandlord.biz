@@ -1,0 +1,16 @@
+.ama {
+	&-item {
+		display: block;
+		min-height: 10rem;
+		background: #222;
+		font-size: 1rem;
+		border-radius: 0.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&:hover {
+			background-color: #333;
+		}
+	}
+}
