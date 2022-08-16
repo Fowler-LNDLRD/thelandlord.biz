@@ -15,11 +15,12 @@ const Buy = () => {
 			<HeadTag title={`How to buy`} />
 			<section className="page page-buy container">
 				<h1 className="page-title mb-1 text-center">How To Buy</h1>
-				{(wallet || device) && (
+
+				{wallet || device ? (
 					<div className="text-center mb-3">
-						<p className="page-title">
+						<h1 className="page-title mb-1 text-center">
 							with {wallet} {device && `on ${device}`}
-						</p>
+						</h1>
 						<button
 							className="btn btn-link text-muted"
 							onClick={() => {
@@ -35,6 +36,8 @@ const Buy = () => {
 							Back
 						</button>
 					</div>
+				) : (
+					<h1 className="page-title mb-1 text-center">Landlord Token</h1>
 				)}
 
 				{!wallet && (
