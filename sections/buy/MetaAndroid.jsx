@@ -1,4 +1,4 @@
 const MetaAndroid = () => {
-	return <div>MetaAndroid</div>;
+	return <div>MetMask on Android</div>;
 };
 export default MetaAndroid;

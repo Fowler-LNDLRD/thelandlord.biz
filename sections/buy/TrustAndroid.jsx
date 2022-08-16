@@ -1,4 +1,4 @@
 const TrustAndroid = () => {
-	return <div>TrustAndroid</div>;
+	return <div>TrustWallet on Android</div>;
 };
 export default TrustAndroid;
