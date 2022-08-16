@@ -1,0 +1,27 @@
+.page-buy {
+	.page-title {
+		text-transform: none;
+	}
+}
+.buy {
+	&-card {
+		background-color: #000;
+		border-top: 1px solid #222;
+		border-radius: 1rem;
+		width: 45rem;
+		max-width: 100%;
+		padding: 8rem 3rem;
+		margin: 3rem auto;
+
+		&-title {
+			font-size: 1.25rem;
+			font-weight: 500;
+		}
+	}
+
+	&-options {
+		.btn {
+			min-width: 10rem;
+		}
+	}
+}
