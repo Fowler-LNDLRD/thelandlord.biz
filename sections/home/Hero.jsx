@@ -3,6 +3,9 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
+import { initEmbr, mount, unmount, getEmbr } from '../../components/EmberScript';
+
+import BuyModal from '../../components/buyModal';
 
 const Hero = () => {
 	const documentHeight = () => {
@@ -13,9 +16,26 @@ const Hero = () => {
 	};
 
 	useEffect(() => {
+		initEmbr();
+
 		documentHeight();
 		window.addEventListener('resize', documentHeight);
 	}, []);
+
+	const showBuy = () => {
+		const myModal = new bootstrap.Modal(document.getElementById('buyModal'));
+
+		const current = getEmbr();
+		if (current) unmount();
+		mount({
+			type: 'CheckoutEmbed',
+			options: {
+				checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+				selector: '#checkout',
+			},
+		});
+		myModal.show();
+	};
 
 	return (
 		<>
@@ -28,9 +48,14 @@ const Hero = () => {
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
 					</p>
-					<Link href="/">
+
+					{/* <Link href="/">
 						<a className="hero-btn btn btn-brand">How To Buy</a>
-					</Link>
+					</Link> */}
+
+					<button onClick={() => showBuy()} className="hero-btn btn btn-dark ms-1" type="button">
+						Buy
+					</button>
 
 					<button className="hero-btn btn btn-dark ms-1" type="button" data-bs-toggle="modal" data-bs-target="#contractModal">
 						Contract
@@ -41,6 +66,9 @@ const Hero = () => {
 				</div>
 			</section>
 			<ContractModal />
+			<BuyModal>
+				<div id="checkout"></div>
+			</BuyModal>
 		</>
 	);
 };

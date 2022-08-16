@@ -8,6 +8,8 @@ function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		window.bootstrap = require('bootstrap/dist/js/bootstrap.bundle.js');
 
+		import('bootstrap/dist/js/bootstrap');
+
 		const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
 		const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
 	}, []);
