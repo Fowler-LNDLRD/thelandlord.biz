@@ -1,4 +1,4 @@
 const MetaIos = () => {
-	return <div>MetaMask on iOS</div>;
+	return <div className="buy-card">MetaMask on iOS</div>;
 };
 export default MetaIos;

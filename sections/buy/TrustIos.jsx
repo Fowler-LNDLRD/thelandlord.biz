@@ -1,4 +1,4 @@
 const TrustIos = () => {
-	return <div>TrustWallet on iOS</div>;
+	return <div className="buy-card">TrustWallet on iOS</div>;
 };
 export default TrustIos;

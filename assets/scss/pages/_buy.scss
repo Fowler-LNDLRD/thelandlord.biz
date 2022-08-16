@@ -1,14 +1,14 @@
 .page-buy {
+	.dropdown-title {
+		position: absolute;
+		top: -1.25rem;
+		font-size: 0.75rem;
+		opacity: 0.8;
+	}
 	.dropdown-toggle {
 		&::after {
 			margin-left: 1rem;
 		}
-	}
-	.page-title {
-		text-transform: none;
-	}
-	&-options {
-		width: 30rem;
 	}
 }
 
@@ -19,23 +19,12 @@
 		border-radius: 1rem;
 		width: 45rem;
 		max-width: 100%;
-		padding: 8rem 3rem;
+		padding: 2rem;
 		margin: 3rem auto;
 
 		&-title {
 			font-size: 1.25rem;
 			font-weight: 500;
-		}
-	}
-
-	&-options {
-		select {
-			width: auto;
-			border: 0;
-			padding: 0.5rem 2.25rem 0.5rem 1rem;
-			background-position: right 0.75rem center;
-			background-color: var(--primary);
-			margin-left: 1rem;
 		}
 	}
 }
