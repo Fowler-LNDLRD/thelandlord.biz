@@ -1,0 +1,30 @@
+.accordion {
+	&-button {
+		@media screen and (min-width: 480px) {
+			font-size: 1.125rem;
+			font-weight: 300;
+		}
+
+		box-shadow: 0 !important;
+
+		&:not(.collapsed) {
+			color: $brand;
+		}
+
+		&:not(.collapsed),
+		&:focus {
+			border: 0;
+			box-shadow: none !important;
+		}
+
+		&::after {
+			order: -1;
+			margin-left: 0;
+			margin-right: 1rem;
+		}
+	}
+
+	&-body {
+		color: #ccc;
+	}
+}
