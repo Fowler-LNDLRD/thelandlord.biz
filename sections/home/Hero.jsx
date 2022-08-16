@@ -53,7 +53,7 @@ const Hero = () => {
 						<a className="hero-btn btn btn-brand">How To Buy</a>
 					</Link> */}
 
-					<button onClick={() => showBuy()} className="hero-btn btn btn-dark ms-1" type="button">
+					<button onClick={() => showBuy()} className="hero-btn btn btn-brand" type="button">
 						Buy
 					</button>
 
