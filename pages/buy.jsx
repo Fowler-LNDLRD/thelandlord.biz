@@ -36,8 +36,8 @@ const Buy = () => {
 								</button>
 							</li>
 							<li>
-								<button onClick={(e) => setDevice('Browser')} className={`dropdown-item ${device === 'Browser' && ' active'}`} type="button">
-									Browser
+								<button onClick={(e) => setDevice('Desktop')} className={`dropdown-item ${device === 'Desktop' && ' active'}`} type="button">
+									Desktop
 								</button>
 							</li>
 						</ul>
@@ -48,7 +48,7 @@ const Buy = () => {
 						<button className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 							{wallet}
 						</button>
-						<ul className="dropdown-menu dropdown-menu-end  dropdown-menu-dark">
+						<ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark">
 							<li>
 								<button onClick={(e) => setWallet('TrustWallet')} className={`dropdown-item ${wallet === 'TrustWallet' && ' active'}`} type="button">
 									TrustWallet
@@ -67,7 +67,7 @@ const Buy = () => {
 						<button className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 							{dApp}
 						</button>
-						<ul className="dropdown-menu dropdown-menu-end  dropdown-menu-dark ">
+						<ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark">
 							<li>
 								<button onClick={(e) => setdApp('PancakeSwap')} className={`dropdown-item ${dApp === 'PancakeSwap' && ' active'}`} type="button">
 									PancakeSwap
