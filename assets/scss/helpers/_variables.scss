@@ -38,7 +38,7 @@ $input-btn-padding-y-lg: 0.75rem;
 $input-btn-padding-x-lg: 1.5rem;
 $input-btn-font-size-lg: 1rem;
 $btn-border-radius-lg: $border-radius;
-$input-btn-focus-width: 0.125rem;
+$input-btn-focus-width: 0;
 
 $input-btn-padding-y: 0.5rem;
 $input-btn-padding-x: 1rem;
@@ -69,3 +69,14 @@ $accordion-button-active-bg: $body-bg;
 $accordion-button-active-color: #fff;
 $accordion-border-color: rgba(#fff, 0.1);
 $accordion-icon-width: 1rem;
+
+//
+
+$dropdown-min-width: 100%;
+$dropdown-font-size: 0.875rem;
+$dropdown-padding-y: 0;
+// $dropdown-spacer:
+// $dropdown-bg:
+// $dropdown-link-active-bg:
+$dropdown-item-padding-y: 0.5rem;
+// $dropdown-item-padding-x:

@@ -1,8 +1,14 @@
 .page-buy {
+	.dropdown-toggle {
+		&::after {
+			margin-left: 1rem;
+		}
+	}
 	.page-title {
 		text-transform: none;
 	}
-	&-title {
+	&-options {
+		width: 30rem;
 	}
 }
 
@@ -23,8 +29,13 @@
 	}
 
 	&-options {
-		.btn {
-			min-width: 10rem;
+		select {
+			width: auto;
+			border: 0;
+			padding: 0.5rem 2.25rem 0.5rem 1rem;
+			background-position: right 0.75rem center;
+			background-color: var(--primary);
+			margin-left: 1rem;
 		}
 	}
 }
