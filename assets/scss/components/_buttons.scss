@@ -1,4 +1,12 @@
 .modal {
+	&-dialog,
+	&-content {
+	}
+
+	&-title {
+		font-weight: 800;
+	}
+
 	&-open {
 		&::before {
 			content: '';
@@ -13,12 +21,7 @@
 		}
 	}
 
-	.btn-close {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		width: 3rem;
-		height: 3rem;
+	&-backdrop {
 	}
 }
 

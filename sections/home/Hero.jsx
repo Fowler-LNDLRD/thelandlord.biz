@@ -1,11 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
+
 import Link from 'next/link';
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
 import { initEmbr, mount, unmount, getEmbr } from '../../components/EmberScript';
-
-import BuyModal from '../../components/buyModal';
 
 const Hero = () => {
 	const documentHeight = () => {
@@ -22,19 +23,23 @@ const Hero = () => {
 		window.addEventListener('resize', documentHeight);
 	}, []);
 
-	const showBuy = () => {
-		const myModal = new bootstrap.Modal(document.getElementById('buyModal'));
+	const [showContract, setShowContract] = useState(false);
+	const toggleContract = () => setShowContract(!showContract);
 
-		const current = getEmbr();
-		if (current) unmount();
-		mount({
-			type: 'CheckoutEmbed',
-			options: {
-				checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
-				selector: '#checkout',
-			},
-		});
-		myModal.show();
+	const [showBuy, setShowBuy] = useState(false);
+	const toggleBuy = () => {
+		if (showBuy) {
+			setShowBuy(false);
+		} else {
+			setShowBuy(true);
+			mount({
+				type: 'CheckoutEmbed',
+				options: {
+					checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+					selector: '#checkout',
+				},
+			});
+		}
 	};
 
 	return (
@@ -49,11 +54,11 @@ const Hero = () => {
 						NFTs and much more.
 					</p>
 
-					<button onClick={() => showBuy()} className="hero-btn btn btn-brand" type="button">
+					<button className="hero-btn btn btn-brand" type="button" onClick={toggleBuy}>
 						Buy
 					</button>
 
-					<button className="hero-btn btn btn-dark ms-1" type="button" data-bs-toggle="modal" data-bs-target="#contractModal">
+					<button className="hero-btn btn btn-dark ms-1" type="button" onClick={toggleContract}>
 						Contract
 					</button>
 				</article>
@@ -61,10 +66,24 @@ const Hero = () => {
 					<img className="hero-coin-img" src="/img/home/coin.png" alt="Landlord Token - $LNDLRD" />
 				</div>
 			</section>
-			<ContractModal />
-			<BuyModal>
-				<div id="checkout"></div>
-			</BuyModal>
+
+			<Modal show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
+				<Modal.Header closeButton>
+					<Modal.Title as="h4">Buy</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<div id="checkout"></div>
+				</Modal.Body>
+			</Modal>
+
+			<Modal show={showContract} onHide={toggleContract} centered>
+				<Modal.Header closeButton>
+					<Modal.Title as="h4">Contract</Modal.Title>
+				</Modal.Header>
+				<Modal.Body>
+					<ContractModal />
+				</Modal.Body>
+			</Modal>
 		</>
 	);
 };
