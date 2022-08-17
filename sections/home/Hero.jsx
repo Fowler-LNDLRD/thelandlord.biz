@@ -58,7 +58,7 @@ const Hero = () => {
 					</button>
 				</article>
 				<div className="container hero-coin">
-					<img className="hero-coin-img" src="/files/img/coin.png" alt="Landlord Token - $LNDLRD" />
+					<img className="hero-coin-img" src="/img/home/coin.png" alt="Landlord Token - $LNDLRD" />
 				</div>
 			</section>
 			<ContractModal />

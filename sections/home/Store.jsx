@@ -49,7 +49,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/01.png" alt="store" />
+									<img src="/img/store/01.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">Soon</span>
@@ -63,7 +63,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/02.png" alt="store" />
+									<img src="/img/store/02.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">new</span>
@@ -77,7 +77,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/03.png" alt="store" />
+									<img src="/img/store/03.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">new</span>
@@ -91,7 +91,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/04.png" alt="store" />
+									<img src="/img/store/04.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">new</span>
@@ -105,7 +105,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/05.png" alt="store" />
+									<img src="/img/store/05.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">new</span>
@@ -119,7 +119,7 @@ const Store = () => {
 						<Link href="/">
 							<a className="store-item">
 								<figure>
-									<img src="/files/img/store/06.png" alt="store" />
+									<img src="/img/store/06.png" alt="store" />
 								</figure>
 								<div className="store-details">
 									<span className="store-details-label">new</span>

@@ -8,7 +8,7 @@ const Certs = () => {
 				<div className="row">
 					<div className="col-md-6">
 						<div className="certs-item">
-							<img className="certs-img" src="/files/img/certs/whitepaper.png" alt="Landlord Whitepaper" />
+							<img className="certs-img" src="/img/home/whitepaper.png" alt="Landlord Whitepaper" />
 							<h2 className="certs-title">Whitepaper</h2>
 							<div className="certs-desc">The latest version of our whitepaper.</div>
 							<LinkArrow className="link-brand" href="/" dir="right">
@@ -18,7 +18,7 @@ const Certs = () => {
 					</div>
 					<div className="col-md-6">
 						<div className="certs-item">
-							<img className="certs-img" src="/files/img/certs/audit.png" alt="Landlord Audit" />
+							<img className="certs-img" src="/img/home/audit.png" alt="Landlord Audit" />
 							<h2 className="certs-title">Audit</h2>
 							<div className="certs-desc">Performed by Dessert Finance.</div>
 							<LinkArrow className="link-brand" href="/" dir="right">

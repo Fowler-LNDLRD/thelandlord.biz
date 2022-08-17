@@ -15,7 +15,7 @@ const Audit = () => {
 						</Link>
 					</div>
 					<div className="col-md-6 text-center">
-						<img className="page-whitepaper-img" width="320" height="320" src="/files/img/certs/audit.png" alt="Landlord Whitepaper" />
+						<img className="page-whitepaper-img" width="320" height="320" src="/img/certs/audit.png" alt="Landlord Whitepaper" />
 					</div>
 				</div>
 			</section>

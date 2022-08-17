@@ -11,7 +11,7 @@ const Pos = () => {
 					orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.
 				</p>
 				<div className="pos-figure d-flex d-block d-md-none">
-					<img className="pos-figure-img mt-auto" src="/files/img/pos.png" alt="Point of Sale System" />
+					<img className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Point of Sale System" />
 				</div>
 				<div className="d-none d-md-block">
 					<Ipad>

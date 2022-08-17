@@ -95,7 +95,7 @@ const POS = () => {
 					.map((item) => (
 						<div className="col-3" key={item.id} onClick={() => addProduct(item)}>
 							<div className="papp-product">
-								<img className="papp-product-img" src={`/files/img/papp/${item.img}`} alt={item.title} />
+								<img className="papp-product-img" src={`/img/papp/${item.img}`} alt={item.title} />
 								<div className="papp-product-title">{item.title}</div>
 								<div className="papp-product-price">${item.price}</div>
 							</div>

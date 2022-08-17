@@ -17,7 +17,7 @@ const Team = () => {
 					{teamMembers.map((item, index) => (
 						<div key={index} className="col-6 col-md-4 col-lg-3">
 							<div className="team-item">
-								<img className="team-img" src={`/files/img/team/${item.img ? item.name.toLowerCase() : 'default'}.jpg`} alt={item.name + ' - The Landlord'} />
+								<img className="team-img" src={`/img/team/${item.img ? item.name.toLowerCase() : 'default'}.jpg`} alt={item.name + ' - The Landlord'} />
 								<h3 className="team-name">{item.name}</h3>
 								<p className="team-title">{item.title}</p>
 

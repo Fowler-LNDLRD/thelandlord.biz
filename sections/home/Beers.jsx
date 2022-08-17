@@ -8,7 +8,7 @@ const Beers = () => {
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-6 text-center text-md-start mb-5 mb-md-0">
-						<img className="beers-img" src="/files/img/beers/beer.png" alt="Landlord Beers" />
+						<img className="beers-img" src="/img/home/beer.png" alt="Landlord Beers" />
 					</div>
 					<div className="col-md-6 ps-0 ps-md-2 text-center text-md-start">
 						<h2 className="section-title">Landlord Beers</h2>

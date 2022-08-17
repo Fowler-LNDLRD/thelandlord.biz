@@ -6,7 +6,7 @@ const TrustAndroid = () => {
 					<div className="buy-step-title">Select DApps</div>
 				</div>
 				<div className="col-5">
-					<img src="/files/img/buy/01.jpg" className="rounded-3" alt="01" />
+					<img src="/img/buy/01.jpg" className="rounded-3" alt="01" />
 				</div>
 			</div>
 		</div>

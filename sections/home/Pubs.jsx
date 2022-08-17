@@ -21,7 +21,7 @@ const Pubs = () => {
 					</div>
 
 					<div className="col-md-6 text-center text-md-end">
-						<img className="pubs-img" src="/files/img/coaster.png" alt="Landlord Pubs" />
+						<img className="pubs-img" src="/img/home/coaster.png" alt="Landlord Pubs" />
 					</div>
 				</div>
 			</div>
