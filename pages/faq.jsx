@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import faq from '../data/faq.json';
+import Accordion from 'react-bootstrap/Accordion';
+
 const Faq = () => {
 	return (
 		<>
@@ -13,32 +15,14 @@ const Faq = () => {
 
 				<div className="row align-items-center justify-content-center">
 					<div className="col-md-8">
-						<div className="accordion accordion-flush accordion-faq" id="accordionFAQ">
+						<Accordion defaultActiveKey="0" className="accordion-faq" flush>
 							{faq.map((item, index) => (
-								<div className="accordion-item" key={index}>
-									<h2 className="accordion-header" id={`accordion_heading_${index}`}>
-										<button
-											className="accordion-button collapsed"
-											type="button"
-											data-bs-toggle="collapse"
-											data-bs-target={`#accordionFAQ-collapse_${index}`}
-											aria-expanded="false"
-											aria-controls={`accordionFAQ-collapse_${index}`}
-										>
-											{item.q}
-										</button>
-									</h2>
-									<div
-										id={`accordionFAQ-collapse_${index}`}
-										className="accordion-collapse collapse"
-										aria-labelledby={`accordion_heading_${index}`}
-										data-bs-parent="#accordionFAQ"
-									>
-										<div className="accordion-body ps-2 pb-2 pt-0">{item.a}</div>
-									</div>
-								</div>
+								<Accordion.Item eventKey={index} key={index}>
+									<Accordion.Header>{item.q}</Accordion.Header>
+									<Accordion.Body>{item.a}</Accordion.Body>
+								</Accordion.Item>
 							))}
-						</div>
+						</Accordion>
 					</div>
 				</div>
 			</section>
