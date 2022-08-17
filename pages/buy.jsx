@@ -1,3 +1,5 @@
+import Dropdown from 'react-bootstrap/Dropdown';
+
 import { useState } from 'react';
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
@@ -19,72 +21,54 @@ const Buy = () => {
 			<section className="page page-buy container">
 				<h1 className="page-title text-center mb-3">How To Buy</h1>
 				<div className="buy-options text-center d-flex justify-content-center">
-					<div className="dropdown">
+					<Dropdown>
 						<span className="dropdown-title">Device</span>
-						<button className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<Dropdown.Toggle id="dropdown-device" size="sm">
 							{device}
-						</button>
-						<ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-							<li>
-								<button onClick={(e) => setDevice('Android')} className={`dropdown-item ${device === 'Android' && ' active'}`} type="button">
-									Android
-								</button>
-							</li>
-							<li>
-								<button onClick={(e) => setDevice('iOS')} className={`dropdown-item ${device === 'iOS' && ' active'}`} type="button">
-									iOS
-								</button>
-							</li>
-							<li>
-								<button onClick={(e) => setDevice('Desktop')} className={`dropdown-item ${device === 'Desktop' && ' active'}`} type="button">
-									Desktop
-								</button>
-							</li>
-						</ul>
-					</div>
-
-					<div className="dropdown mx-1">
+						</Dropdown.Toggle>
+						<Dropdown.Menu variant="dark">
+							<Dropdown.Item as="button" onClick={(e) => setDevice('Android')} active={device === 'Android'}>
+								Android
+							</Dropdown.Item>
+							<Dropdown.Item as="button" onClick={(e) => setDevice('iOS')} active={device === 'iOS'}>
+								iOS
+							</Dropdown.Item>
+							<Dropdown.Item as="button" onClick={(e) => setDevice('Desktop')} active={device === 'Desktop'}>
+								Desktop
+							</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+					<Dropdown className="mx-1">
 						<span className="dropdown-title">Wallet</span>
-						<button className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<Dropdown.Toggle id="dropdown-wallet" size="sm">
 							{wallet}
-						</button>
-						<ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-							<li>
-								<button onClick={(e) => setWallet('TrustWallet')} className={`dropdown-item ${wallet === 'TrustWallet' && ' active'}`} type="button">
-									TrustWallet
-								</button>
-							</li>
-							<li>
-								<button onClick={(e) => setWallet('MetaMask')} className={`dropdown-item ${wallet === 'MetaMask' && ' active'}`} type="button">
-									MetaMask
-								</button>
-							</li>
-						</ul>
-					</div>
-
-					<div className="dropdown">
+						</Dropdown.Toggle>
+						<Dropdown.Menu variant="dark">
+							<Dropdown.Item as="button" onClick={(e) => setWallet('TrustWallet')} active={wallet === 'TrustWallet'}>
+								TrustWallet
+							</Dropdown.Item>
+							<Dropdown.Item as="button" onClick={(e) => setWallet('MetaMask')} active={wallet === 'MetaMask'}>
+								MetaMask
+							</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
+					<Dropdown>
 						<span className="dropdown-title">dApp</span>
-						<button className="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<Dropdown.Toggle id="dropdown-dapp" size="sm">
 							{dApp}
-						</button>
-						<ul className="dropdown-menu dropdown-menu-end dropdown-menu-dark">
-							<li>
-								<button onClick={(e) => setdApp('PancakeSwap')} className={`dropdown-item ${dApp === 'PancakeSwap' && ' active'}`} type="button">
-									PancakeSwap
-								</button>
-							</li>
-							<li>
-								<button onClick={(e) => setdApp('PooCoin')} className={`dropdown-item ${dApp === 'PooCoin' && ' active'}`} type="button">
-									PooCoin
-								</button>
-							</li>
-							<li>
-								<button onClick={(e) => setdApp('Bogged')} className={`dropdown-item ${dApp === 'Bogged' && ' active'}`} type="button">
-									Bogged
-								</button>
-							</li>
-						</ul>
-					</div>
+						</Dropdown.Toggle>
+						<Dropdown.Menu variant="dark">
+							<Dropdown.Item as="button" onClick={(e) => setdApp('PancakeSwap')} active={dApp === 'PancakeSwap'}>
+								PancakeSwap
+							</Dropdown.Item>
+							<Dropdown.Item as="button" onClick={(e) => setdApp('PooCoin')} active={dApp === 'PooCoin'}>
+								PooCoin
+							</Dropdown.Item>
+							<Dropdown.Item as="button" onClick={(e) => setdApp('Bogged')} active={dApp === 'Bogged'}>
+								Bogged
+							</Dropdown.Item>
+						</Dropdown.Menu>
+					</Dropdown>
 				</div>
 
 				{wallet === 'TrustWallet' && device === 'Android' && <TrustAndroid />}
