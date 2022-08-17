@@ -1,37 +1,28 @@
-.page-buy {
-	.dropdown-title {
-		position: absolute;
-		top: -1.25rem;
-		font-size: 0.75rem;
-		opacity: 0.8;
+.buy-steps {
+}
+.buy-step {
+	background-color: rgba(#000, 0.5);
+	padding: 2rem;
+	border-radius: 0.5rem;
+	position: relative;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
 	}
-	.dropdown-toggle {
-		&::after {
-			margin-left: 1rem;
-		}
+
+	&-number {
+	}
+	&-title {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+	}
+	&-desc {
+		font-size: 0.875rem;
+		opacity: 0.9;
 	}
 }
 
-.buy {
-	&-card {
-		background-color: #000;
-		border-top: 1px solid #222;
-		border-radius: 1rem;
-		width: 45rem;
-		max-width: 100%;
-		padding: 2rem;
-		margin: 3rem auto;
-
-		&-title {
-			font-size: 1.5rem;
-			font-weight: 300;
-		}
-	}
-
-	&-step {
-		&-title {
-			font-size: 1.5rem;
-			font-weight: 300;
-		}
-	}
+.checkout section {
+	border: 0 !important;
 }
