@@ -7,7 +7,7 @@ const Certs = () => {
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">
-						<div className="certs-item">
+						<div className="certs-item mb-4 mb-md-0">
 							<img className="certs-img" src="/img/home/whitepaper.png" alt="Landlord Whitepaper" />
 							<h2 className="certs-title">Whitepaper</h2>
 							<div className="certs-desc">The latest version of our whitepaper.</div>
