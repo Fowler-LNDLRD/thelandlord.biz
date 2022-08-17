@@ -8,18 +8,13 @@
 		"url": "/buy"
 	},
 	{
-		"title": "Whitepaper",
-		"url": "/whitepaper"
-	},
-	{
-		"title": "Audit",
-		"url": "/audit"
-	},
-	{
 		"title": "Roadmap",
 		"url": "/roadmap"
 	},
-
+	{
+		"title": "FAQ",
+		"url": "/faq"
+	},
 	{
 		"title": "Team",
 		"url": "/team"
@@ -27,6 +22,14 @@
 	{
 		"title": "AMAs",
 		"url": "/ama"
+	},
+	{
+		"title": "Earn",
+		"url": "/earn"
+	},
+	{
+		"title": "Contact",
+		"url": "/contact"
 	},
 	{
 		"title": "Links",
@@ -46,9 +49,5 @@
 				"url": "https://nomics.com/assets/lndlrd-the-landlord"
 			}
 		]
-	},
-	{
-		"title": "FAQ",
-		"url": "/faq"
 	}
 ]

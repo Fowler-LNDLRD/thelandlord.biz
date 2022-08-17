@@ -5,6 +5,7 @@ import Tokenomics from '../sections/home/Tokenomics';
 import Pubs from '../sections/home/Pubs';
 import Pos from '../sections/home/Pos';
 import Shill from '../sections/home/Shill';
+import Certs from '../sections/home/Certs';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -22,6 +23,7 @@ export default function Home() {
 			<Pubs />
 			<Pos />
 			<Shill />
+			<Certs />
 		</>
 	);
 }
