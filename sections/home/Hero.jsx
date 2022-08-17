@@ -67,12 +67,16 @@ const Hero = () => {
 				</div>
 			</section>
 
-			<Modal show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
+			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
 				<Modal.Header closeButton>
 					<Modal.Title as="h4">Buy</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<div id="checkout"></div>
+					<div id="checkout">
+						<div className="spinner-border m-auto d-block text-brand" role="status">
+							<span className="visually-hidden">Loading...</span>
+						</div>
+					</div>
 				</Modal.Body>
 			</Modal>
 

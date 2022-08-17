@@ -111,6 +111,25 @@
 			max-width: 100%;
 		}
 	}
+
+	&-buy {
+		.modal-content {
+			width: 21rem;
+			max-width: 100%;
+			margin: auto;
+		}
+
+		.modal-body {
+			min-height: 20rem;
+			display: flex;
+			justify-self: stretch;
+			align-items: center;
+			justify-content: center;
+		}
+		#checkout {
+			width: 100%;
+		}
+	}
 }
 
 @media screen and (max-height: 799px) and (min-height: 460px) and (min-width: 768px) {

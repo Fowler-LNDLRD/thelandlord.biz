@@ -29,7 +29,7 @@ const Buy = () => {
 				<div className={`row justify-content-center mb-3 ` + (showSteps ? 'd-none' : 'd-flex')}>
 					<div className="col-md-5">
 						<div id="checkout">
-							<div className="spinner-border m-auto d-block text-primary" role="status">
+							<div className="spinner-border m-auto d-block text-brand" role="status">
 								<span className="visually-hidden">Loading...</span>
 							</div>
 						</div>
