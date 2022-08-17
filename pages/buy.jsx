@@ -7,16 +7,14 @@ const Buy = () => {
 	const [showSteps, setShowSteps] = useState(false);
 	useEffect(() => {
 		const isEmbr = getEmbr();
-		if (!isEmbr) {
-			initEmbr();
-			mount({
-				type: 'CheckoutEmbed',
-				options: {
-					checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
-					selector: '#checkout',
-				},
-			});
-		}
+		initEmbr();
+		mount({
+			type: 'CheckoutEmbed',
+			options: {
+				checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+				selector: '#checkout',
+			},
+		});
 	}, []);
 
 	return (
