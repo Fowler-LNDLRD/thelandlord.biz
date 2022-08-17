@@ -8,17 +8,18 @@
 		"url": "/buy"
 	},
 	{
-		"title": "Roadmap",
-		"url": "/roadmap"
-	},
-	{
 		"title": "FAQ",
 		"url": "/faq"
+	},
+	{
+		"title": "Roadmap",
+		"url": "/roadmap"
 	},
 	{
 		"title": "Team",
 		"url": "/team"
 	},
+
 	{
 		"title": "AMAs",
 		"url": "/ama"
