@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
-import teamMembers from '../data/team';
+import teamMembers from '../data/team.json';
 
 const Team = () => {
 	return (

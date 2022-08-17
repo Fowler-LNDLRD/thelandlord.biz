@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
-import ama from '../data/ama';
+import ama from '../data/ama.json';
 
 const Ama = () => {
 	return (

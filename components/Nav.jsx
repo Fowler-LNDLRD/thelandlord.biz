@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import nav from '../data/nav';
+import nav from '../data/nav.json';
 
 const Nav = ({ className }) => {
 	const router = useRouter();

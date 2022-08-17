@@ -4,7 +4,7 @@ import 'swiper/css';
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 
-import roadmap from '../data/roadmap';
+import roadmap from '../data/roadmap.json';
 
 const Roadmap = () => {
 	return (

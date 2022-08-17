@@ -49,10 +49,6 @@ const Hero = () => {
 						NFTs and much more.
 					</p>
 
-					{/* <Link href="/">
-						<a className="hero-btn btn btn-brand">How To Buy</a>
-					</Link> */}
-
 					<button onClick={() => showBuy()} className="hero-btn btn btn-brand" type="button">
 						Buy
 					</button>
