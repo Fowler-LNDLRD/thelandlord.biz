@@ -1,11 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
+import LogoLinks from '../../components/LogoLinks';
 import { initEmbr, mount, unmount, getEmbr } from '../../components/EmberScript';
 
 const Hero = () => {
@@ -62,9 +59,7 @@ const Hero = () => {
 						Contract
 					</button>
 				</article>
-				<div className="container hero-coin">
-					<img className="hero-coin-img" src="/img/home/coin.png" alt="Landlord Token - $LNDLRD" />
-				</div>
+				<LogoLinks />
 			</section>
 
 			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>

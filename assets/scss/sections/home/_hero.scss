@@ -43,6 +43,7 @@
 	}
 
 	&-coin {
+		display: none;
 		text-align: right;
 		padding-right: 8rem;
 		position: absolute !important;
@@ -89,26 +90,26 @@
 		line-height: 2.9375rem;
 	}
 
-	.btn-link {
-		color: var(--gray-400);
-		margin-left: 0.5rem;
-		font-weight: 400;
-		min-width: 8rem;
-
-		&:focus {
-			box-shadow: 0 0 0 0.125rem rgba(#fff, 0.1);
-		}
-
-		&:focus,
-		&:hover {
-			color: #fff;
-		}
-	}
-
 	@media screen and (min-width: 639px) {
 		&-desc {
 			width: 33rem;
 			max-width: 100%;
+		}
+	}
+
+	&-links {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		right: 0;
+
+		&-link {
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
+		}
+		&-img {
+			display: block;
 		}
 	}
 
