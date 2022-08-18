@@ -28,7 +28,6 @@
 
 	// swiper
 	.swiper {
-		border-radius: 1rem;
 	}
 	.swiper-slide {
 		height: auto;
@@ -107,6 +106,10 @@
 
 	@media screen and (max-width: 767px) {
 		padding-top: 5rem;
+
+		.container {
+			padding: 0;
+		}
 
 		&-protocols {
 			margin-top: -2rem;

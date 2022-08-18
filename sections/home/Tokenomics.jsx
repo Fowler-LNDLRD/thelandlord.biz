@@ -1,31 +1,30 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper';
 
 const Protocols = () => {
 	return (
 		<section className="tokenomics section section-dark">
 			<div className="container">
-				<h2 className="tokenomics-title section-title text-start text-md-center">Tokenomics</h2>
-				<p className="tokenomics-desc section-desc text-start text-md-center">
+				<h2 className="tokenomics-title section-title text-center">Tokenomics</h2>
+				<p className="tokenomics-desc section-desc text-center ">
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
+			</div>
 
+			<div className="container">
 				<div className="tokenomics-protocols">
 					<Swiper
-						navigation={true}
+						loop={false}
+						slidesPerView={1.25}
+						centeredSlides={true}
+						spaceBetween={16}
+						initialSlide={1}
 						breakpoints={{
-							700: {
-								slidesPerView: 2,
-							},
 							800: {
 								slidesPerView: 3,
+								centeredSlides: false,
+								spaceBetween: 32,
 							},
 						}}
-						modules={[Navigation, Pagination]}
-						pagination={false}
-						spaceBetween={32}
-						loop={false}
-						className="mySwiper"
 					>
 						<SwiperSlide>
 							<article className="tokenomics-item">
