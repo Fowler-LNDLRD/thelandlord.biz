@@ -1,26 +1,62 @@
 [
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "How to buy and where?",
+		"a": "The Landlord is currently available to buy via pancake swap and is paired with BNB. This means you need to buy BNB to swap for $LNDLRD tokens. Tokens can also be bought from TokPie exchange either via card payment or via or USDT pairing. This means you need to buy USDT to swap for $LNDLRD tokens."
 	},
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "How to see my tokens in my wallet?",
+		"a": "<div className='mb-1'>Trust wallet- Scroll to bottom of screen, select add token. Press the plus button and enter BNB SmartChain as the network. Then paste in The Landlord contract address 0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694 This will populate the name, symbol and decimals fields and then hit save.</div><div className='mb-1'>MetaMask- You will need to add SmartChain network to your wallet this can be done by following these instructions MM LINK. Once added select the circle at the app and select Smart chain. Then select import tokens and select custom token and paste in the contract address 0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694 in the token address field. Then select import.</div>"
 	},
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "How to see my busd rewards?",
+		"a": "The easiest way to see you rewards is to add BUSD token to your wallet. Then you will see the amount increase."
 	},
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "Am I taxed if I send from one wallet to another?",
+		"a": "Yes, the standard sale tax of 9% is applied if you move tokens from wallet to another or to an exchange."
 	},
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "How do BUSD rewards work?",
+		"a": "2% of every transaction gets sent to the Landlord contract and swapped for BUSD. The contract then distributes BUSD rewards to all holders with minimum of 100k tokens. The rewards are distributed off the back of each buy or sell and are done in batches of 5-6. This means during high volume periods your get rewards quicker than during low volume periods. Lastly the amount of reward you receive is relative to how many tokens you hold, so the more you hold the more BUSD tokens you receive."
 	},
 	{
-		"q": "Question",
-		"a": "answer"
+		"q": "What's an altcoin?",
+		"a": "Altcoin is short for Alternative Coin. This term, Altcoin, is used for all other coins other than the mighty Bitcoin."
+	},
+	{
+		"q": "What's a wallet and why do I need one?",
+		"a": "A crypto wallet is the place where your coins are stored. Your wallet must contain seeds, keys, and addresses to function properly. There are several types of wallets, such as hardware and software. If you use a mobile app to store your crypto, that is an example of a software wallet."
+	},
+	{
+		"q": "What's an AMA?",
+		"a": "AMA stands for ask me anything, I'm relation to The Landlord this is relates to our regular video conferences that we hold where the team give and update and answer any questions from investors."
+	},
+	{
+		"q": "What does doxxed mean?",
+		"a": "Doxxed is a term used in crypto to describe a team or team member who has actively shared there true Identity such as name and picture or by appearing in live video conferences or videos. The key Landlord Team members have done this and their linked on profiles can be found on our team page."
+	},
+	{
+		"q": "What are Gas fees?",
+		"a": "When you make a transaction on the blockchain, you have to pay a fee. That fee is called a gas price. You are basically paying a miner to go out and receive crypto for you. You can choose to pay higher fees for faster transaction speeds, or lower fees for slower transaction fees. Luckily The Landlord is on the BSC block chain which is both fast and has low gas fees."
+	},
+	{
+		"q": "What's a NFT?",
+		"a": "Non-fungible tokens are units of value used to represent the ownership of unique digital items like art or collectibles."
+	},
+	{
+		"q": "What's my Private Key is it important?",
+		"a": "This is the super-important string of numbers and letters you should not share with anyone. If someone is able to access your private key, you can lose your funds in a matter of seconds. This key is necessary to verify transactions when selling or withdrawing your crypto."
+	},
+	{
+		"q": "What's a Seed Phrase?",
+		"a": "The seed is the foundation of your wallet's digital existence. A recovery seed is a series of twelve, sometimes sixteen words that can be used to access your wallet if something goes wrong and you lose it."
+	},
+	{
+		"q": "What is fiat?",
+		"a": "Fiat currency is 1) government-backed and 2) not backed by any commodity (like gold). Those US dollars or GBP in your wallet? That’s fiat currency. The value of these rely solely on peoples collective faith in the institution of the government."
+	},
+	{
+		"q": "What is a whale and are they good?",
+		"a": "Crypto Whale (or Whale) are the entities big enough to swing markets by their unilateral purchase or sell-off. They are typically the largest crypto holders, projects need whales for large growth and are an important part of the crypto community."
 	}
 ]

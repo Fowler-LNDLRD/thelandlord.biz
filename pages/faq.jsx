@@ -2,6 +2,7 @@ import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import faq from '../data/faq.json';
 import Accordion from 'react-bootstrap/Accordion';
+import convertHtmlToReact from '@hedgedoc/html-to-react';
 
 const Faq = () => {
 	return (
@@ -19,7 +20,7 @@ const Faq = () => {
 							{faq.map((item, index) => (
 								<Accordion.Item eventKey={index} key={index}>
 									<Accordion.Header>{item.q}</Accordion.Header>
-									<Accordion.Body>{item.a}</Accordion.Body>
+									<Accordion.Body>{convertHtmlToReact(item.a)}</Accordion.Body>
 								</Accordion.Item>
 							))}
 						</Accordion>
