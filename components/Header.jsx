@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Logo from './Logo';
@@ -19,6 +19,13 @@ const Header = () => {
 			setToggle(true);
 		}
 	};
+
+	useEffect(() => {
+		router.events.on('routeChangeStart', () => setToggle(false));
+		return () => {
+			router.events.off('routeChangeStart', () => setToggle(false));
+		};
+	}, []);
 
 	return (
 		<header className={'header' + (toggle ? ' nav-active' : '')}>
