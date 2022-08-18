@@ -20,37 +20,40 @@ const LogoLinks = () => {
 					className="mySwiper"
 				>
 					<SwiperSlide>
-						<Link href="/">
-							<a className="hero-links-link">
+						<Link href="https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694">
+							<a target="_blank" rel="noreferrer" className="hero-links-link">
 								<img src="/img/home/bscscan.png" alt="BscScan" className="hero-links-img" />
 							</a>
 						</Link>
 					</SwiperSlide>
 					<SwiperSlide>
-						<Link href="/">
-							<a className="hero-links-link">
+						<Link href="https://www.coingecko.com/en/coins/the-landlord">
+							<a target="_blank" rel="noreferrer" className="hero-links-link">
 								<img src="/img/home/coingecko.png" alt="coingecko" className="hero-links-img" />
 							</a>
 						</Link>
 					</SwiperSlide>
+
 					<SwiperSlide>
-						<Link href="/">
-							<a className="hero-links-link">
+						<Link href="https://tokpie.com/view_exchange/lndlrd-usdt/">
+							<a target="_blank" rel="noreferrer" className="hero-links-link">
+								<img src="/img/home/tokpie.png" alt="Tokpie" className="hero-links-img" />
+							</a>
+						</Link>
+					</SwiperSlide>
+
+					<SwiperSlide>
+						<Link href="https://watcher.guru/coin/the-landlord">
+							<a target="_blank" rel="noreferrer" className="hero-links-link">
+								<img src="/img/home/watcher.png" alt="Watcher Guru" className="hero-links-img" />
+							</a>
+						</Link>
+					</SwiperSlide>
+
+					<SwiperSlide>
+						<Link href="https://nomics.com/assets/lndlrd-the-landlord">
+							<a target="_blank" rel="noreferrer" className="hero-links-link">
 								<img src="/img/home/nomics.png" alt="nomics" className="hero-links-img" />
-							</a>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Link href="/">
-							<a className="hero-links-link">
-								<img src="/img/home/tokpie.png" alt="watcher" className="hero-links-img" />
-							</a>
-						</Link>
-					</SwiperSlide>
-					<SwiperSlide>
-						<Link href="/">
-							<a className="hero-links-link">
-								<img src="/img/home/coinmarket.png" alt="coingecko" className="hero-links-img" />
 							</a>
 						</Link>
 					</SwiperSlide>
