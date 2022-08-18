@@ -14,7 +14,7 @@ const Ama = () => {
 					{ama.map((item, index) => (
 						<div className="col-md-6" key={index}>
 							<Link href={item.url}>
-								<a className="ama-item">
+								<a className="ama-item" target="_blank" rel="noreferrer">
 									<div className="ama-item-overlay" style={{ backgroundImage: `url(${item.img})` }}></div>
 									<div className="ama-item-desc p-1 p-md-2">
 										<div className="ama-item-title">Ask me anything</div>
