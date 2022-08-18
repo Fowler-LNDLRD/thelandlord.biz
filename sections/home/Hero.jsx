@@ -1,9 +1,8 @@
 import Modal from 'react-bootstrap/Modal';
-import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
 import LogoLinks from '../../components/LogoLinks';
-import { initEmbr, mount, unmount, getEmbr } from '../../components/EmberScript';
+import { initEmbr, mount, unmount } from '../../components/EmberScript';
 
 const Hero = () => {
 	const documentHeight = () => {
