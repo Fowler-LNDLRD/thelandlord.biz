@@ -1,15 +1,20 @@
 .hero {
-	padding-top: 10rem;
-	padding-bottom: 8rem;
+	margin-top: -3rem;
+	padding-top: 8rem;
 	position: relative;
 	z-index: 50;
-	margin-top: -3rem;
 
 	background-color: #111;
 	background-image: url('/img/home/hero.jpg');
 	background-position: center right;
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	.container {
+		z-index: 2;
+		position: relative;
+		margin: auto;
+	}
 
 	&::before {
 		content: '';
@@ -23,7 +28,6 @@
 		background-image: linear-gradient(90deg, #000, transparent);
 	}
 
-	// background-image: radial-gradient(transparent, #000);
 	&::after {
 		content: '';
 		display: block;
@@ -34,25 +38,6 @@
 		left: 0;
 		z-index: 1;
 		background-image: linear-gradient(180deg, transparent, #000);
-	}
-
-	.container {
-		z-index: 2;
-		position: relative;
-		margin: auto;
-	}
-
-	&-coin {
-		display: none;
-		text-align: right;
-		padding-right: 8rem;
-		position: absolute !important;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%, 5rem);
-		&-img {
-			filter: drop-shadow(0.125rem 0.25rem 1rem rgba(#000, 0.5));
-		}
 	}
 
 	&-title {
@@ -80,32 +65,31 @@
 		margin: 2rem 0 2.5rem;
 		font-size: 1rem;
 		line-height: 1.9;
-	}
-
-	&-btn {
-		padding: 0;
-		min-width: 9.5rem;
-		font-weight: 600;
-		height: 3rem;
-		line-height: 2.9375rem;
-	}
-
-	@media screen and (min-width: 639px) {
-		&-desc {
+		@media screen and (min-width: 639px) {
 			width: 33rem;
 			max-width: 100%;
 		}
 	}
 
+	&-btn {
+		padding: 0;
+		min-width: 8rem;
+		font-weight: 600;
+		height: 2.75rem;
+	}
+
 	&-links {
-		position: absolute;
-		bottom: 3rem;
-		left: 0;
-		right: 0;
+		padding: 5rem 0;
 
 		&-link {
+			opacity: 0.6;
+			transition: opacity ease-in-out 0.25s;
 			&:not(:last-child) {
 				margin-right: 2rem;
+			}
+
+			&:hover {
+				opacity: 1;
 			}
 		}
 		&-img {
@@ -129,37 +113,6 @@
 		}
 		#checkout {
 			width: 100%;
-		}
-	}
-}
-
-@media screen and (max-height: 799px) and (min-height: 460px) and (min-width: 768px) {
-	.hero {
-		min-height: var(--hero-height, 100vh);
-		padding: 3rem 0 0 0;
-		display: flex;
-		.container {
-			margin-top: auto;
-			margin-bottom: auto;
-		}
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.hero {
-		padding-top: 7rem;
-		padding-bottom: 5rem;
-		background-position: 60% center;
-		&::before {
-			width: 100%;
-			background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7));
-		}
-		&-coin {
-			padding-right: 3rem;
-			transform: translate(-50%, 3rem);
-			&-img {
-				width: 6rem;
-			}
 		}
 	}
 }

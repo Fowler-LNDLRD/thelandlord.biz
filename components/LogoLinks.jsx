@@ -1,19 +1,23 @@
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Autoplay } from 'swiper';
 
 const LogoLinks = () => {
 	return (
 		<div className="hero-links">
 			<div className="container  d-flex">
 				<Swiper
+					autoplay={true}
+					slidesPerView={2}
 					breakpoints={{
+						400: {
+							slidesPerView: 3,
+						},
 						800: {
 							slidesPerView: 5,
 						},
 					}}
-					modules={[Pagination]}
-					pagination={true}
+					modules={[Autoplay]}
 					spaceBetween={32}
 					loop={false}
 					className="mySwiper"
