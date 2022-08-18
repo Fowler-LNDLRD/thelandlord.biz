@@ -31,24 +31,5 @@
 	{
 		"title": "Contact",
 		"url": "/contact"
-	},
-	{
-		"title": "Links",
-		"url": "#",
-		"sub": true,
-		"submenu": [
-			{
-				"title": "BscScan",
-				"url": "/"
-			},
-			{
-				"title": "CoinGecko",
-				"url": "/"
-			},
-			{
-				"title": "Nomics",
-				"url": "https://nomics.com/assets/lndlrd-the-landlord"
-			}
-		]
 	}
 ]

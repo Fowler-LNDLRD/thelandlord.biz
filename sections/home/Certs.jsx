@@ -3,7 +3,7 @@ import LinkArrow from '../../components/LinkArrow';
 
 const Certs = () => {
 	return (
-		<section className="certs section">
+		<section className="certs section section-dark">
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">

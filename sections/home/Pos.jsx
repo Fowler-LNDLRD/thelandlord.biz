@@ -3,7 +3,7 @@ import POS from '../../components/POS';
 
 const Pos = () => {
 	return (
-		<section className="pos section">
+		<section className="pos section section-dark">
 			<div className="container">
 				<h2 className="section-title text-center">Point of Sale System</h2>
 				<p className="section-desc text-center mb-5">
