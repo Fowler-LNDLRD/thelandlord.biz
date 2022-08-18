@@ -1,6 +1,6 @@
 [
-	{ "date": "Jul 26, 2022", "url": "https://www.youtube.com/watch?v=5Qn7Wh0jDHg" },
-	{ "date": "Jun 13, 2022", "url": "https://www.youtube.com/watch?v=ZOPyePt-wf8" },
-	{ "date": "Jun 10, 2022", "url": "https://www.youtube.com/watch?v=3fcD_b_oZNI" },
-	{ "date": "May 16, 2022", "url": "https://www.youtube.com/shorts/iMJe_F_Ir8M" }
+	{ "date": "Jul 26, 2022", "url": "https://www.youtube.com/watch?v=5Qn7Wh0jDHg", "img": "/img/ama/01.jpg" },
+	{ "date": "Jun 13, 2022", "url": "https://www.youtube.com/watch?v=ZOPyePt-wf8", "img": "/img/ama/02.jpg" },
+	{ "date": "Jun 10, 2022", "url": "https://www.youtube.com/watch?v=3fcD_b_oZNI", "img": "/img/ama/03.jpg" },
+	{ "date": "May 16, 2022", "url": "https://www.youtube.com/shorts/iMJe_F_Ir8M", "img": "/img/ama/04.jpg" }
 ]
