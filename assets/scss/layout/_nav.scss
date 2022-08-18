@@ -31,12 +31,6 @@
 			text-shadow: 0 0 0 white;
 			opacity: 1;
 		}
-
-		&.active {
-			.header-nav-chevron {
-				transform: scaleY(-1);
-			}
-		}
 	}
 }
 
@@ -49,7 +43,6 @@
 		width: 100%;
 		overflow: hidden;
 		height: 0;
-
 		transition: height 0.56s cubic-bezier(0.52, 0.16, 0.24, 1);
 
 		&.active {
