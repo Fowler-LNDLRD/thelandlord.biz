@@ -8,11 +8,8 @@ const LogoLinks = () => {
 			<div className="container  d-flex">
 				<Swiper
 					autoplay={true}
-					slidesPerView={2}
+					slidesPerView={3}
 					breakpoints={{
-						400: {
-							slidesPerView: 3,
-						},
 						800: {
 							slidesPerView: 5,
 						},
