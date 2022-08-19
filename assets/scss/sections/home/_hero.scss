@@ -101,6 +101,7 @@
 		right: 0;
 		display: flex;
 		align-items: center;
+		transform: translateY(1px);
 
 		padding-top: 1.75rem;
 		padding-bottom: 1.75rem;
@@ -166,7 +167,7 @@
 
 @media screen and (max-width: 767px) {
 	.hero {
-		background-position: center;
+		background-position: 60%;
 
 		.container {
 			padding-right: 3rem;
