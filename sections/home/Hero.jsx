@@ -6,9 +6,15 @@ import { initEmbr, mount, unmount } from '../../components/EmberScript';
 
 const Hero = () => {
 	const documentHeight = () => {
-		if (window.innerHeight > 460 && window.innerHeight < 799 && window.innerWidth > 768) {
-			const doc = document.getElementById('hero');
-			if (doc?.style) doc.style.setProperty('--hero-height', `${window.innerHeight}px`);
+		const heroSection = document.getElementById('hero');
+		if (heroSection?.style) {
+			if (window.innerHeight > 650 && window.innerHeight < 900) {
+				heroSection.classList.add('hero-fit');
+				heroSection.style.setProperty('--hero-height', `${window.innerHeight}px`);
+			} else {
+				heroSection.classList.remove('hero-fit');
+				heroSection.style.removeProperty('--hero-height');
+			}
 		}
 	};
 
