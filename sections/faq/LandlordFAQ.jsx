@@ -5,6 +5,13 @@ import LinkArrow from '../../components/LinkArrow';
 const LandlordFAQ = () => {
 	return (
 		<Accordion defaultActiveKey="0" className="accordion-faq" flush>
+			<Accordion.Item eventKey={0}>
+				<Accordion.Header>Tax and Slippage?</Accordion.Header>
+				<Accordion.Body>
+					<p>8% Tax and 9% Slippage</p>
+				</Accordion.Body>
+			</Accordion.Item>
+
 			<Accordion.Item eventKey={1}>
 				<Accordion.Header>Liquidity locked?</Accordion.Header>
 				<Accordion.Body>
