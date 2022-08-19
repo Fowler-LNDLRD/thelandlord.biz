@@ -11,10 +11,15 @@ const Buy = () => {
 		mount({
 			type: 'CheckoutEmbed',
 			options: {
-				checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+				checkoutId: process.env.EMBR_API,
 				selector: '#checkout',
 			},
 		});
+		return () => {
+			if (isEmbr) {
+				unmount();
+			}
+		};
 	}, []);
 
 	return (
@@ -26,7 +31,7 @@ const Buy = () => {
 
 				<div className={`row justify-content-center mb-3 ` + (showSteps ? 'd-none' : 'd-flex')}>
 					<div className="col-md-5">
-						<div id="checkout">
+						<div id="checkout" className="page-buy-checkout">
 							<div className="spinner-border m-auto d-block text-brand" role="status">
 								<span className="visually-hidden">Loading...</span>
 							</div>
@@ -35,7 +40,7 @@ const Buy = () => {
 				</div>
 
 				<p className="page-desc text-center">
-					<button type="button" className="btn btn-link" onClick={() => setShowSteps(!showSteps)}>
+					<button type="button" className="btn btn-primary" onClick={() => setShowSteps(!showSteps)}>
 						{showSteps ? 'I have a wallet' : `I don't have a wallet`}
 					</button>
 				</p>

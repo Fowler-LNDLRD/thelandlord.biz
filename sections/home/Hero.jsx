@@ -37,7 +37,7 @@ const Hero = () => {
 			mount({
 				type: 'CheckoutEmbed',
 				options: {
-					checkoutId: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+					checkoutId: process.env.EMBR_API,
 					selector: '#checkout',
 				},
 			});

@@ -79,7 +79,7 @@ const LandlordFAQ = () => {
 
 					<p>
 						<b className="text-white">Contract address:</b> <br />
-						{process.env.NEXT_PUBLIC_CONTRACT}
+						{process.env.CONTRACT}
 					</p>
 				</Accordion.Body>
 			</Accordion.Item>
