@@ -22,7 +22,7 @@ const LandlordFAQ = () => {
 					<p className="m-0 mt-1">
 						Additional tokens in the owner wallet that are not being used for liquidity are stored in a token locker so cannot be accessed or used or sold.
 					</p>
-					<LinkArrow className="link link-primary" dir="right" href="https://www.pinksale.finance/#/pinklock/detail/0xfa1F2cf9fd3465B88889420918B6315b887127fE?chain=BSC">
+					<LinkArrow className="link link-primary" dir="right" href="https://www.pinksale.finance/pinklock/record/1026448?chain=BSC">
 						Lock info
 					</LinkArrow>
 				</Accordion.Body>
@@ -32,13 +32,13 @@ const LandlordFAQ = () => {
 				<Accordion.Header>Team doxxed?</Accordion.Header>
 				<Accordion.Body>
 					<p>
-						Team is doxxed and LinkedIn profiles can be found on our{' '}
-						<Link href="/team">
-							<a>Team page</a>
-						</Link>
-						. and also you can take a look at our{' '}
+						You can take a look at our{' '}
 						<Link href="/ama">
 							<a>Video Call AMAs</a>
+						</Link>{' '}
+						and also LinkedIn profiles can be found on our{' '}
+						<Link href="/team">
+							<a>Team page</a>
 						</Link>
 						.
 					</p>
@@ -48,9 +48,13 @@ const LandlordFAQ = () => {
 			<Accordion.Item eventKey={3}>
 				<Accordion.Header>How to buy and where?</Accordion.Header>
 				<Accordion.Body>
-					<p>The Landlord is currently available to buy via pancake swap and is paired with BNB. This means you need to buy BNB to swap for $LNDLRD tokens.</p>
+					<p>The Landlord is currently available to buy via pancake swap and is paired with $BNB. This means you need to buy $BNB to swap for $LNDLRD tokens.</p>
 					<p>
-						Tokens can also be bought from TokPie exchange either via card payment or via or USDT pairing. This means you need to buy USDT to swap for $LNDLRD tokens.
+						Tokens can also be bought from{' '}
+						<Link href="https://tokpie.com/view_exchange/lndlrd-usdt/">
+							<a target="_blank">TokPie exchange</a>
+						</Link>{' '}
+						either via card payment or via $USDT pairing. This means you need to buy $USDT to swap for $LNDLRD tokens.
 					</p>
 					<LinkArrow className="link link-primary" dir="right" href="/buy">
 						Buy now

@@ -4,7 +4,6 @@
 	&-button {
 		box-shadow: 0 !important;
 		transition: all ease 0.25s;
-		padding: 1rem 1.5rem;
 
 		@media screen and (min-width: 480px) {
 			font-size: 1rem;
@@ -14,7 +13,7 @@
 
 		&[aria-expanded='true'] {
 			background-color: #000;
-			padding-top: 1.5rem;
+			padding: 1.5rem 1.5rem 1rem;
 		}
 
 		&:hover {
@@ -42,7 +41,7 @@
 		a:not(.link) {
 			color: $info;
 			border-bottom: 1px solid $info;
-			padding-bottom: 0.25rem;
+			padding-bottom: 0.125rem;
 
 			&:hover {
 				color: #fff;
