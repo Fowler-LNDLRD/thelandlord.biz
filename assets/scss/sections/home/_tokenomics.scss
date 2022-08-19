@@ -26,6 +26,35 @@
 		margin: 0 auto 0;
 	}
 
+	//
+
+	.floating {
+		position: absolute;
+		display: block;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+
+		&-01 {
+			background-image: url('/img/home/floating-01.png');
+			width: 7rem;
+			height: 7rem;
+			top: -5rem;
+			right: 10rem;
+			z-index: 10000000;
+			filter: drop-shadow(2px 4px 0.5rem rgba(0, 0, 0, 0.2));
+		}
+
+		&-02 {
+			background-image: url('/img/home/floating-02.png');
+			width: 5rem;
+			height: 5rem;
+			bottom: -36px;
+			left: 6rem;
+			filter: drop-shadow(2px 4px 0.5rem rgba(0, 0, 0, 0.2));
+		}
+	}
+
 	// swiper
 	.swiper {
 	}

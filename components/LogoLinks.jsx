@@ -9,6 +9,7 @@ const LogoLinks = () => {
 				<Swiper
 					autoplay={true}
 					slidesPerView={3}
+					loop={false}
 					breakpoints={{
 						800: {
 							slidesPerView: 5,
@@ -16,7 +17,6 @@ const LogoLinks = () => {
 					}}
 					modules={[Autoplay]}
 					spaceBetween={32}
-					loop={false}
 					className="mySwiper"
 				>
 					<SwiperSlide>

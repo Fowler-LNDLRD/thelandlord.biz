@@ -8,6 +8,9 @@ const Protocols = () => {
 				<p className="tokenomics-desc section-desc text-center ">
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
+
+				<span className="floating floating-01"></span>
+				<span className="floating floating-02"></span>
 			</div>
 
 			<div className="container">
