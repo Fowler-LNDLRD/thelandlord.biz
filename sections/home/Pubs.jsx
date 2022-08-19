@@ -3,7 +3,7 @@ const Pubs = () => {
 		<section className="pubs section">
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-md-6 text-center text-md-start pe-0 pe-md-3 mb-3 mb-md-0">
+					<div className="col-md-5 text-center text-md-start mb-3 mb-md-0">
 						<h2 className="section-title">Landlord Pubs</h2>
 
 						<p className="section-desc">
@@ -20,8 +20,8 @@ const Pubs = () => {
 						</p>
 					</div>
 
-					<div className="col-md-6 text-center text-md-end">
-						<img className="pubs-img" src="/img/home/coaster.png" alt="Landlord Pubs" />
+					<div className="col-md-7 text-center text-md-end">
+						<img className="pubs-img" src="/img/home/pub.png" alt="Landlord Pubs" />
 					</div>
 				</div>
 			</div>
