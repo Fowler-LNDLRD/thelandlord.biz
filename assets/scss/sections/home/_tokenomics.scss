@@ -138,6 +138,10 @@
 			padding-right: 3rem;
 		}
 
+		&-desc {
+			margin: 0;
+		}
+
 		.swiper-container {
 			padding: 0;
 		}
@@ -150,7 +154,7 @@
 			&-01 {
 				width: 5rem;
 				height: 5rem;
-				top: -4rem;
+				top: -2rem;
 				right: 2rem;
 			}
 			&-02 {
@@ -159,6 +163,16 @@
 				bottom: -3rem;
 				left: -2rem;
 				opacity: 0.4;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 479px) {
+	.tokenomics {
+		.floating {
+			&-01 {
+				right: 1rem;
 			}
 		}
 	}

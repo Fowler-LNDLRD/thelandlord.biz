@@ -8,7 +8,7 @@ const Hero = () => {
 	const documentHeight = () => {
 		const heroSection = document.getElementById('hero');
 		if (heroSection?.style) {
-			if (window.innerHeight > 650 && window.innerHeight < 900) {
+			if (window.innerWidth > 767 && window.innerHeight > 650 && window.innerHeight < 900) {
 				heroSection.classList.add('hero-fit');
 				heroSection.style.setProperty('--hero-height', `${window.innerHeight}px`);
 			} else {

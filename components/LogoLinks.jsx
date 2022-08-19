@@ -8,7 +8,7 @@ const LogoLinks = () => {
 			<div className="container  d-flex">
 				<Swiper
 					autoplay={true}
-					slidesPerView={3}
+					slidesPerView={2}
 					loop={false}
 					breakpoints={{
 						800: {
