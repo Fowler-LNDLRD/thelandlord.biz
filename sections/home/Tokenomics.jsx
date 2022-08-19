@@ -4,8 +4,8 @@ const Protocols = () => {
 	return (
 		<section className="tokenomics section section-dark">
 			<div className="container">
-				<h2 className="tokenomics-title section-title text-center">Tokenomics</h2>
-				<p className="tokenomics-desc section-desc text-center ">
+				<h2 className="tokenomics-title section-title text-md-center">Tokenomics</h2>
+				<p className="tokenomics-desc section-desc text-md-center ">
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
 
@@ -13,14 +13,13 @@ const Protocols = () => {
 				<span className="floating floating-02"></span>
 			</div>
 
-			<div className="container">
+			<div className="container swiper-container">
 				<div className="tokenomics-protocols">
 					<Swiper
 						loop={false}
 						slidesPerView={1.25}
 						centeredSlides={true}
 						spaceBetween={16}
-						initialSlide={1}
 						breakpoints={{
 							800: {
 								slidesPerView: 3,

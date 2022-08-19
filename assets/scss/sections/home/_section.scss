@@ -6,6 +6,10 @@
 	&-brand {
 		color: $dark;
 		background-color: $brand;
+		.section-desc,
+		.section-title {
+			color: #000;
+		}
 	}
 
 	&-dark {
@@ -18,12 +22,14 @@
 		font-size: 3rem;
 		text-transform: capitalize;
 		color: inherit;
+		color: #fff;
 	}
 
 	&-desc {
 		font-size: 1rem;
 		line-height: 1.7;
 		margin-bottom: 1.5rem;
+		color: #ccc;
 
 		&.-center {
 			text-align-last: center;

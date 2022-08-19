@@ -1,7 +1,7 @@
 .tokenomics {
 	position: relative;
-	padding-top: 7rem;
 	padding-bottom: 0;
+	background-image: linear-gradient(180deg, #000, #303032);
 
 	// &::after {
 	// 	content: '';
@@ -52,6 +52,7 @@
 			bottom: -36px;
 			left: 6rem;
 			filter: drop-shadow(2px 4px 0.5rem rgba(0, 0, 0, 0.2));
+			z-index: -1;
 		}
 	}
 
@@ -99,12 +100,12 @@
 	}
 
 	&-item {
+		z-index: 10;
+		position: relative;
 		background-color: #000;
 		height: 100%;
-		padding: 3rem;
-		border-radius: 1rem;
-		position: relative;
-		z-index: 10;
+		padding: 2.5rem;
+		border-radius: 1.25rem;
 		border-top: 1px solid #333;
 
 		&-percent {
@@ -117,7 +118,7 @@
 			overflow: hidden;
 			position: relative;
 			display: block;
-			margin: 1rem 0;
+			margin: 0.75rem 0 1rem;
 			font-weight: 700;
 			font-size: 1.5rem;
 		}
@@ -127,21 +128,38 @@
 			margin-bottom: 0;
 			line-height: 1.8;
 		}
-
-		@media screen and (max-width: 699px) {
-			text-align: center;
-		}
 	}
+}
 
-	@media screen and (max-width: 767px) {
-		padding-top: 5rem;
-
+@media screen and (max-width: 767px) {
+	.tokenomics {
 		.container {
+			padding-left: 3rem;
+			padding-right: 3rem;
+		}
+
+		.swiper-container {
 			padding: 0;
 		}
 
 		&-protocols {
 			margin-top: -2rem;
+		}
+
+		.floating {
+			&-01 {
+				width: 5rem;
+				height: 5rem;
+				top: -4rem;
+				right: 2rem;
+			}
+			&-02 {
+				width: 5rem;
+				height: 5rem;
+				bottom: -3rem;
+				left: -2rem;
+				opacity: 0.4;
+			}
 		}
 	}
 }
