@@ -1,8 +1,6 @@
-import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
-import faq from '../data/faq.json';
-import Accordion from 'react-bootstrap/Accordion';
-import convertHtmlToReact from '@hedgedoc/html-to-react';
+import LandlordFAQ from '../sections/faq/LandlordFAQ';
+import GeneralFAQ from '../sections/faq/GeneralFAQ';
 
 const Faq = () => {
 	return (
@@ -16,14 +14,9 @@ const Faq = () => {
 
 				<div className="row align-items-center justify-content-center">
 					<div className="col-md-8">
-						<Accordion defaultActiveKey="0" className="accordion-faq" flush>
-							{faq.map((item, index) => (
-								<Accordion.Item eventKey={index} key={index}>
-									<Accordion.Header>{item.q}</Accordion.Header>
-									<Accordion.Body>{convertHtmlToReact(item.a)}</Accordion.Body>
-								</Accordion.Item>
-							))}
-						</Accordion>
+						<LandlordFAQ />
+						<h4 className="mt-5 mb-2">General Crypto Questions</h4>
+						<GeneralFAQ />
 					</div>
 				</div>
 			</section>
