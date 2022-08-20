@@ -1,0 +1,136 @@
+.book {
+	position: relative;
+	width: 200px;
+	height: 260px;
+
+	perspective: 1000px;
+	transform-style: preserve-3d;
+
+	// shit
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+
+	&-back,
+	&-front {
+		transform-origin: 0% 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		border-top-left-radius: 0.25rem;
+		border-bottom-left-radius: 0.25rem;
+	}
+
+	&-front {
+		transform: rotateY(-34deg) translateZ(8px);
+		background-color: blue;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 100;
+		height: 98%;
+		top: 1%;
+
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 1px;
+			height: 277px;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.4);
+			box-shadow: 0px 0px 90px 20px #000;
+			transform: rotateX(90deg) rotateZ(63deg) translateZ(-133px) translateX(-106px) translateY(-34%);
+		}
+
+		// &::before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 0;
+		// 	bottom: 0;
+		// 	width: 1rem;
+		// 	background-color: rgba(0, 0, 0, 0.2);
+		// }
+	}
+
+	&-back {
+		background-color: #000;
+		transform: rotateY(-15deg) translateZ(-8px);
+	}
+
+	&-pages {
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform-style: preserve-3d;
+		width: 100%;
+		height: 92%;
+		top: 4%;
+		left: 1%;
+		z-index: 10;
+
+		span {
+			display: block;
+
+			position: absolute;
+
+			top: 0.5%;
+			left: 1.5%;
+			width: 100%;
+			height: 99%;
+
+			transform-origin: left center;
+			transition-property: transform;
+			transition-timing-function: ease;
+
+			background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
+			box-shadow: inset 0px -1px 2px rgba(50, 50, 50, 0.1), inset -1px 0px 1px rgba(150, 150, 150, 0.2);
+			border-radius: 0px 5px 5px 0px;
+
+			&:nth-child(0) {
+				transform: rotateY(-24deg);
+			}
+
+			&:nth-child(1) {
+				transform: rotateY(-26deg);
+			}
+
+			&:nth-child(2) {
+				transform: rotateY(-28deg);
+			}
+
+			&:nth-child(3) {
+				transform: rotateY(-30deg);
+			}
+
+			&:nth-child(4) {
+				transform: rotateY(-32deg);
+			}
+
+			&:nth-child(5) {
+				transform: rotateY(-34deg);
+			}
+			&:nth-child(6) {
+				transform: rotateY(-36deg);
+			}
+		}
+	}
+}
+
+.book-whitepaper .book-front {
+	background-image: url('/img/home/whitepaper-cover.png');
+}
+
+.book-audit .book-front {
+	background-image: url('/img/home/audit-cover.png');
+}
