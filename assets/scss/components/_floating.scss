@@ -1,0 +1,10 @@
+.floating {
+	position: absolute;
+	display: block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	z-index: 100;
+
+	filter: drop-shadow(-1rem 1rem 0.25rem rgba(0, 0, 0, 0.2));
+}

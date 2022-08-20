@@ -22,9 +22,9 @@ const Beers = () => {
 						</p>
 
 						<p className="section-desc mb-2">Profits will be used to buy back and burn $LNDLRD tokens and may be added to liquidity as well.</p>
-						<LinkArrow href="/" dir="right" className="link link-dark">
+						{/* <LinkArrow href="/" dir="right" className="link link-dark">
 							About Landlord Beers
-						</LinkArrow>
+						</LinkArrow> */}
 					</div>
 				</div>
 			</div>

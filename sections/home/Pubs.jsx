@@ -24,6 +24,9 @@ const Pubs = () => {
 						<img className="pubs-img" src="/img/home/pub.png" alt="Landlord Pubs" />
 					</div>
 				</div>
+
+				<span className="floating floating-03"></span>
+				<span className="floating floating-04"></span>
 			</div>
 		</section>
 	);
