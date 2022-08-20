@@ -36,27 +36,24 @@
 	}
 
 	&-avatar {
-		width: 7rem;
-		height: 7rem;
+		width: 6rem;
+		height: 6rem;
 		border-radius: 50%;
 		display: block;
 		margin: 0 auto;
 		border: 5px solid rgba(#000, 0.1);
 	}
 	&-username {
-		font-weight: 500;
+		font-weight: 600;
 		font-size: 1.25rem;
-		margin: 1rem 0 2rem;
+		margin: 1rem 0;
 	}
-	&-points {
-		font-size: 1.125rem;
-		font-weight: 300;
-		margin: 0;
-	}
+	&-points,
 	&-lndlrd {
-		font-size: 1.125rem;
-		font-weight: 300;
+		font-size: 1rem;
+		font-weight: 400;
 		margin: 0;
+		opacity: 0.8;
 	}
 
 	&-main {
@@ -67,16 +64,29 @@
 		&-desc {
 			margin-top: 2rem;
 			margin-bottom: 2rem;
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 1.25rem;
 		}
+	}
+}
 
-		@media screen and (max-width: 459px) {
+@media screen and (max-width: 459px) {
+	.shill {
+		&-username {
+			font-size: 1rem;
+		}
+
+		&-points,
+		&-lndlrd {
+			font-size: 0.875rem;
+		}
+
+		&-main {
 			&-desc {
 				font-size: 1rem;
 			}
 			&-swipe {
-				font-size: 1rem;
+				font-size: 0.875rem;
 			}
 		}
 	}
