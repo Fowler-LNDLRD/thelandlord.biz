@@ -8,13 +8,22 @@ import shills from '../../data/shills';
 import 'swiper/css/effect-cards';
 
 const Shill = () => {
-	const [shillers, setShillers] = useState([]);
+	const [shillers, setShillers] = useState(shills);
+	const [isLocal, setIsLocal] = useState(true);
 	const getShillers = async () => {
-		const users = await axios.get('http://localhost:5000/api/board');
-		setShillers(users.data.shills);
+		try {
+			const users = await axios.get('https://landlord.army/api/board');
+			setShillers(users.data.shills);
+			setIsLocal(false);
+		} catch (err) {
+			console.log(err.response.data.message);
+			setIsLocal(true);
+		}
 	};
 
-	useEffect(() => {}, []);
+	useEffect(() => {
+		getShillers();
+	}, []);
 
 	return (
 		<section className="shill section">
@@ -54,10 +63,17 @@ const Shill = () => {
 										</div>
 									</div>
 								</SwiperSlide>
-								{shills.map((item, index) => (
+								{shillers.map((item, index) => (
 									<SwiperSlide key={index} className={`shill-card shill-card-${index}`}>
 										<div className="shill-inner">
-											<img className="shill-avatar" src={`/img/avatars/${item.username}.jpg`} alt={item.username} />
+											<img
+												className="shill-avatar"
+												onError={(event) => {
+													event.target.src = '/img/avatars/default.jpg';
+												}}
+												src={`/img/avatars/${item.username}.jpg`}
+												alt={item.username}
+											/>
 											<div className="shill-username">@{item.username}</div>
 											<div className="shill-points">{item.count} Points</div>
 											<div className="shill-lndlrd">{(item.count * 5000).toLocaleString()} $LNDLRD</div>
