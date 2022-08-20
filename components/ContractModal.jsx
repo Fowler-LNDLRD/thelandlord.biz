@@ -18,7 +18,7 @@ const ContractModal = () => {
 				{copied ? 'Copied!' : process.env.CONTRACT}
 			</div>
 			<div className="contract-modal-link mt-2">
-				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand" dir="right" href={`https://bscscan.com/token/${process.env.NEXT_PUBLIC_CONTRACT}`}>
+				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand" dir="right" href={`https://bscscan.com/token/${process.env.CONTRACT}`}>
 					Check it on BscScan
 				</LinkArrow>
 			</div>
