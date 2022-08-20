@@ -4,7 +4,7 @@ const ContractModal = () => {
 	const [copied, setCopied] = useState(false);
 
 	const copyToClipboard = () => {
-		navigator.clipboard.writeText(process.env.NEXT_PUBLIC_CONTRACT);
+		navigator.clipboard.writeText(process.env.CONTRACT);
 		setCopied(true);
 
 		setTimeout(() => {
