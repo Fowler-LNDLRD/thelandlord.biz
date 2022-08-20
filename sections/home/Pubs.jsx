@@ -3,7 +3,7 @@ const Pubs = () => {
 		<section className="pubs section">
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-md-5 text-center text-md-start mb-3 mb-md-0">
+					<div className="col-md-5 mb-3 mb-md-0">
 						<h2 className="section-title">Landlord Pubs</h2>
 
 						<p className="section-desc">
