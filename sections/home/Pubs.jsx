@@ -1,12 +1,12 @@
 import Parallax from '../../components/Parallax';
-import FadeIn from '../../components/FadeIn';
+import SlideFade from '../../components/SlideFade';
 
 const Pubs = () => {
 	return (
 		<section className="pubs section" id="pubs">
 			<div className="container">
-				<FadeIn className="row align-items-center">
-					<div className="col-md-5 mb-3 mb-md-0">
+				<div className="row align-items-center">
+					<SlideFade className="col-md-5 mb-3 mb-md-0">
 						<h2 className="section-title">Landlord Pubs</h2>
 
 						<p className="section-desc">
@@ -21,12 +21,12 @@ const Pubs = () => {
 							Landlord Pubs will use cutting edge technology throughout and help drive crypto mass adoption. Profits will be used to buyback and burn tokens and add
 							to liquidity.
 						</p>
-					</div>
+					</SlideFade>
 
-					<div className="col-md-7 text-center text-md-end">
+					<SlideFade y={0} className="col-md-7 text-center text-md-end">
 						<img className="pubs-img" src="/img/home/pub.png" alt="Landlord Pubs" />
-					</div>
-				</FadeIn>
+					</SlideFade>
+				</div>
 
 				<Parallax offset={30} className="floating floating-03"></Parallax>
 				<Parallax offset={30} className="floating floating-04"></Parallax>

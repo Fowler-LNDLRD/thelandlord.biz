@@ -1,12 +1,12 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Parallax from '../../components/Parallax';
 
-import FadeIn from '../../components/FadeIn';
+import SlideFade from '../../components/SlideFade';
 
 const Protocols = () => {
 	return (
 		<section className="tokenomics section section-dark" id="tokenomics">
-			<FadeIn className="container">
+			<SlideFade className="container">
 				<h2 className="tokenomics-title section-title text-md-center">Tokenomics</h2>
 				<p className="tokenomics-desc section-desc text-md-center ">
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
@@ -14,9 +14,9 @@ const Protocols = () => {
 
 				<Parallax offset={30} className="floating floating-01"></Parallax>
 				<Parallax offset={30} className="floating floating-02"></Parallax>
-			</FadeIn>
+			</SlideFade>
 
-			<FadeIn className="container swiper-container">
+			<SlideFade className="container swiper-container">
 				<div className="tokenomics-protocols">
 					<Swiper
 						loop={false}
@@ -67,7 +67,7 @@ const Protocols = () => {
 						</SwiperSlide>
 					</Swiper>
 				</div>
-			</FadeIn>
+			</SlideFade>
 		</section>
 	);
 };

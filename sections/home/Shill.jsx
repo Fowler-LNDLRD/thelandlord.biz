@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
 import shills from '../../data/shills';
-import FadeIn from '../../components/FadeIn';
+import SlideFade from '../../components/SlideFade';
 
 import 'swiper/css/effect-cards';
 
@@ -43,8 +43,8 @@ const Shill = () => {
 	return (
 		<section className="shill section" id="earn">
 			<div className="container">
-				<FadeIn className="row align-items-center px-1 px-md-0">
-					<div className="col-md-6 col-lg-5">
+				<div className="row align-items-center px-1 px-md-0">
+					<SlideFade className="col-md-6 col-lg-5">
 						<h2 className="section-title">Earn Landlord</h2>
 						<p className="section-desc">
 							Landlord Army is an app that we developed to enrich community engagement, and encourage its users to inviting more investors into The Landlord. You can
@@ -53,8 +53,8 @@ const Shill = () => {
 						<LinkArrow href="/" dir="right" className="link link-brand">
 							Join Now
 						</LinkArrow>
-					</div>
-					<div className="col-md-6 col-lg-7 d-flex mt-3 mt-md-0">
+					</SlideFade>
+					<SlideFade y={0} x={50} className="col-md-6 col-lg-7 d-flex mt-3 mt-md-0">
 						<div className="shill-wrap">
 							<Swiper effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper">
 								<SwiperSlide className={`shill-card shill-main-card`}>
@@ -95,8 +95,8 @@ const Shill = () => {
 								))}
 							</Swiper>
 						</div>
-					</div>
-				</FadeIn>
+					</SlideFade>
+				</div>
 			</div>
 		</section>
 	);
