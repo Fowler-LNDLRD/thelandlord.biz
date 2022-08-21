@@ -9,60 +9,51 @@ const POS = () => {
 	const [search, setSearch] = useState('');
 	const [flash, setFlash] = useState(false);
 
-	const addProduct = (item) => {
-		let nowCart = [...cart];
-		const found = nowCart.find((c) => c.id === item.id);
-		if (found) {
-			nowCart = nowCart.map((c) => (c.id === item.id ? { ...c, added: c.added + 1 } : c));
-		} else {
-			nowCart.push({
-				id: item.id,
-				title: item.title,
-				price: item.price,
-				added: 1,
-			});
-		}
+	const [addedProducts, setAddedProducts] = useState(0);
+
+	const addProduct = (item, index) => {
+		let tempProduct = [...products];
+		tempProduct[index].added += 1;
+		setProducts(tempProduct);
+		setAddedProducts(addedProducts + 1);
+
 		setCartTotal(cartTotal + item.price);
-		setCart(nowCart);
-
 		setFlash(true);
-
 		setTimeout(() => setFlash(false), 300);
 	};
 
 	const removeItem = (item) => {
-		let nowCart = [...cart];
-		nowCart = nowCart.filter((c) => c.id !== item.id);
-		if (nowCart.length === 0) {
+		const currentItem = item;
+		let tempProduct = [...products];
+		tempProduct = tempProduct.map((c) => (c.id === item.id ? { ...c, added: 0 } : c));
+		setProducts(tempProduct);
+		setAddedProducts(addedProducts - currentItem.added);
+
+		if (addedProducts - currentItem.added === 0) {
 			setCartShow(false);
 			setCartTotal(0);
 		} else {
-			setCartTotal(cartTotal - item.price * item.added);
+			setCartTotal(cartTotal - currentItem.price * currentItem.added);
 		}
-		setCart(nowCart);
 	};
 
 	const lessItem = (item) => {
-		let nowCart = [...cart];
-		if (item.added > 1) {
-			nowCart = nowCart.map((c) => (c.id === item.id ? { ...c, added: c.added - 1 } : c));
-			setCart(nowCart);
-		} else {
-			removeItem(item);
-		}
-		if (nowCart.length === 0) {
+		setAddedProducts(addedProducts - 1);
+		if (addedProducts - 1 === 0) {
 			setCartShow(false);
-			setCartTotal(0);
-		} else {
-			setCartTotal(cartTotal - item.price);
 		}
+		let tempProduct = [...products];
+		tempProduct = tempProduct.map((c) => (c.id === item.id ? { ...c, added: c.added - 1 } : c));
+		setCartTotal(cartTotal - item.price);
+		setProducts(tempProduct);
 	};
 
 	const moreItem = (item) => {
-		let nowCart = [...cart];
-		nowCart = nowCart.map((c) => (c.id === item.id ? { ...c, added: c.added + 1 } : c));
+		setAddedProducts(addedProducts + 1);
+		let tempProduct = [...products];
+		tempProduct = tempProduct.map((c) => (c.id === item.id ? { ...c, added: c.added + 1 } : c));
 		setCartTotal(cartTotal + item.price);
-		setCart(nowCart);
+		setProducts(tempProduct);
 	};
 
 	return (
@@ -79,7 +70,7 @@ const POS = () => {
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="mx-auto" viewBox="0 0 16 16">
 							<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
 						</svg>
-						{cart.length !== 0 && <span className="papp-cart-badge">{cart.length}</span>}
+						{addedProducts !== 0 && <span className="papp-cart-badge">{addedProducts}</span>}
 					</button>
 				</div>
 			</div>
@@ -92,13 +83,13 @@ const POS = () => {
 							return true;
 						}
 					})
-					.map((item) => (
+					.map((item, index) => (
 						<div className="col-3" key={item.id}>
-							<button disabled={cart.filter((c) => c.id === item.id)[0]?.added >= item.stock} className="papp-product" onClick={() => addProduct(item)}>
+							<button disabled={item.added >= item.stock} className="papp-product" onClick={() => addProduct(item, index)}>
 								<img className="papp-product-img" src={`/img/papp/${item.img}`} alt={item.title} />
 								<div className="papp-product-title">{item.title}</div>
 								<div className="papp-product-price">${item.price}</div>
-								{cart.find((c) => c.id === item.id) && <div className="papp-product-added">{cart.filter((c) => c.id === item.id)[0]?.added}</div>}
+								{item.added !== 0 && <div className="papp-product-added">{item.added}</div>}
 							</button>
 						</div>
 					))}
@@ -108,39 +99,46 @@ const POS = () => {
 				<div className="papp-modal-overlay" onClick={() => setCartShow(!cartShow)}></div>
 				<div className="btn-close"></div>
 
-				{cart.length === 0 && <div className="papp-modal-content text-center small">Empty cart, add something!</div>}
+				{addedProducts === 0 && <div className="papp-modal-content text-center small">Empty cart, add something!</div>}
 
-				{cart.length !== 0 && (
+				{addedProducts !== 0 && (
 					<div className="papp-modal-content">
 						<h4>Cart</h4>
 
 						<ul className="papp-cart-list my-2">
-							{cart.map((item, index) => (
-								<li className="papp-cart-item" key={index}>
-									<button type="button" className="text-danger papp-cart-item-btn papp-cart-item-del" onClick={() => removeItem(item)}>
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-circle" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-											<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-										</svg>
-									</button>
+							{products
+								.filter((item) => item.added !== 0)
+								.map((item, index) => (
+									<li className="papp-cart-item" key={index}>
+										<button type="button" className="text-danger papp-cart-item-btn papp-cart-item-del" onClick={() => removeItem(item)}>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-circle" viewBox="0 0 16 16">
+												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+												<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+											</svg>
+										</button>
 
-									<span className="papp-cart-item-title">{item.title}</span>
-									<span className="papp-cart-item-price me-1">${item.price}</span>
-									<button type="button" className="text-warning papp-cart-item-btn papp-cart-item-del" onClick={() => lessItem(item)}>
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash-circle" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-											<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-										</svg>
-									</button>
-									<span className="papp-cart-item-added">{item.added}</span>
-									<button type="button" className="text-success papp-cart-item-btn papp-cart-item-del" onClick={() => moreItem(item)}>
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus-circle" viewBox="0 0 16 16">
-											<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-											<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-										</svg>
-									</button>
-								</li>
-							))}
+										<span className="papp-cart-item-title">{item.title}</span>
+										<span className="papp-cart-item-price me-1">${item.price}</span>
+										<button type="button" className="text-warning papp-cart-item-btn papp-cart-item-del" onClick={() => lessItem(item)}>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash-circle" viewBox="0 0 16 16">
+												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+											</svg>
+										</button>
+										<span className="papp-cart-item-added">{item.added}</span>
+										<button
+											disabled={item.added >= item.stock}
+											type="button"
+											className={'papp-cart-item-btn papp-cart-item-del ' + (item.added >= item.stock ? 'text-dark' : 'text-success ')}
+											onClick={() => moreItem(item)}
+										>
+											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus-circle" viewBox="0 0 16 16">
+												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+											</svg>
+										</button>
+									</li>
+								))}
 						</ul>
 
 						<div className="papp-cart-total mb-2 d-flex">
