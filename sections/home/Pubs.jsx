@@ -1,6 +1,6 @@
 const Pubs = () => {
 	return (
-		<section className="pubs section">
+		<section className="pubs section" id="pubs">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-5 mb-3 mb-md-0">

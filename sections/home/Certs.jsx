@@ -4,7 +4,7 @@ import Book from '../../components/Book';
 
 const Certs = () => {
 	return (
-		<section className="certs section section-dark">
+		<section className="certs section section-dark" id="whitepaper">
 			<div className="container">
 				<div className="row g-5">
 					<div className="col-md-6 d-flex justify-content-center  justify-content-md-start">

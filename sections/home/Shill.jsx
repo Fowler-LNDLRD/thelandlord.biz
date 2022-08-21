@@ -40,7 +40,7 @@ const Shill = () => {
 	}, []);
 
 	return (
-		<section className="shill section">
+		<section className="shill section" id="earn">
 			<div className="container">
 				<div className="row align-items-center px-1 px-md-0">
 					<div className="col-md-6 col-lg-5">

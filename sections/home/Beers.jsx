@@ -4,7 +4,7 @@ import LinkArrow from '../../components/LinkArrow';
 
 const Beers = () => {
 	return (
-		<section className="beers section section-brand">
+		<section className="beers section section-brand" id="beers">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-6 text-center text-md-start mb-5 mb-md-0">

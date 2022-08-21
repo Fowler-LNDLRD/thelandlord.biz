@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Protocols = () => {
 	return (
-		<section className="tokenomics section section-dark">
+		<section className="tokenomics section section-dark" id="tokenomics">
 			<div className="container">
 				<h2 className="tokenomics-title section-title text-md-center">Tokenomics</h2>
 				<p className="tokenomics-desc section-desc text-md-center ">
