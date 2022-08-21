@@ -6,7 +6,7 @@ import { Autoplay } from 'swiper';
 
 const LogoLinks = () => {
 	return (
-		<motion.div className="hero-links" initial={{ bottom: -77 }} whileInView={{ bottom: 0 }}>
+		<motion.div className="hero-links" initial={{ bottom: -77 }} whileInView={{ bottom: 0 }} viewport={{ once: true }}>
 			<div className="container  d-flex">
 				<Swiper
 					autoplay={true}

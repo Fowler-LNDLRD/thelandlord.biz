@@ -1,14 +1,13 @@
-/* eslint-disable @next/next/no-img-element */
-
-import LinkArrow from '../../components/LinkArrow';
-
+import Parallax from '../../components/Parallax';
 const Beers = () => {
 	return (
 		<section className="beers section section-brand" id="beers">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-md-6 text-center text-md-start mb-5 mb-md-0">
-						<img className="beers-img" src="/img/home/beer.png" alt="Landlord Beers" />
+						<Parallax offset={-10}>
+							<img className="beers-img" src="/img/home/beer.png" alt="Landlord Beers" />
+						</Parallax>
 					</div>
 					<div className="col-md-6">
 						<h2 className="section-title">Landlord Beers</h2>

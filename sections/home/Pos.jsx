@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 import Ipad from '../../components/Ipad';
 import POS from '../../components/POS';
 
@@ -11,14 +13,16 @@ const Pos = () => {
 					orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.{' '}
 					<span className="d-none d-md-inline-block">Take a look at the demo, part of POS system.</span>
 				</p>
-				<div className="pos-figure d-flex d-block d-md-none">
-					<img className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Point of Sale System" />
-				</div>
-				<div className="d-none d-md-block">
-					<Ipad>
-						<POS />
-					</Ipad>
-				</div>
+				<motion.div initial={{ y: 100 }} whileInView={{ y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }}>
+					<div className="pos-figure d-flex d-block d-md-none">
+						<img className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Point of Sale System" />
+					</div>
+					<div className="d-none d-md-block">
+						<Ipad>
+							<POS />
+						</Ipad>
+					</div>
+				</motion.div>
 			</div>
 		</section>
 	);
