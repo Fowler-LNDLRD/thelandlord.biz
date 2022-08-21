@@ -4,7 +4,7 @@
 		"img": "stella.png",
 		"title": "Stella (Pint)",
 		"price": 6,
-		"stock": 5,
+		"stock": 3,
 		"added": 0
 	},
 	{
@@ -20,7 +20,7 @@
 		"img": "perrier.png",
 		"title": "Perrier (Bottle)",
 		"price": 4,
-		"stock": 5,
+		"stock": 2,
 		"added": 0
 	},
 	{
@@ -36,7 +36,7 @@
 		"img": "coke.png",
 		"title": "Coke (Pint)",
 		"price": 3,
-		"stock": 5,
+		"stock": 4,
 		"added": 0
 	},
 	{
@@ -52,7 +52,7 @@
 		"img": "cokezero.png",
 		"title": "Coke Zero (Pint)",
 		"price": 3,
-		"stock": 5,
+		"stock": 7,
 		"added": 0
 	},
 	{
@@ -60,7 +60,7 @@
 		"img": "cokezero.png",
 		"title": "Coke Zero (Half)",
 		"price": 2,
-		"stock": 5,
+		"stock": 2,
 		"added": 0
 	}
 ]

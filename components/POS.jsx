@@ -93,12 +93,13 @@ const POS = () => {
 						}
 					})
 					.map((item) => (
-						<div className="col-3" key={item.id} onClick={() => addProduct(item)}>
-							<div className="papp-product">
+						<div className="col-3" key={item.id}>
+							<button disabled={cart.filter((c) => c.id === item.id)[0]?.added >= item.stock} className="papp-product" onClick={() => addProduct(item)}>
 								<img className="papp-product-img" src={`/img/papp/${item.img}`} alt={item.title} />
 								<div className="papp-product-title">{item.title}</div>
 								<div className="papp-product-price">${item.price}</div>
-							</div>
+								{cart.find((c) => c.id === item.id) && <div className="papp-product-added">{cart.filter((c) => c.id === item.id)[0]?.added}</div>}
+							</button>
 						</div>
 					))}
 			</div>
