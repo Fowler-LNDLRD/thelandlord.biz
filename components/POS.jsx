@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import posProducts from '../data/posProducts.json';
 
 const POS = () => {
 	const [products, setProducts] = useState(posProducts);
-	const [cart, setCart] = useState([]);
 	const [cartShow, setCartShow] = useState(false);
+	const [confirmShow, setConfirmShow] = useState(false);
 	const [cartTotal, setCartTotal] = useState(0);
+	const [tip, setTip] = useState(0);
 	const [search, setSearch] = useState('');
 	const [flash, setFlash] = useState(false);
-
 	const [addedProducts, setAddedProducts] = useState(0);
 
 	const addProduct = (item, index) => {
@@ -95,6 +95,62 @@ const POS = () => {
 					))}
 			</div>
 
+			<div className={'papp-modal' + (confirmShow ? ' active' : '')}>
+				<div className="papp-modal-overlay" onClick={() => setConfirmShow(!confirmShow)}></div>
+				<div className="btn-close"></div>
+
+				<div className="papp-modal-content">
+					<h4 className="">Confirm</h4>
+					<hr className="hr mb-2" />
+
+					<h5>Add Tip</h5>
+					<div className="form-item d-flex">
+						<input
+							onChange={(e) => setTip(Number(e.target.value))}
+							value={parseFloat(tip).toLocaleString('en-US', { maximumFractionDigits: 2 })}
+							min="0"
+							placeholder="Tip in $"
+							type="number"
+							className="flex-1 form-control me-1"
+						/>
+						<button className="btn btn-danger" onClick={() => setTip(0)}>
+							&times;
+						</button>
+					</div>
+					<div className="btn-group w-100 mt-1" role="group">
+						<button onClick={() => setTip(cartTotal * 0.1)} type="button" className="btn btn-outline-secondary">
+							10%
+						</button>
+						<button onClick={() => setTip(cartTotal * 0.15)} type="button" className="btn btn-outline-secondary">
+							15%
+						</button>
+						<button onClick={() => setTip(cartTotal * 0.18)} type="button" className="btn btn-outline-secondary">
+							18%
+						</button>
+						<button onClick={() => setTip(cartTotal * 0.2)} type="button" className="btn btn-outline-secondary">
+							20%
+						</button>
+					</div>
+					<hr className="hr my-2" />
+
+					<h5>Summary</h5>
+					<div className="">
+						<div className="d-flex justify-content-between">
+							<span className="fw-400">Products</span>
+							<span className="fw-400">${cartTotal.toFixed(2)}</span>
+						</div>
+						<div className="d-flex justify-content-between">
+							<span className="fw-400">Tip</span>
+							<span className="fw-400">${Number(tip).toFixed(2)}</span>
+						</div>
+					</div>
+
+					<button type="button" className="btn btn-success w-100 mt-2">
+						Pay ${(cartTotal + Number(tip)).toFixed(2)}
+					</button>
+				</div>
+			</div>
+
 			<div className={'papp-modal' + (cartShow ? ' active' : '')}>
 				<div className="papp-modal-overlay" onClick={() => setCartShow(!cartShow)}></div>
 				<div className="btn-close"></div>
@@ -150,7 +206,15 @@ const POS = () => {
 							</div>
 						</div>
 
-						<button className="btn btn-success w-100">Confirm</button>
+						<button
+							className="btn btn-success w-100"
+							onClick={() => {
+								setConfirmShow(!confirmShow);
+								setCartShow(!cartShow);
+							}}
+						>
+							Confirm
+						</button>
 					</div>
 				)}
 			</div>
