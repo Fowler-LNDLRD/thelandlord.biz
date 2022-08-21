@@ -1,4 +1,5 @@
 import Modal from 'react-bootstrap/Modal';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
 import LogoLinks from '../../components/LogoLinks';
@@ -48,7 +49,7 @@ const Hero = () => {
 	return (
 		<>
 			<section className="hero" id="hero">
-				<article className="container">
+				<motion.article className="container" initial={{ opacity: 0, top: 30 }} whileInView={{ opacity: 1, top: 0 }}>
 					<h1 className="hero-title">
 						crypto <span>pubs &amp; beers</span>
 					</h1>
@@ -64,7 +65,7 @@ const Hero = () => {
 					<button className="hero-btn btn btn-dark ms-1" type="button" onClick={toggleContract}>
 						Contract
 					</button>
-				</article>
+				</motion.article>
 				<LogoLinks />
 			</section>
 

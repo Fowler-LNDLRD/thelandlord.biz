@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import Logo from './Logo';
 import nav from '../data/nav.json';
+import { motion } from 'framer-motion';
 
 const Header = () => {
 	const router = useRouter();
@@ -31,7 +32,7 @@ const Header = () => {
 	}, []);
 
 	return (
-		<header className={'header' + (toggle ? ' nav-active' : '')}>
+		<motion.header className={'header' + (toggle ? ' nav-active' : '')} initial={{ top: -48 }} whileInView={{ top: 0 }}>
 			<div className="container">
 				<Logo />
 
@@ -85,7 +86,7 @@ const Header = () => {
 					</span>
 				</button>
 			</div>
-		</header>
+		</motion.header>
 	);
 };
 export default Header;

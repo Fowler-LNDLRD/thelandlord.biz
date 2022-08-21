@@ -8,8 +8,6 @@ import Shill from '../sections/home/Shill';
 import Certs from '../sections/home/Certs';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
 export default function Home() {
 	return (

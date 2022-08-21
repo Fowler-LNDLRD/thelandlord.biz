@@ -1,10 +1,12 @@
+import { motion } from 'framer-motion';
+
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
 
 const LogoLinks = () => {
 	return (
-		<div className="hero-links">
+		<motion.div className="hero-links" initial={{ bottom: -77 }} whileInView={{ bottom: 0 }}>
 			<div className="container  d-flex">
 				<Swiper
 					autoplay={true}
@@ -59,7 +61,7 @@ const LogoLinks = () => {
 					</SwiperSlide>
 				</Swiper>
 			</div>
-		</div>
+		</motion.div>
 	);
 };
 export default LogoLinks;
