@@ -1,3 +1,5 @@
+import Parallax from '../../components/Parallax';
+
 const Pubs = () => {
 	return (
 		<section className="pubs section" id="pubs">
@@ -25,8 +27,8 @@ const Pubs = () => {
 					</div>
 				</div>
 
-				<span className="floating floating-03"></span>
-				<span className="floating floating-04"></span>
+				<Parallax offset={30} className="floating floating-03"></Parallax>
+				<Parallax offset={30} className="floating floating-04"></Parallax>
 			</div>
 		</section>
 	);
