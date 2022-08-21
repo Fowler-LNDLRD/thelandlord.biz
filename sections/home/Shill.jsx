@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
 import shills from '../../data/shills';
+import FadeIn from '../../components/FadeIn';
 
 import 'swiper/css/effect-cards';
 
@@ -42,7 +43,7 @@ const Shill = () => {
 	return (
 		<section className="shill section" id="earn">
 			<div className="container">
-				<div className="row align-items-center px-1 px-md-0">
+				<FadeIn className="row align-items-center px-1 px-md-0">
 					<div className="col-md-6 col-lg-5">
 						<h2 className="section-title">Earn Landlord</h2>
 						<p className="section-desc">
@@ -95,7 +96,7 @@ const Shill = () => {
 							</Swiper>
 						</div>
 					</div>
-				</div>
+				</FadeIn>
 			</div>
 		</section>
 	);

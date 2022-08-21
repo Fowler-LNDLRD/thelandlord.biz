@@ -49,7 +49,7 @@ const Hero = () => {
 	return (
 		<>
 			<section className="hero" id="hero">
-				<motion.article className="container" initial={{ opacity: 0, top: 30 }} whileInView={{ opacity: 1, top: 0 }}>
+				<motion.article className="container" initial={{ opacity: 0.01, top: 50 }} whileInView={{ opacity: 1, top: 0 }} viewport={{ once: true }}>
 					<h1 className="hero-title">
 						crypto <span>pubs &amp; beers</span>
 					</h1>

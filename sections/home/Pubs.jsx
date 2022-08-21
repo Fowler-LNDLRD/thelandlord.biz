@@ -1,10 +1,11 @@
 import Parallax from '../../components/Parallax';
+import FadeIn from '../../components/FadeIn';
 
 const Pubs = () => {
 	return (
 		<section className="pubs section" id="pubs">
 			<div className="container">
-				<div className="row align-items-center">
+				<FadeIn className="row align-items-center">
 					<div className="col-md-5 mb-3 mb-md-0">
 						<h2 className="section-title">Landlord Pubs</h2>
 
@@ -25,7 +26,7 @@ const Pubs = () => {
 					<div className="col-md-7 text-center text-md-end">
 						<img className="pubs-img" src="/img/home/pub.png" alt="Landlord Pubs" />
 					</div>
-				</div>
+				</FadeIn>
 
 				<Parallax offset={30} className="floating floating-03"></Parallax>
 				<Parallax offset={30} className="floating floating-04"></Parallax>
