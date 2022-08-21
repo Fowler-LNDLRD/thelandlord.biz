@@ -2,6 +2,11 @@
 	&-swiper {
 		.swiper-slide {
 			padding-top: 5rem;
+			cursor: grab;
+
+			&:active {
+				cursor: grabbing;
+			}
 
 			&:last-child {
 				.roadmap-item {
