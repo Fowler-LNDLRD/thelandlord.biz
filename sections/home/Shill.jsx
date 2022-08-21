@@ -21,7 +21,7 @@ const Shill = () => {
 
 	const getShillers = async () => {
 		try {
-			const resp = await axios.get('https://landlord.army/api/board');
+			const resp = await axios.get('https://landlord.army/api/board?limit=10');
 			const data = resp.data.shills;
 			countTotal(data);
 			setShillers(data);
@@ -32,7 +32,9 @@ const Shill = () => {
 	};
 
 	useEffect(() => {
-		getShillers();
+		if (process.env.NODE_ENV !== 'development') {
+			getShillers();
+		}
 	}, []);
 
 	return (
