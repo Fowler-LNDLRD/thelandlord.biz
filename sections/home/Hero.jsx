@@ -19,8 +19,6 @@ const Hero = () => {
 	};
 
 	useEffect(() => {
-		initEmbr();
-
 		documentHeight();
 		window.addEventListener('resize', documentHeight);
 	}, []);
@@ -29,10 +27,13 @@ const Hero = () => {
 	const toggleContract = () => setShowContract(!showContract);
 
 	const [showBuy, setShowBuy] = useState(false);
+
 	const toggleBuy = () => {
 		if (showBuy) {
 			setShowBuy(false);
 		} else {
+			initEmbr();
+
 			setShowBuy(true);
 			mount({
 				type: 'CheckoutEmbed',
