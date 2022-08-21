@@ -96,151 +96,171 @@ const POS = () => {
 					))}
 			</div>
 
-			<div className={'papp-modal' + (cartShow ? ' active' : '')}>
-				<div className="papp-modal-overlay" onClick={() => setCartShow(!cartShow)}></div>
-				<div className="btn-close"></div>
+			{cartShow && (
+				<div className="papp-modal active">
+					<div className="papp-modal-overlay" onClick={() => setCartShow(!cartShow)}></div>
+					<div className="btn-close"></div>
 
-				{addedProducts === 0 && <div className="papp-modal-content text-center small">Empty cart, add something!</div>}
+					{addedProducts === 0 && <div className="papp-modal-content text-center small">Empty cart, add something!</div>}
 
-				{addedProducts !== 0 && (
-					<div className="papp-modal-content">
-						<h4>Cart</h4>
-						<hr className="hr mb-0" />
+					{addedProducts !== 0 && (
+						<div className="papp-modal-content">
+							<h4>Cart</h4>
+							<hr className="hr mb-0" />
 
-						<ul className="papp-cart-list my-1">
-							{products
-								.filter((item) => item.added !== 0)
-								.map((item, index) => (
-									<li className="papp-cart-item" key={index}>
-										<button type="button" className="text-danger papp-cart-item-btn papp-cart-item-del" onClick={() => removeItem(item)}>
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-circle" viewBox="0 0 16 16">
-												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-												<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-											</svg>
-										</button>
+							<ul className="papp-cart-list my-1">
+								{products
+									.filter((item) => item.added !== 0)
+									.map((item, index) => (
+										<li className="papp-cart-item" key={index}>
+											<button type="button" className="text-danger papp-cart-item-btn papp-cart-item-del" onClick={() => removeItem(item)}>
+												<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-x-circle" viewBox="0 0 16 16">
+													<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+													<path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+												</svg>
+											</button>
 
-										<span className="papp-cart-item-title">{item.title}</span>
-										<span className="papp-cart-item-price me-1">${item.price}</span>
-										<button type="button" className="text-warning papp-cart-item-btn papp-cart-item-del" onClick={() => lessItem(item)}>
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-dash-circle" viewBox="0 0 16 16">
-												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-												<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
-											</svg>
-										</button>
-										<span className="papp-cart-item-added">{item.added}</span>
-										<button
-											disabled={item.added >= item.stock}
-											type="button"
-											className={'papp-cart-item-btn papp-cart-item-del ' + (item.added >= item.stock ? 'text-dark' : 'text-success ')}
-											onClick={() => moreItem(item)}
-										>
-											<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus-circle" viewBox="0 0 16 16">
-												<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-												<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-											</svg>
-										</button>
-									</li>
-								))}
-						</ul>
+											<span className="papp-cart-item-title">{item.title}</span>
+											<span className="papp-cart-item-price me-1">${item.price}</span>
+											<button type="button" className="text-warning papp-cart-item-btn papp-cart-item-del" onClick={() => lessItem(item)}>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="16"
+													height="16"
+													fill="currentColor"
+													className="bi bi-dash-circle"
+													viewBox="0 0 16 16"
+												>
+													<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+													<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+												</svg>
+											</button>
+											<span className="papp-cart-item-added">{item.added}</span>
+											<button
+												disabled={item.added >= item.stock}
+												type="button"
+												className={'papp-cart-item-btn papp-cart-item-del ' + (item.added >= item.stock ? 'text-dark' : 'text-success ')}
+												onClick={() => moreItem(item)}
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="16"
+													height="16"
+													fill="currentColor"
+													className="bi bi-plus-circle"
+													viewBox="0 0 16 16"
+												>
+													<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+													<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+												</svg>
+											</button>
+										</li>
+									))}
+							</ul>
 
-						<hr className="hr mb-1" />
-						<div className="papp-cart-total mb-1 d-flex">
-							<div className="papp-cart-total-title me-auto ps-1">
-								<b>Total</b>
+							<hr className="hr mb-1" />
+							<div className="papp-cart-total mb-1 d-flex">
+								<div className="papp-cart-total-title me-auto ps-1">
+									<b>Total</b>
+								</div>
+								<div className="papp-cart-total-value pe-1">
+									<b>${cartTotal}</b>
+								</div>
 							</div>
-							<div className="papp-cart-total-value pe-1">
-								<b>${cartTotal}</b>
+
+							<button
+								className="btn btn-success w-100"
+								onClick={() => {
+									setConfirmShow(!confirmShow);
+									setCartShow(!cartShow);
+								}}
+							>
+								Confirm
+							</button>
+						</div>
+					)}
+				</div>
+			)}
+
+			{confirmShow && (
+				<div className="papp-modal active">
+					<div className="papp-modal-overlay" onClick={() => setConfirmShow(!confirmShow)}></div>
+					<div className="btn-close"></div>
+
+					<div className="papp-modal-content">
+						<h4 className="">Confirm</h4>
+						<hr className="hr mb-2" />
+
+						<h5>Add Tip</h5>
+						<div className="form-item d-flex">
+							<input
+								onChange={(e) => setTip(Number(e.target.value))}
+								value={parseFloat(tip).toLocaleString('en-US', { maximumFractionDigits: 2 })}
+								min="0"
+								placeholder="Tip in $"
+								type="number"
+								className="flex-1 form-control me-1"
+							/>
+							<button className="btn btn-danger" onClick={() => setTip(0)}>
+								&times;
+							</button>
+						</div>
+						<div className="btn-group w-100 mt-1" role="group">
+							<button onClick={() => setTip(cartTotal * 0.1)} type="button" className="btn btn-outline-secondary">
+								10%
+							</button>
+							<button onClick={() => setTip(cartTotal * 0.15)} type="button" className="btn btn-outline-secondary">
+								15%
+							</button>
+							<button onClick={() => setTip(cartTotal * 0.18)} type="button" className="btn btn-outline-secondary">
+								18%
+							</button>
+							<button onClick={() => setTip(cartTotal * 0.2)} type="button" className="btn btn-outline-secondary">
+								20%
+							</button>
+						</div>
+						<hr className="hr my-2" />
+
+						<h5>Summary</h5>
+						<div className="">
+							<div className="d-flex justify-content-between">
+								<span className="fw-400">Products</span>
+								<span className="fw-400">${cartTotal.toFixed(2)}</span>
+							</div>
+							<div className="d-flex justify-content-between">
+								<span className="fw-400">Tip</span>
+								<span className="fw-400">${Number(tip).toFixed(2)}</span>
 							</div>
 						</div>
 
 						<button
-							className="btn btn-success w-100"
+							type="button"
+							className="btn btn-success w-100 mt-2"
 							onClick={() => {
-								setConfirmShow(!confirmShow);
-								setCartShow(!cartShow);
+								setConfirmShow(false);
+								setPayShow(true);
 							}}
 						>
-							Confirm
+							Pay ${(cartTotal + Number(tip)).toFixed(2)}
 						</button>
 					</div>
-				)}
-			</div>
-
-			<div className={'papp-modal' + (confirmShow ? ' active' : '')}>
-				<div className="papp-modal-overlay" onClick={() => setConfirmShow(!confirmShow)}></div>
-				<div className="btn-close"></div>
-
-				<div className="papp-modal-content">
-					<h4 className="">Confirm</h4>
-					<hr className="hr mb-2" />
-
-					<h5>Add Tip</h5>
-					<div className="form-item d-flex">
-						<input
-							onChange={(e) => setTip(Number(e.target.value))}
-							value={parseFloat(tip).toLocaleString('en-US', { maximumFractionDigits: 2 })}
-							min="0"
-							placeholder="Tip in $"
-							type="number"
-							className="flex-1 form-control me-1"
-						/>
-						<button className="btn btn-danger" onClick={() => setTip(0)}>
-							&times;
-						</button>
-					</div>
-					<div className="btn-group w-100 mt-1" role="group">
-						<button onClick={() => setTip(cartTotal * 0.1)} type="button" className="btn btn-outline-secondary">
-							10%
-						</button>
-						<button onClick={() => setTip(cartTotal * 0.15)} type="button" className="btn btn-outline-secondary">
-							15%
-						</button>
-						<button onClick={() => setTip(cartTotal * 0.18)} type="button" className="btn btn-outline-secondary">
-							18%
-						</button>
-						<button onClick={() => setTip(cartTotal * 0.2)} type="button" className="btn btn-outline-secondary">
-							20%
-						</button>
-					</div>
-					<hr className="hr my-2" />
-
-					<h5>Summary</h5>
-					<div className="">
-						<div className="d-flex justify-content-between">
-							<span className="fw-400">Products</span>
-							<span className="fw-400">${cartTotal.toFixed(2)}</span>
-						</div>
-						<div className="d-flex justify-content-between">
-							<span className="fw-400">Tip</span>
-							<span className="fw-400">${Number(tip).toFixed(2)}</span>
-						</div>
-					</div>
-
-					<button
-						type="button"
-						className="btn btn-success w-100 mt-2"
-						onClick={() => {
-							setConfirmShow(false);
-							setPayShow(true);
-						}}
-					>
-						Pay ${(cartTotal + Number(tip)).toFixed(2)}
-					</button>
 				</div>
-			</div>
+			)}
 
-			<div className={'papp-modal' + (payShow ? ' active' : '')}>
-				<div className="papp-modal-overlay" onClick={() => setPayShow(!payShow)}></div>
-				<div className="btn-close"></div>
+			{payShow && (
+				<div className="papp-modal active">
+					<div className="papp-modal-overlay" onClick={() => setPayShow(!payShow)}></div>
+					<div className="btn-close"></div>
 
-				<div className="papp-modal-content">
-					<h4 className="">Pay</h4>
-					<hr className="hr mb-2" />
+					<div className="papp-modal-content">
+						<h4 className="">Pay</h4>
+						<hr className="hr mb-2" />
 
-					<p>You can select which crypto you want to pay with and then we show a QR code with a wallet address that you can pay with.</p>
-					<p>This is just part of the POS system demo, soon we will release it and you get to try it.</p>
+						<p>You can select which crypto you want to pay with and then we show a QR code with a wallet address that you can pay with.</p>
+						<p>This is just part of the POS system demo, soon we will release it and you get to try it.</p>
+					</div>
 				</div>
-			</div>
+			)}
 		</section>
 	);
 };
