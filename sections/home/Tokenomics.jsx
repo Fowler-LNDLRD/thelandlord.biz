@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import Parallax from '../../components/Parallax';
 const Protocols = () => {
 	return (
 		<section className="tokenomics section section-dark" id="tokenomics">
@@ -9,8 +9,8 @@ const Protocols = () => {
 					Three key protocols which unlock the potential of The Landlord. All $LNDLRD transactions will be subject to an 8% tax so will require 9% slippage.
 				</p>
 
-				<span className="floating floating-01"></span>
-				<span className="floating floating-02"></span>
+				<Parallax offset={30} className="floating floating-01"></Parallax>
+				<Parallax offset={30} className="floating floating-02"></Parallax>
 			</div>
 
 			<div className="container swiper-container">
