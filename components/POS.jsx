@@ -105,8 +105,9 @@ const POS = () => {
 				{addedProducts !== 0 && (
 					<div className="papp-modal-content">
 						<h4>Cart</h4>
+						<hr className="hr mb-0" />
 
-						<ul className="papp-cart-list my-2">
+						<ul className="papp-cart-list my-1">
 							{products
 								.filter((item) => item.added !== 0)
 								.map((item, index) => (
@@ -142,7 +143,8 @@ const POS = () => {
 								))}
 						</ul>
 
-						<div className="papp-cart-total mb-2 d-flex">
+						<hr className="hr mb-1" />
+						<div className="papp-cart-total mb-1 d-flex">
 							<div className="papp-cart-total-title me-auto ps-1">
 								<b>Total</b>
 							</div>
