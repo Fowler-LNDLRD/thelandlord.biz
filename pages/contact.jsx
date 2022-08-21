@@ -8,14 +8,23 @@ const Contact = () => {
 	return (
 		<div className="page">
 			<div className="container">
-				{state.succeeded && (
+				{state?.succeeded && (
 					<div>
 						<h1 className="page-title text-center">Sent!</h1>
 						<p className="page-desc text-center">We will respond as soon as possible.</p>
 					</div>
 				)}
 
-				<div className="row align-items-center" hidden={state.succeeded}>
+				{state?.errors.length !== 0 && (
+					<>
+						<div>
+							<h1 className="page-title text-center">Error!</h1>
+							<p className="page-desc text-center">Something went wrong! please join our Telegram group.</p>
+						</div>
+					</>
+				)}
+
+				<div className="row align-items-center" hidden={state.succeeded || state?.errors.length !== 0}>
 					<div className="col-md-6 mb-2 mb-md-0">
 						<h1 className="page-title">Contact</h1>
 						<p className="page-desc">We will respond as soon as possible.</p>
