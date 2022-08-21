@@ -8,7 +8,7 @@ import shills from '../../data/shills';
 import 'swiper/css/effect-cards';
 
 const Shill = () => {
-	const [shillers, setShillers] = useState(shills);
+	const [shillers, setShillers] = useState([]);
 	const [total, setTotal] = useState(0);
 
 	const countTotal = (data) => {
@@ -21,19 +21,21 @@ const Shill = () => {
 
 	const getShillers = async () => {
 		try {
-			const resp = await axios.get('https://landlord.army/api/board?limit=10');
+			const resp = await axios.get('https://landlord.army/api/board');
 			const data = resp.data.shills;
-			countTotal(data);
 			setShillers(data);
+			countTotal(data);
 		} catch (err) {
 			console.log(err?.response?.data?.message);
-			countTotal(shills);
 		}
 	};
 
 	useEffect(() => {
 		if (process.env.NODE_ENV !== 'development') {
 			getShillers();
+		} else {
+			setShillers(shills);
+			countTotal(shills);
 		}
 	}, []);
 
