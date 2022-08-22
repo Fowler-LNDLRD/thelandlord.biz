@@ -14,11 +14,11 @@ const ContractModal = () => {
 	return (
 		<div className="contract-modal">
 			<p className="contract-modal-desc">V2 Contract with 8% Tax or 9% Slippage.</p>
-			<div onClick={() => copyToClipboard()} id="contractModelCode" className={'contract-modal-code' + (copied ? ' copied' : '')}>
+			<div onClick={() => copyToClipboard()} id="contractModelCode" className="contract-modal-code">
 				{copied ? 'Copied!' : process.env.CONTRACT}
 			</div>
 			<div className="contract-modal-link mt-2">
-				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand" dir="right" href={`https://bscscan.com/token/${process.env.CONTRACT}`}>
+				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand" dir="right" href={process.env.LINK_BSCSCAN}>
 					Check it on BscScan
 				</LinkArrow>
 			</div>

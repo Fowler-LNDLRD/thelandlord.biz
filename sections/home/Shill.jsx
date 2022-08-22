@@ -22,7 +22,8 @@ const Shill = () => {
 
 	const getShillers = async () => {
 		try {
-			const resp = await axios.get('https://landlord.army/api/board');
+			const shillApi = process.env.SHILL_API;
+			const resp = await axios.get(shillApi);
 			const data = resp.data.shills;
 			setShillers(data);
 			countTotal(data);
