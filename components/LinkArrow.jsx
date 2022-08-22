@@ -12,8 +12,8 @@ const LinkArrow = ({ dir, href, rel, className, children, target }) => {
 		);
 	};
 	return (
-		<Link target={target} rel={rel} href={href}>
-			<a className={className}>
+		<Link href={href}>
+			<a className={className} target={target} rel={rel}>
 				{dir === 'left' && <ArrowRightShort />}
 				{children}
 				{dir === 'right' && <ArrowRightShort />}

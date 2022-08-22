@@ -20,7 +20,7 @@ module.exports = {
 		SOCIAL_TWITTER: 'https://twitter.com/Landlord_Token',
 		SOCIAL_TELEGRAM: 'https://t.me/TheLandlordToken',
 		SOCIAL_INSTAGRAM: 'https://instagram.com/thelandlordtoken',
-		SOCIAL_YOUTUBE: 'https://youtube.com/channel/UCPc2NMZdFnDN5rV-_gbpQKg',
+		SOCIAL_YOUTUBE: 'https://youtube.com/channel/UCPc2NMZdFnDN5rV-_gbpQKg/videos',
 
 		FORM_ID: 'x',
 	},
