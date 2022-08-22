@@ -1,18 +1,19 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import ama from '../data/ama.json';
+import SlideFade from '../components/SlideFade';
 
 const Ama = () => {
 	return (
 		<>
 			<HeadTag title={`AMAs`} />
-			<section className="page page-ama container">
+			<SlideFade as="section" className="page page-ama container">
 				<h1 className="page-title text-center">AMAs</h1>
 				<div className="page-desc text-center mb-5">Watch our latest AMAs on our YouTube</div>
 
 				<div className="row g-2">
 					{ama.map((item, index) => (
-						<div className="col-md-6" key={index}>
+						<SlideFade className="col-md-6" key={index} delay={index / 10}>
 							<Link href={item.url}>
 								<a className="ama-item" target="_blank" rel="noreferrer">
 									<div className="ama-item-overlay" style={{ backgroundImage: `url(${item.img})` }}></div>
@@ -26,10 +27,10 @@ const Ama = () => {
 									</svg>
 								</a>
 							</Link>
-						</div>
+						</SlideFade>
 					))}
 				</div>
-			</section>
+			</SlideFade>
 		</>
 	);
 };

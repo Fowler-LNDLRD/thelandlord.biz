@@ -8,7 +8,7 @@ const Certs = () => {
 		<section className="certs section section-dark" id="whitepaper">
 			<div className="container">
 				<div className="row g-5">
-					<SlideFade className="col-md-6 d-flex justify-content-center  justify-content-md-start">
+					<SlideFade className="col-md-6 d-flex justify-content-center justify-content-md-start">
 						<div className="cert-item d-md-block d-lg-flex g-0 align-items-center">
 							<Book className="book-whitepaper" />
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">
@@ -20,7 +20,7 @@ const Certs = () => {
 							</div>
 						</div>
 					</SlideFade>
-					<SlideFade delay={0.25} className="col-md-6 d-flex justify-content-center  justify-content-md-start">
+					<SlideFade delay={0.25} className="col-md-6 d-flex justify-content-center justify-content-md-start">
 						<div className="cert-item d-md-block d-lg-flex g-0 align-items-center">
 							<Book className="book-audit" />
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">

@@ -1,6 +1,7 @@
 import { useForm } from '@formspree/react';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
+import SlideFade from '../components/SlideFade';
 
 const Contact = () => {
 	const [state, handleSubmit] = useForm('x');
@@ -25,11 +26,11 @@ const Contact = () => {
 				)}
 
 				<div className="row align-items-center" hidden={state.succeeded || state?.errors.length !== 0}>
-					<div className="col-md-6 mb-2 mb-md-0">
+					<SlideFade className="col-md-6 mb-2 mb-md-0">
 						<h1 className="page-title">Contact</h1>
 						<p className="page-desc">We will respond as soon as possible.</p>
-					</div>
-					<div className="col-md-6">
+					</SlideFade>
+					<SlideFade className="col-md-6" delay={0.2}>
 						<Form onSubmit={handleSubmit}>
 							<FloatingLabel controlId="email" label="Email address" className="mb-2">
 								<Form.Control min={24} required type="email" name="email" placeholder="name@example.com" />
@@ -43,7 +44,7 @@ const Contact = () => {
 								Submit
 							</button>
 						</Form>
-					</div>
+					</SlideFade>
 				</div>
 			</div>
 		</div>

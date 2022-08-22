@@ -2,6 +2,7 @@ import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import { initEmbr, mount, unmount, getEmbr } from '../components/EmberScript';
 import { useState, useEffect } from 'react';
+import SlideFade from '../components/SlideFade';
 
 const Buy = () => {
 	const [showSteps, setShowSteps] = useState(false);
@@ -25,7 +26,7 @@ const Buy = () => {
 	return (
 		<>
 			<HeadTag title={`How To Buy`} />
-			<section className="page page-buy container">
+			<SlideFade as="section" className="page page-buy container">
 				<h1 className="page-title text-center">Buy Landlord Token</h1>
 				<p className="page-desc text-center mb-3">Swap $BNB for $LNDLRD</p>
 
@@ -74,7 +75,7 @@ const Buy = () => {
 						</div>
 					</div>
 				)}
-			</section>
+			</SlideFade>
 		</>
 	);
 };

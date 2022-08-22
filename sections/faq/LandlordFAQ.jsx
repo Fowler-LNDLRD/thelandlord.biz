@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Accordion from 'react-bootstrap/Accordion';
-
 import LinkArrow from '../../components/LinkArrow';
 const LandlordFAQ = () => {
 	return (

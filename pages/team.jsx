@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import teamMembers from '../data/team.json';
+import SlideFade from '../components/SlideFade';
 
 const Team = () => {
 	return (
 		<>
 			<HeadTag title={`Team`} />
-			<section className="page container">
+			<SlideFade as="section" className="page container">
 				<h1 className="page-title text-center">Team</h1>
 				<div className="page-desc page-desc-limit text-center">
 					The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition
@@ -15,7 +16,7 @@ const Team = () => {
 
 				<div className="row  justify-content-center">
 					{teamMembers.map((item, index) => (
-						<div key={index} className="col-6 col-md-4 col-lg-3">
+						<SlideFade key={index} className="col-6 col-md-4 col-lg-3" delay={index / 10}>
 							<div className="team-item">
 								<img className="team-img" src={`/img/team/${item.img ? item.name.toLowerCase() : 'default'}.jpg`} alt={item.name + ' - The Landlord'} />
 								<h3 className="team-name">{item.name}</h3>
@@ -42,10 +43,10 @@ const Team = () => {
 									)}
 								</div>
 							</div>
-						</div>
+						</SlideFade>
 					))}
 				</div>
-			</section>
+			</SlideFade>
 		</>
 	);
 };
