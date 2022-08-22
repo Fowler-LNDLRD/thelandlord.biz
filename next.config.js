@@ -7,13 +7,24 @@ module.exports = {
 		WEBSITE_TITLE: 'The Landlord Token',
 		WEBSITE_SLOGAN: 'Crypto Pubs & Beers',
 		WEBSITE_DESCRIPTION:
-			'The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more.',
+			'The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, real world utilities, and utility driven NFTs and more.',
 		WEBSITE_IMAGE: 'https://thelandlord.biz/img/meta/website.jpg',
 
 		CONTRACT: '0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
-		EMAIL: 'contact@thelandlord.biz',
 		EMBR_API: '01GAM5ASBK0EKDJ2P4KMFE60DY',
+		EMAIL: 'contact@thelandlord.biz',
+
+		WHITEPAPER: '/pdf/whitepaper.pdf',
+		AUDIT: '/pdf/audit.pdf',
+
+		SOCIAL_TWITTER: 'https://twitter.com/Landlord_Token',
+		SOCIAL_TELEGRAM: 'https://t.me/TheLandlordToken',
+		SOCIAL_INSTAGRAM: 'https://instagram.com/thelandlordtoken',
+		SOCIAL_YOUTUBE: 'https://youtube.com/channel/UCPc2NMZdFnDN5rV-_gbpQKg',
+
+		FORM_ID: 'x',
 	},
+
 	reactStrictMode: false,
 	swcMinify: true,
 	poweredByHeader: false,

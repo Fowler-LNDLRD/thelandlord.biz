@@ -6,7 +6,10 @@ import SlideFade from '../components/SlideFade';
 const Faq = () => {
 	return (
 		<>
-			<HeadTag title={`FAQ`} />
+			<HeadTag
+				title={`FAQ`}
+				desc="Learn about Landlord Token, we have answered many frequently asked questions, and here you can find it. if not, join our telegram group."
+			/>
 			<SlideFade as="section" className="page page-faq container">
 				<h1 className="page-title text-center">FAQ</h1>
 				<div className="page-desc text-center page-desc-limit mb-5">

@@ -25,7 +25,7 @@ const Buy = () => {
 
 	return (
 		<>
-			<HeadTag title={`How To Buy`} />
+			<HeadTag title={`How To Buy`} desc="Learn how you can buy Landlord Token ($LNDLRD) easily." />
 			<SlideFade as="section" className="page page-buy container">
 				<h1 className="page-title text-center">Buy Landlord Token</h1>
 				<p className="page-desc text-center mb-3">Swap $BNB for $LNDLRD</p>

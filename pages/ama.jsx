@@ -6,7 +6,7 @@ import SlideFade from '../components/SlideFade';
 const Ama = () => {
 	return (
 		<>
-			<HeadTag title={`AMAs`} />
+			<HeadTag title={`AMAs`} desc="Watch the latest Landlord Token AMAs on YouTube, we have AMA every week that you can ask any questions about the project." />
 			<SlideFade as="section" className="page page-ama container">
 				<h1 className="page-title text-center">AMAs</h1>
 				<div className="page-desc text-center mb-5">Watch our latest AMAs on our YouTube</div>

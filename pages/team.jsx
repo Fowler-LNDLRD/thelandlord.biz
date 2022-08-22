@@ -6,7 +6,10 @@ import SlideFade from '../components/SlideFade';
 const Team = () => {
 	return (
 		<>
-			<HeadTag title={`Team`} />
+			<HeadTag
+				title={`Team`}
+				desc="The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience and desire to the project."
+			/>
 			<SlideFade as="section" className="page container">
 				<h1 className="page-title text-center">Team</h1>
 				<div className="page-desc page-desc-limit text-center">

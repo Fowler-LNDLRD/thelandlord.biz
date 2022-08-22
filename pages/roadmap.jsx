@@ -7,7 +7,7 @@ import SlideFade from '../components/SlideFade';
 const Roadmap = () => {
 	return (
 		<>
-			<HeadTag title={`Roadmap`} />
+			<HeadTag title={`Roadmap`} desc="Take a look at The Landlord Token roadmap to see what we have been working on and what we have planned for the future." />
 			<section as="section" className="page page-roadmap">
 				<SlideFade className="container text-center">
 					<h1 className="page-title">Roadmap</h1>
