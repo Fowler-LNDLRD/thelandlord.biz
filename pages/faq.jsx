@@ -12,9 +12,7 @@ const Faq = () => {
 			/>
 			<SlideFade as="section" className="page page-faq container">
 				<h1 className="page-title text-center">FAQ</h1>
-				<div className="page-desc text-center page-desc-limit mb-5">
-					You can find the answer to your question right here, <br /> if not, join our telegram group.
-				</div>
+				<div className="page-desc text-center page-desc-limit mb-5">You can find the answer to your question right here.</div>
 
 				<div className="row align-items-center justify-content-center">
 					<div className="col-md-8">

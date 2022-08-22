@@ -9,7 +9,7 @@ const Ama = () => {
 			<HeadTag title={`AMAs`} desc="Watch the latest Landlord Token AMAs on YouTube, we have AMA every week that you can ask any questions about the project." />
 			<SlideFade as="section" className="page page-ama container">
 				<h1 className="page-title text-center">AMAs</h1>
-				<div className="page-desc text-center mb-5">Watch our latest AMAs on our YouTube</div>
+				<div className="page-desc text-center mb-5">Watch our latest AMAs on our YouTube.</div>
 
 				<div className="row g-2">
 					{ama.map((item, index) => (
