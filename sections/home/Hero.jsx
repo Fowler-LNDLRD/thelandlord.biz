@@ -1,9 +1,9 @@
 import Modal from 'react-bootstrap/Modal';
-import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import ContractModal from '../../components/ContractModal';
 import LogoLinks from '../../components/LogoLinks';
 import { initEmbr, mount, unmount } from '../../components/EmberScript';
+import SlideFade from '../../components/SlideFade';
 
 const Hero = () => {
 	const documentHeight = () => {
@@ -48,26 +48,26 @@ const Hero = () => {
 
 	return (
 		<>
-			<section className="hero" id="hero">
-				<motion.article className="container" initial={{ opacity: 0.01, top: 50 }} whileInView={{ opacity: 1, top: 0 }} viewport={{ once: true }}>
-					<h1 className="hero-title">
+			<div className="hero" id="hero">
+				<section className="container">
+					<SlideFade as="h1" className="hero-title">
 						crypto <span>pubs &amp; beers</span>
-					</h1>
-					<p className="hero-desc">
+					</SlideFade>
+					<SlideFade as="p" className="hero-desc" delay={0.1}>
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
-					</p>
+					</SlideFade>
 
-					<button className="hero-btn btn btn-brand" type="button" onClick={toggleBuy}>
+					<SlideFade as="button" delay={0.2} className="hero-btn btn btn-brand" type="button" onClick={toggleBuy}>
 						Buy
-					</button>
+					</SlideFade>
 
-					<button className="hero-btn btn btn-dark ms-1" type="button" onClick={toggleContract}>
+					<SlideFade as="button" delay={0.3} className="hero-btn btn btn-dark ms-1" type="button" onClick={toggleContract}>
 						Contract
-					</button>
-				</motion.article>
+					</SlideFade>
+				</section>
 				<LogoLinks />
-			</section>
+			</div>
 
 			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
 				<Modal.Header closeButton>

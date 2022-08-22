@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import SlideFade from './SlideFade';
 
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,7 +6,7 @@ import { Autoplay } from 'swiper';
 
 const LogoLinks = () => {
 	return (
-		<motion.div className="hero-links" initial={{ bottom: -77 }} whileInView={{ bottom: 0 }} viewport={{ once: true }}>
+		<SlideFade delay={0.3} className="hero-links">
 			<div className="container  d-flex">
 				<Swiper
 					autoplay={true}
@@ -61,7 +61,7 @@ const LogoLinks = () => {
 					</SwiperSlide>
 				</Swiper>
 			</div>
-		</motion.div>
+		</SlideFade>
 	);
 };
 export default LogoLinks;
