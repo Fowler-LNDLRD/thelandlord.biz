@@ -14,7 +14,7 @@ const Certs = () => {
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">
 								<h2 className="certs-title">Whitepaper</h2>
 								<div className="certs-desc d-none d-md-block">The latest version.</div>
-								<LinkArrow className="link-brand" href="/" dir="right">
+								<LinkArrow className="link-brand" href={process.env.WHITEPAPER} dir="right">
 									Download
 								</LinkArrow>
 							</div>
@@ -26,7 +26,7 @@ const Certs = () => {
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">
 								<h2 className="certs-title">Audit</h2>
 								<div className="certs-desc d-none d-md-block">Performed by Desert Finance.</div>
-								<LinkArrow className="link-brand" href="/" dir="right">
+								<LinkArrow className="link-brand" href={process.env.AUDIT} dir="right">
 									Download
 								</LinkArrow>
 							</div>

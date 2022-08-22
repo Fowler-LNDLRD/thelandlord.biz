@@ -51,7 +51,7 @@ const Shill = () => {
 							Landlord Army is an app that we developed to enrich community engagement, and encourage its users to inviting more investors into The Landlord. You can
 							join the Landlord Army and earn $LNDLRD by just Tweeting about it.
 						</p>
-						<LinkArrow href="/" dir="right" className="link link-brand">
+						<LinkArrow href={process.env.SHILL_URL} target="_blank" rel="noreferrer" dir="right" className="link link-brand">
 							Join Now
 						</LinkArrow>
 					</SlideFade>

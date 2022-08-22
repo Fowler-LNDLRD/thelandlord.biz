@@ -14,8 +14,8 @@ module.exports = {
 		EMBR_API: '01GAM5ASBK0EKDJ2P4KMFE60DY',
 		EMAIL: 'contact@thelandlord.biz',
 
-		WHITEPAPER: '/pdf/whitepaper.pdf',
-		AUDIT: '/pdf/audit.pdf',
+		WHITEPAPER: '/pdf/The-Landlord-Whitepaper.pdf',
+		AUDIT: '/pdf/The-Landlord-Audit.pdf',
 
 		LIQUIDITY_LOCK: 'https://www.pinksale.finance/#/pinklock/detail/0xfa1F2cf9fd3465B88889420918B6315b887127fE?chain=BSC',
 		TOKEN_LOCK: 'https://www.pinksale.finance/pinklock/record/1026448?chain=BSC',
@@ -32,6 +32,7 @@ module.exports = {
 		LINK_NOMICS: 'https://nomics.com/assets/lndlrd-the-landlord',
 
 		SHILL_API: 'https://landlord.army/api/board',
+		SHILL_URL: 'https://shill.thelandlord.biz',
 
 		FORM_ID: 'x',
 	},
