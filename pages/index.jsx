@@ -15,6 +15,13 @@ export default function Home() {
 	const pageImage = process.env.WEBSITE_IMAGE;
 	const pageUrl = process.env.WEBSITE_URL;
 
+	const jsonLD = {
+		'@context': 'https://schema.org',
+		'@type': 'Organization',
+		url: process.env.WEBSITE_URL,
+		logo: process.env.WEBSITE_URL + '/img/meta/google-logo.png',
+	};
+
 	return (
 		<>
 			<Head>
@@ -28,6 +35,8 @@ export default function Home() {
 				<meta property="og:image" content={pageImage} />
 				<meta property="og:url" content={pageUrl} />
 				<meta property="og:type" content="website" />
+
+				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
 			</Head>
 			<Hero />
 			<Tokenomics />
