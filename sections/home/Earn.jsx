@@ -12,28 +12,27 @@ const Shill = () => {
 	const [shillers, setShillers] = useState([]);
 	const [total, setTotal] = useState(0);
 
-	const countTotal = (data) => {
-		let t = 0;
-		data.forEach((item) => {
-			t += item.count;
-		});
-		setTotal(t);
-	};
-
-	const getShillers = async () => {
-		try {
-			const shillApi = process.env.SHILL_API;
-			const resp = await axios.get(shillApi);
-			const data = resp.data.shills;
-			setShillers(data);
-			countTotal(data);
-		} catch (err) {
-			console.log(err?.response?.data?.message);
-		}
-	};
-
 	useEffect(() => {
-		if (process.env.NODE_ENV !== 'development') {
+		const environment = process.env.NODE_ENV;
+		const countTotal = (data) => {
+			let t = 0;
+			data.forEach((item) => {
+				t += item.count;
+			});
+			setTotal(t);
+		};
+		const getShillers = async () => {
+			try {
+				const shillApi = process.env.SHILL_API;
+				const resp = await axios.get(shillApi);
+				const data = resp.data.shills;
+				setShillers(data);
+				countTotal(data);
+			} catch (err) {
+				console.log(err?.response?.data?.message);
+			}
+		};
+		if (environment !== 'development') {
 			getShillers();
 		} else {
 			setShillers(shills);
