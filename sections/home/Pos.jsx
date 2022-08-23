@@ -15,7 +15,7 @@ const Pos = () => {
 				</p>
 				<SlideFade delay={0.25}>
 					<div className="pos-figure d-flex d-block d-md-none">
-						<Image quality="100" width="768" height="477" className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Landlord Point of Sale System" />
+						<Image quality={100} width={768} height={477} className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Landlord Point of Sale System" />
 					</div>
 					<div className="d-none d-md-block">
 						<Ipad>

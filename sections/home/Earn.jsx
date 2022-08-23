@@ -80,8 +80,8 @@ const Shill = () => {
 									<SwiperSlide key={index} className={`shill-card shill-card-${index}`}>
 										<div className="shill-inner">
 											<Image
-												width="96"
-												height="96"
+												width={96}
+												height={96}
 												className="shill-avatar"
 												onError={(event) => {
 													event.target.src = '/img/avatars/default.jpg';

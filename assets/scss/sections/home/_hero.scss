@@ -7,10 +7,11 @@
 	z-index: 50;
 
 	background-color: #111;
-	background-image: url('/img/home/hero.jpg');
-	background-position: center right;
-	background-size: cover;
-	background-repeat: no-repeat;
+
+	&-cover {
+		object-position: center;
+		object-fit: cover;
+	}
 
 	&-fit {
 		min-height: var(--hero-height);
@@ -138,6 +139,10 @@
 			&:hover {
 				opacity: 1;
 			}
+
+			span {
+				display: block !important;
+			}
 		}
 		&-img {
 			display: block;
@@ -168,6 +173,10 @@
 @media screen and (max-width: 767px) {
 	.hero {
 		background-position: 60%;
+
+		&-cover {
+			object-position: 60% !important;
+		}
 
 		.container {
 			padding-right: 3rem;

@@ -25,7 +25,7 @@ const Pubs = () => {
 					</SlideFade>
 
 					<SlideFade y={0} className="col-md-7 text-center text-md-end pubs-img-container">
-						<Image quality="100" width="550" height="531" src="/img/home/pub.png" alt="Landlord Pubs" />
+						<Image quality={100} width={550} height={531} src="/img/home/pub.png" alt="Landlord Pubs" />
 					</SlideFade>
 				</div>
 

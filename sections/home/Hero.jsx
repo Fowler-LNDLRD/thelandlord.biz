@@ -4,6 +4,7 @@ import ContractModal from '../../components/ContractModal';
 import LogoLinks from '../../components/LogoLinks';
 import { initEmbr, mount, unmount } from '../../components/EmberScript';
 import SlideFade from '../../components/SlideFade';
+import Image from 'next/image';
 
 const Hero = () => {
 	const documentHeight = () => {
@@ -65,6 +66,7 @@ const Hero = () => {
 					</SlideFade>
 				</section>
 				<LogoLinks />
+				<Image className="hero-cover" priority quality={100} layout="fill" alt="The Landlord Token" src="/img/home/hero.jpg" objectFit="cover" objectPosition="center" />
 			</div>
 
 			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
