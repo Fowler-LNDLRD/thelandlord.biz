@@ -17,17 +17,18 @@
 		"@hedgedoc/html-to-react": "^1.4.5",
 		"axios": "^0.27.2",
 		"bootstrap": "^5.2.0",
-		"framer-motion": "^7.2.0",
+		"framer-motion": "^7.2.1",
 		"next": "^12.2.5",
 		"next-sitemap": "^3.1.21",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.5.0",
 		"react-dom": "^18.2.0",
+		"sharp": "^0.30.7",
 		"swiper": "^8.3.2"
 	},
 	"devDependencies": {
 		"eslint": "^8.22.0",
 		"eslint-config-next": "^12.2.5",
-		"sass": "^1.54.4"
+		"sass": "^1.54.5"
 	}
 }
