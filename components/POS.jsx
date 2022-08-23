@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import posProducts from '../data/posProducts.json';
+import Image from 'next/image';
 
 const POS = () => {
 	const [products, setProducts] = useState(posProducts);
@@ -87,7 +88,7 @@ const POS = () => {
 					.map((item, index) => (
 						<div className="col-3" key={item.id}>
 							<button disabled={item.added >= item.stock} className="papp-product" onClick={() => addProduct(item, index)}>
-								<img className="papp-product-img" src={`/img/papp/${item.img}`} alt={item.title} />
+								<Image quality={100} width={144} height={144} className="papp-product-img" src={`/img/papp/${item.img}`} alt={item.title} />
 								<div className="papp-product-title">{item.title}</div>
 								<div className="papp-product-price">${item.price}</div>
 								{item.added !== 0 && <div className="papp-product-added">{item.added}</div>}
