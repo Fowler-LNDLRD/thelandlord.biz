@@ -32,7 +32,7 @@ const Header = () => {
 			router.events.off('routeChangeStart', removeNav);
 			router.events.off('hashChangeComplete', removeNav);
 		};
-	}, []);
+	}, [router.events]);
 
 	return (
 		<motion.header className={'header' + (toggle ? ' nav-active' : '')} initial={{ top: -48 }} whileInView={{ top: 0 }}>
