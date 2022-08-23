@@ -26,8 +26,11 @@ const Header = () => {
 			setToggle(false);
 		};
 		router.events.on('routeChangeStart', removeNav);
+		router.events.on('hashChangeComplete', removeNav);
+
 		return () => {
 			router.events.off('routeChangeStart', removeNav);
+			router.events.off('hashChangeComplete', removeNav);
 		};
 	}, []);
 

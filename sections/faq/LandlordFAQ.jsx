@@ -80,7 +80,7 @@ const LandlordFAQ = () => {
 
 					<p>
 						<b className="text-white">Contract address:</b> <br />
-						{process.env.CONTRACT}
+						<span className="text-break">{process.env.CONTRACT}</span>
 					</p>
 				</Accordion.Body>
 			</Accordion.Item>
