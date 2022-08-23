@@ -31,7 +31,7 @@ module.exports = {
 		LINK_WATCHER: 'https://watcher.guru/coin/the-landlord',
 		LINK_NOMICS: 'https://nomics.com/assets/lndlrd-the-landlord',
 
-		SHILL_API: 'https://earn.thelandlord.pub/api/board',
+		SHILL_API: 'https://earn.thelandlord.pub/api/board/official',
 		SHILL_URL: 'https://earn.thelandlord.pub',
 
 		FORM_ID: 'x',
