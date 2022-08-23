@@ -1,14 +1,14 @@
 import Parallax from '../../components/Parallax';
 import SlideFade from '../../components/SlideFade';
-
+import Image from 'next/image';
 const Beers = () => {
 	return (
 		<section className="beers section section-brand" id="beers">
 			<div className="container">
 				<SlideFade className="row align-items-center">
 					<div className="col-md-6 text-center text-md-start mb-5 mb-md-0">
-						<Parallax offset={-10}>
-							<img className="beers-img" src="/img/home/beer.png" alt="Landlord Beers" />
+						<Parallax className="beers-img-container" offset={-10}>
+							<Image quality="100" width="404" height="352" src="/img/home/beer.png" alt="Landlord Beers" />
 						</Parallax>
 					</div>
 					<div className="col-md-6">

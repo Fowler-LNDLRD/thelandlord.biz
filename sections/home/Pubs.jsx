@@ -1,5 +1,6 @@
 import Parallax from '../../components/Parallax';
 import SlideFade from '../../components/SlideFade';
+import Image from 'next/image';
 
 const Pubs = () => {
 	return (
@@ -23,8 +24,8 @@ const Pubs = () => {
 						</p>
 					</SlideFade>
 
-					<SlideFade y={0} className="col-md-7 text-center text-md-end">
-						<img className="pubs-img" src="/img/home/pub.png" alt="Landlord Pubs" />
+					<SlideFade y={0} className="col-md-7 text-center text-md-end pubs-img-container">
+						<Image quality="100" width="550" height="531" src="/img/home/pub.png" alt="Landlord Pubs" />
 					</SlideFade>
 				</div>
 
