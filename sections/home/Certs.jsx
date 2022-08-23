@@ -7,9 +7,9 @@ const Certs = () => {
 	return (
 		<section className="certs section section-dark" id="whitepaper">
 			<div className="container">
-				<div className="row g-5">
-					<SlideFade className="col-md-6 d-flex justify-content-center justify-content-md-start">
-						<div className="cert-item d-md-block d-lg-flex g-0 align-items-center">
+				<div className="row">
+					<SlideFade className="col-md-6 d-flex justify-content-center justify-content-md-start mb-5 mb-md-0">
+						<div className="cert-item d-md-block d-lg-flex align-items-center">
 							<Book className="book-whitepaper" />
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">
 								<h2 className="certs-title">Whitepaper</h2>
@@ -21,7 +21,7 @@ const Certs = () => {
 						</div>
 					</SlideFade>
 					<SlideFade delay={0.25} className="col-md-6 d-flex justify-content-center justify-content-md-start">
-						<div className="cert-item d-md-block d-lg-flex g-0 align-items-center">
+						<div className="cert-item d-md-block d-lg-flex ps-md-1 align-items-center">
 							<Book className="book-audit" />
 							<div className="certs-info ms-md-0 ms-lg-2 mt-3 mt-lg-0">
 								<h2 className="certs-title">Audit</h2>
