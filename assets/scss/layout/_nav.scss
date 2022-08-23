@@ -60,7 +60,6 @@
 			transition: opacity ease 0.25s;
 			visibility: hidden;
 			opacity: 0;
-			border-top: 1px solid #151515;
 			display: block;
 			position: relative;
 			padding: 2.75rem !important;
@@ -68,11 +67,16 @@
 
 		&-item {
 			text-align: left;
+
+			&:not(:last-child) {
+				.header-nav-link {
+					border-bottom: 1px solid #151515;
+				}
+			}
 		}
 
 		&-link {
 			padding: 0;
-			border-bottom: 1px solid #151515;
 			font-size: 1rem;
 			letter-spacing: 0;
 			height: 3.5rem;
