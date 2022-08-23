@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
 import shills from '../../data/shills';
 import SlideFade from '../../components/SlideFade';
-
+import Image from 'next/image';
 import 'swiper/css/effect-cards';
 
 const Shill = () => {
@@ -80,7 +80,9 @@ const Shill = () => {
 								{shillers.map((item, index) => (
 									<SwiperSlide key={index} className={`shill-card shill-card-${index}`}>
 										<div className="shill-inner">
-											<img
+											<Image
+												width="96"
+												height="96"
 												className="shill-avatar"
 												onError={(event) => {
 													event.target.src = '/img/avatars/default.jpg';
@@ -88,6 +90,7 @@ const Shill = () => {
 												src={`/img/avatars/${item.username}.jpg`}
 												alt={item.username}
 											/>
+
 											<div className="shill-username">@{item.username}</div>
 											<div className="shill-lndlrd">{(item.count * 5000).toLocaleString()} $LNDLRD</div>
 											<div className="shill-points">{item.count} Points</div>
