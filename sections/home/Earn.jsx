@@ -48,8 +48,8 @@ const Shill = () => {
 					<SlideFade className="col-md-6 col-lg-5">
 						<h2 className="section-title">Earn Landlord</h2>
 						<p className="section-desc">
-							Landlord Army is an app that we developed to enrich community engagement, and encourage its users to inviting more investors into The Landlord. You can
-							join the Landlord Army and earn $LNDLRD by just Tweeting about it.
+							We developed an app to enrich community engagement, and encourage it&apos;s users to inviting more investors into The Landlord. You can join the
+							Landlord Army and earn $LNDLRD by just Tweeting about it.
 						</p>
 						<LinkArrow href={process.env.SHILL_URL} target="_blank" rel="noreferrer" dir="right" className="link link-brand">
 							Join Now

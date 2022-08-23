@@ -14,9 +14,9 @@ const Pos = () => {
 					orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.{' '}
 					<span className="d-none d-md-inline-block">Take a look at the demo, part of POS system.</span>
 				</p>
-				<SlideFade>
+				<SlideFade delay={0.25}>
 					<div className="pos-figure d-flex d-block d-md-none">
-						<img className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Point of Sale System" />
+						<img className="pos-figure-img mt-auto" src="/img/home/pos.png" alt="Landlord Point of Sale System" />
 					</div>
 					<div className="d-none d-md-block">
 						<Ipad>

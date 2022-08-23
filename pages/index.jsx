@@ -4,7 +4,7 @@ import Hero from '../sections/home/Hero';
 import Tokenomics from '../sections/home/Tokenomics';
 import Pubs from '../sections/home/Pubs';
 import Pos from '../sections/home/Pos';
-import Shill from '../sections/home/Shill';
+import Earn from '../sections/home/Earn';
 import Certs from '../sections/home/Certs';
 
 import 'swiper/css';
@@ -34,7 +34,7 @@ export default function Home() {
 			<Beers />
 			<Pubs />
 			<Pos />
-			<Shill />
+			<Earn />
 			<Certs />
 		</>
 	);

@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, ReactNode } from 'react';
 import { motion, useScroll, useTransform, useSpring, useReducedMotion } from 'framer-motion';
 
-const Parallax = ({ className, children, offset = 50 }) => {
+const Parallax = ({ className, children, offset = 50, ariaHidden }) => {
 	const prefersReducedMotion = useReducedMotion();
 	const [elementTop, setElementTop] = useState(0);
 	const [clientHeight, setClientHeight] = useState(0);
@@ -32,7 +32,7 @@ const Parallax = ({ className, children, offset = 50 }) => {
 	}
 
 	return (
-		<motion.div className={className} ref={ref} style={{ y }}>
+		<motion.div aria-hidden={ariaHidden} className={className} ref={ref} style={{ y }}>
 			{children}
 		</motion.div>
 	);

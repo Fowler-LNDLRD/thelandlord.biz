@@ -28,8 +28,8 @@ const Pubs = () => {
 					</SlideFade>
 				</div>
 
-				<Parallax offset={30} className="floating floating-03"></Parallax>
-				<Parallax offset={30} className="floating floating-04"></Parallax>
+				<Parallax offset={30} className="floating floating-03" ariaHidden="true"></Parallax>
+				<Parallax offset={30} className="floating floating-04" ariaHidden="true"></Parallax>
 			</div>
 		</section>
 	);

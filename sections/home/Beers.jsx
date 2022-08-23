@@ -21,11 +21,7 @@ const Beers = () => {
 							Additional partnerships in other countries will be established and additional beers will be launched and sold via the online store as well as bars
 							across the world.
 						</p>
-
 						<p className="section-desc">Profits will be used to buy back and burn $LNDLRD tokens and may be added to liquidity as well.</p>
-						{/* <LinkArrow href="/" dir="right" className="link link-dark">
-							About Landlord Beers
-						</LinkArrow> */}
 					</div>
 				</SlideFade>
 			</div>

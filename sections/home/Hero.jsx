@@ -57,7 +57,6 @@ const Hero = () => {
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
 					</SlideFade>
-
 					<SlideFade as="button" delay={0.25} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
 						Buy
 					</SlideFade>
