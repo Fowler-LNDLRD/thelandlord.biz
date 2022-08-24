@@ -7,8 +7,6 @@ import Pos from '../sections/home/Pos';
 import Earn from '../sections/home/Earn';
 import Certs from '../sections/home/Certs';
 
-import 'swiper/css';
-
 export default function Home() {
 	const pageTitle = process.env.WEBSITE_TITLE + ' - ' + process.env.WEBSITE_SLOGAN;
 	const pageDesc = process.env.WEBSITE_DESCRIPTION;

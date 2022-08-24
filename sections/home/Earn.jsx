@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCards } from 'swiper';
 import SlideFade from '../../components/SlideFade';
 import Image from 'next/image';
-import 'swiper/css/effect-cards';
 
 const Shill = () => {
 	const [earnData, setEarnData] = useState(null);

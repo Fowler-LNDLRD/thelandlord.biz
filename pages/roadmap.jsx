@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
 import HeadTag from '../components/HeadTag';
 import roadmap from '../data/roadmap.json';
 import SlideFade from '../components/SlideFade';
