@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Parallax from '../../components/Parallax';
 import SlideFade from '../../components/SlideFade';
-
+import Image from 'next/image';
 const Protocols = () => {
 	return (
 		<section className="tokenomics section section-dark" id="tokenomics">
@@ -10,8 +10,12 @@ const Protocols = () => {
 				<p className="tokenomics-desc section-desc text-md-center ">
 					Three key protocols which unlock the potential of The Landlord. All transactions will be subject to an 8% tax so require 9% slippage. Total supply is only 100B.
 				</p>
-				<Parallax offset={30} className="floating floating-01" ariaHidden="true"></Parallax>
-				<Parallax offset={30} className="floating floating-02" ariaHidden="true"></Parallax>
+				<Parallax offset={30} className="floating floating-01" ariaHidden="true">
+					<Image alt="Landlord Token" src="/img/home/floating-01.png" width={112} height={112} objectFit="contain" quality={100} className="floating-img" />
+				</Parallax>
+				<Parallax offset={30} className="floating floating-02" ariaHidden="true">
+					<Image alt="Landlord Token" src="/img/home/floating-02.png" width={80} height={80} objectFit="contain" quality={100} className="floating-img" />
+				</Parallax>
 			</SlideFade>
 
 			<SlideFade className="container swiper-container">

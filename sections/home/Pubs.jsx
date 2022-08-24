@@ -29,8 +29,12 @@ const Pubs = () => {
 					</SlideFade>
 				</div>
 
-				<Parallax offset={30} className="floating floating-03" ariaHidden="true"></Parallax>
-				<Parallax offset={30} className="floating floating-04" ariaHidden="true"></Parallax>
+				<Parallax offset={30} className="floating floating-03" ariaHidden="true">
+					<Image alt="Landlord Token" src="/img/home/floating-03.png" width={160} height={160} objectFit="contain" quality={100} className="floating-img" />
+				</Parallax>
+				<Parallax offset={30} className="floating floating-04" ariaHidden="true">
+					<Image alt="Landlord Token" src="/img/home/floating-04.png" width={160} height={160} objectFit="contain" quality={100} className="floating-img" />
+				</Parallax>
 			</div>
 		</section>
 	);
