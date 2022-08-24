@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Host
+Host: https://thelandlord.pub
+
+# Sitemaps
+Sitemap: https://thelandlord.pub/sitemap.xml
