@@ -12,9 +12,6 @@
 		"printWidth": 180
 	},
 	"dependencies": {
-		"@formspree/core": "^2.7.1",
-		"@formspree/react": "^2.3.1",
-		"@hedgedoc/html-to-react": "^1.4.5",
 		"axios": "^0.27.2",
 		"bootstrap": "^5.2.0",
 		"framer-motion": "^7.2.1",
