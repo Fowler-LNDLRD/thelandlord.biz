@@ -35,7 +35,7 @@ const Header = () => {
 	}, [router.events]);
 
 	return (
-		<motion.header className={'header' + (toggle ? ' nav-active' : '')} initial={{ top: -48 }} whileInView={{ top: 0 }}>
+		<motion.header className={'header' + (toggle ? ' nav-active' : '')} initial={{ top: -48 }} animate={{ top: 0 }} transition={{ duration: 0.5 }}>
 			<div className="container">
 				<Logo />
 

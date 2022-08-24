@@ -40,7 +40,6 @@ module.exports = {
 	reactStrictMode: false,
 	swcMinify: true,
 	poweredByHeader: false,
-	optimizeFonts: false,
 
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'assets/scss')],

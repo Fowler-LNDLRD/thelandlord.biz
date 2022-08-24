@@ -13,6 +13,9 @@ const LogoLinks = () => {
 					slidesPerView={2}
 					loop={false}
 					breakpoints={{
+						480: {
+							slidesPerView: 3,
+						},
 						800: {
 							slidesPerView: 5,
 						},
