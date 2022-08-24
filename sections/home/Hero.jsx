@@ -8,20 +8,19 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
-	const documentHeight = () => {
-		const heroSection = document.getElementById('hero');
-		if (heroSection?.style) {
-			if (window.innerWidth > 767 && window.innerHeight > 650 && window.innerHeight < 900) {
-				heroSection.classList.add('hero-fit');
-				heroSection.style.setProperty('--hero-height', `${window.innerHeight}px`);
-			} else {
-				heroSection.classList.remove('hero-fit');
-				heroSection.style.removeProperty('--hero-height');
-			}
-		}
-	};
-
 	useEffect(() => {
+		const documentHeight = () => {
+			const heroSection = document.getElementById('hero');
+			if (heroSection?.style) {
+				if (window.innerWidth > 767 && window.innerHeight > 650 && window.innerHeight < 900) {
+					heroSection.classList.add('hero-fit');
+					heroSection.style.setProperty('--hero-height', `${window.innerHeight}px`);
+				} else {
+					heroSection.classList.remove('hero-fit');
+					heroSection.style.removeProperty('--hero-height');
+				}
+			}
+		};
 		documentHeight();
 		window.addEventListener('resize', documentHeight);
 	}, []);
@@ -30,13 +29,11 @@ const Hero = () => {
 	const toggleContract = () => setShowContract(!showContract);
 
 	const [showBuy, setShowBuy] = useState(false);
-
 	const toggleBuy = () => {
 		if (showBuy) {
 			setShowBuy(false);
 		} else {
 			initEmbr();
-
 			setShowBuy(true);
 			mount({
 				type: 'CheckoutEmbed',
