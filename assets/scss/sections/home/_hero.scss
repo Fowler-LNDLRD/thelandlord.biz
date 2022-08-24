@@ -158,14 +158,15 @@
 		}
 
 		.modal-body {
+		}
+
+		#checkout {
 			min-height: 20rem;
 			display: flex;
-			justify-self: stretch;
 			align-items: center;
 			justify-content: center;
-		}
-		#checkout {
-			width: 100%;
+			background: #fff;
+			border-radius: 1rem;
 		}
 	}
 }

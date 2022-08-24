@@ -6,6 +6,7 @@ import { initEmbr, mount, unmount } from '../../components/EmberScript';
 import SlideFade from '../../components/SlideFade';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import LinkArrow from '../../components/LinkArrow';
 
 const Hero = () => {
 	useEffect(() => {
@@ -87,6 +88,18 @@ const Hero = () => {
 						<div className="spinner-border m-auto d-block text-brand" role="status">
 							<span className="visually-hidden">Loading...</span>
 						</div>
+					</div>
+
+					<div className="mt-1 text-center">
+						<LinkArrow
+							target="_blank"
+							rel="noreferrer"
+							className="link link-brand py-1"
+							dir="right"
+							href={'https://pancakeswap.finance/swap?outputCurrency=' + process.env.CONTRACT}
+						>
+							Buy from PancakeSwap
+						</LinkArrow>
 					</div>
 				</Modal.Body>
 			</Modal>

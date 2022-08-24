@@ -18,8 +18,19 @@ const ContractModal = () => {
 				{copied ? 'Copied!' : process.env.CONTRACT}
 			</div>
 			<div className="contract-modal-link mt-2">
-				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand" dir="right" href={process.env.LINK_BSCSCAN}>
-					Check it on BscScan
+				<LinkArrow target="_blank" rel="noreferrer" className="link link-brand me-2" dir="right" href={process.env.LINK_BSCSCAN}>
+					BscScan
+				</LinkArrow>
+			</div>
+			<div className="contract-modal-link">
+				<LinkArrow
+					target="_blank"
+					rel="noreferrer"
+					className="link link-brand"
+					dir="right"
+					href={'https://pancakeswap.finance/swap?outputCurrency=' + process.env.CONTRACT}
+				>
+					PancakeSwap
 				</LinkArrow>
 			</div>
 		</div>
