@@ -41,6 +41,18 @@ const Header = () => {
 
 				<nav className={'header-nav d-md-flex' + (toggle ? ' active' : '')}>
 					<ul className="header-nav-list">
+						<li className="header-nav-item d-block d-md-none">
+							<Link href="/">
+								<a className="header-nav-link">Home</a>
+							</Link>
+						</li>
+						<li className="header-nav-item">
+							<Link href="https://thelandlord.store/">
+								<a className="header-nav-link" target="_blank" rel="noreferrer">
+									Store
+								</a>
+							</Link>
+						</li>
 						{nav.map((item, index) => (
 							<li className={'header-nav-item'} key={index}>
 								<Link href={item.url}>
