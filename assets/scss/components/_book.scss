@@ -38,6 +38,7 @@
 		z-index: 100;
 		height: 100%;
 		top: 0;
+		overflow: hidden;
 
 		&::before {
 			content: '';
@@ -66,6 +67,11 @@
 	&-back {
 		background-color: #000;
 		transform: rotateY(-15deg) translateZ(-8px);
+	}
+	&-cover {
+		height: 100%;
+		overflow: hidden;
+		background-color: #000;
 	}
 
 	&-pages {
@@ -128,10 +134,10 @@
 	}
 }
 
-.book-whitepaper .book-front {
-	background-image: url('/img/home/whitepaper-cover.jpg');
+.book-whitepaper .book-cover {
+	background-color: #1d1d1b;
 }
 
-.book-audit .book-front {
-	background-image: url('/img/home/audit-cover.jpg');
+.book-audit .book-cover {
+	background-color: #000;
 }
