@@ -49,17 +49,17 @@ const Hero = () => {
 		<>
 			<div className="hero" id="hero">
 				<section className="container">
-					<SlideFade as="h1" className="hero-title">
+					<SlideFade animate as="h1" className="hero-title">
 						crypto <span>pubs &amp; beers</span>
 					</SlideFade>
-					<SlideFade as="p" className="hero-desc" delay={0.15}>
+					<SlideFade animate as="p" className="hero-desc" delay={0.15}>
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
 					</SlideFade>
-					<SlideFade as="button" delay={0.25} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
+					<SlideFade animate as="button" delay={0.25} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
 						Buy
 					</SlideFade>
-					<SlideFade as="button" delay={0.35} className="hero-btn btn btn-dark ms-1" type="button" onClick={() => toggleContract()}>
+					<SlideFade animate as="button" delay={0.35} className="hero-btn btn btn-dark ms-1" type="button" onClick={() => toggleContract()}>
 						Contract
 					</SlideFade>
 				</section>
