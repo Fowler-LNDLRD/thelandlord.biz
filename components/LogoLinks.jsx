@@ -59,13 +59,13 @@ const LogoLinks = () => {
 				</Link>
 			</SwiperSlide>
 
-			<SwiperSlide>
+			{/* <SwiperSlide>
 				<Link href={process.env.LINK_WATCHER}>
 					<a target="_blank" rel="noreferrer" className="info-listed-link">
 						<Image quality={100} width={40} height={40} src="/img/listed/watcher.png" alt="Watcher Guru" className="info-listed-img" />
 					</a>
 				</Link>
-			</SwiperSlide>
+			</SwiperSlide> */}
 
 			<SwiperSlide>
 				<Link href={process.env.LINK_NOMICS}>
