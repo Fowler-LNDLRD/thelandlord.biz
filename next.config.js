@@ -35,6 +35,19 @@ module.exports = {
 		SHILL_URL: 'https://earn.thelandlord.pub',
 
 		FORM_ID: 'x',
+
+		INFO: {
+			supply: '100 Billion',
+			burned: '1.1 Billion',
+			circulating: '98.9 Billion',
+			liquidity: '19 Billion',
+			pinklock: '15.2 Billion',
+			locked: '34.2 Billion',
+
+			burnedWallet: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694?a=0x000000000000000000000000000000000000dead',
+			liquidityWallet: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694?a=0xfa1f2cf9fd3465b88889420918b6315b887127fe',
+			pinklockWallet: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694?a=0x407993575c91ce7643a4d4ccacc9a98c36ee1bbe',
+		},
 	},
 
 	reactStrictMode: false,

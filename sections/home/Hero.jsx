@@ -57,9 +57,14 @@ const Hero = () => {
 						Buy
 					</SlideFade>
 					<Link href="/#whitepaper">
-						<SlideFade animate as="a" delay={0.3} className="hero-btn btn btn-light ms-1">
+						<motion.a
+							initial={{ opacity: 0.01, y: 50 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ duration: 0.5, delay: 0.3 }}
+							className="hero-btn btn btn-light ms-1"
+						>
 							Whitepaper
-						</SlideFade>
+						</motion.a>
 					</Link>
 				</section>
 				{/* <LogoLinks /> */}
