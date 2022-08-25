@@ -28,13 +28,13 @@ const Info = () => {
 							<div className="row">
 								<div className="col-6">
 									<Link href={process.env.LINK_BSCSCAN}>
-										<a className="info-item info-link">
+										<a className="info-item info-link" target="_blank" rel="noreferrer">
 											<span className="info-key">Supply</span>
 											<span className="info-value">{info?.supply}</span>
 										</a>
 									</Link>
 									<Link href={info.burnedWallet}>
-										<a className="info-item info-link">
+										<a className="info-item info-link" target="_blank" rel="noreferrer">
 											<span className="info-key">Burned</span>
 											<span className="info-value">{info?.burned}</span>
 										</a>
@@ -46,13 +46,13 @@ const Info = () => {
 								</div>
 								<div className="col-6">
 									<Link href={info.liquidityWallet}>
-										<a className="info-item info-link">
+										<a className="info-item info-link" target="_blank" rel="noreferrer">
 											<span className="info-key">Liquidity Locked</span>
 											<span className="info-value">{info?.liquidity}</span>
 										</a>
 									</Link>
 									<Link href={info.pinklockWallet}>
-										<a className="info-item info-link">
+										<a className="info-item info-link" target="_blank" rel="noreferrer">
 											<span className="info-key">Token Locked</span>
 											<span className="info-value">{info?.pinklock}</span>
 										</a>
@@ -79,8 +79,8 @@ const Info = () => {
 												<>
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
-														width="16"
-														height="16"
+														width="14"
+														height="14"
 														fill="currentColor"
 														className="info-value-icon d-none d-md-inline"
 														viewBox="0 0 16 16"

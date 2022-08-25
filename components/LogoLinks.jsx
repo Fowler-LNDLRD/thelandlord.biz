@@ -30,15 +30,15 @@ const LogoLinks = () => {
 			<SwiperSlide>
 				<Link href={process.env.LINK_COINGEKO}>
 					<a target="_blank" rel="noreferrer" className="info-listed-link">
-						<Image quality={100} width={40} height={40} src="/img/listed/coingecko.png" alt="coingecko" className="info-listed-img" />
+						<Image quality={100} width={40} height={40} src="/img/listed/coingecko.png" alt="CoinGecko" className="info-listed-img" />
 					</a>
 				</Link>
 			</SwiperSlide>
 
 			<SwiperSlide>
-				<Link href={process.env.LINK_COINGEKO}>
+				<Link href={process.env.LINK_PANCAKESWAP}>
 					<a target="_blank" rel="noreferrer" className="info-listed-link">
-						<Image quality={100} width={40} height={40} src="/img/listed/pancakeswap.png" alt="coingecko" className="info-listed-img" />
+						<Image quality={100} width={40} height={40} src="/img/listed/pancakeswap.png" alt="PancakeSwap" className="info-listed-img" />
 					</a>
 				</Link>
 			</SwiperSlide>
@@ -52,9 +52,9 @@ const LogoLinks = () => {
 			</SwiperSlide>
 
 			<SwiperSlide>
-				<Link href={process.env.LINK_TOKPIE}>
+				<Link href={process.env.LINK_BOGGED}>
 					<a target="_blank" rel="noreferrer" className="info-listed-link">
-						<Image quality={100} width={40} height={40} src="/img/listed/bogged.png" alt="Tokpie" className="info-listed-img" />
+						<Image quality={100} width={40} height={40} src="/img/listed/bogged.png" alt="Bogged" className="info-listed-img" />
 					</a>
 				</Link>
 			</SwiperSlide>
