@@ -6,6 +6,10 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Info = () => {
+	const info = process.env.INFO;
+	const [price, setPrice] = useState(null);
+
+	// copy
 	const [copied, setCopied] = useState(false);
 	const copyToClipboard = () => {
 		navigator.clipboard.writeText(process.env.CONTRACT);
@@ -16,8 +20,20 @@ const Info = () => {
 		}, 2000);
 	};
 
-	// info
-	const info = process.env.INFO;
+	useEffect(() => {
+		const getPrice = async () => {
+			try {
+				const response = await axios.get(
+					'https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694&vs_currencies=usd'
+				);
+				const data = response?.data && response?.data['0xd6da6491a6663b1d413715f4fd8edd74a4b47694']?.usd;
+				if (data) setPrice(data);
+			} catch (err) {
+				setPrice('Error!');
+			}
+		};
+		getPrice();
+	}, []);
 
 	return (
 		<section className="info bg-black" id="tokenomics">
@@ -103,7 +119,7 @@ const Info = () => {
 								<div className="col-6">
 									<div className="info-item">
 										<span className="info-key">Price</span>
-										<span className="info-value">wait...</span>
+										<span className="info-value">{price ? `$${price}` : 'loading...'}</span>
 									</div>
 								</div>
 							</div>
