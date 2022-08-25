@@ -53,7 +53,7 @@ const Info = () => {
 									</Link>
 									<Link href={info.pinklockWallet}>
 										<a className="info-item info-link" target="_blank" rel="noreferrer">
-											<span className="info-key">Token Locked</span>
+											<span className="info-key">Tokens Locked</span>
 											<span className="info-value">{info?.pinklock}</span>
 										</a>
 									</Link>
