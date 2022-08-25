@@ -89,8 +89,8 @@
 		&-link {
 			height: 2.5rem;
 			display: block;
-
-			opacity: 0.8;
+			opacity: 0.6;
+			transition: opacity ease 0.25s;
 
 			&:hover {
 				opacity: 1;
