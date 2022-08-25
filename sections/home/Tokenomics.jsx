@@ -8,7 +8,7 @@ const Protocols = () => {
 			<SlideFade className="container">
 				<h2 className="tokenomics-title section-title text-md-center">Tokenomics</h2>
 				<p className="tokenomics-desc section-desc text-md-center ">
-					Three key protocols which unlock the potential of The Landlord. All transactions will be subject to an 8% tax so require 9% slippage. Total supply is only 100B.
+					Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.
 				</p>
 				<Parallax offset={30} className="floating floating-01" ariaHidden="true">
 					<Image alt="Landlord Token" src="/img/home/floating-01.png" width={112} height={112} objectFit="contain" quality={100} className="floating-img" />

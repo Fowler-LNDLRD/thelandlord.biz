@@ -8,6 +8,7 @@ import axios from 'axios';
 const Info = () => {
 	const info = process.env.INFO;
 	const [price, setPrice] = useState(null);
+	const [mc, setMc] = useState(null);
 
 	// copy
 	const [copied, setCopied] = useState(false);
@@ -27,7 +28,13 @@ const Info = () => {
 					'https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694&vs_currencies=usd'
 				);
 				const data = response?.data && response?.data['0xd6da6491a6663b1d413715f4fd8edd74a4b47694']?.usd;
-				if (data) setPrice(data);
+				if (data) {
+					setPrice(data);
+					const market = new Intl.NumberFormat('en', {
+						maximumFractionDigits: 0,
+					}).format(data * 98872756299);
+					setMc(market);
+				}
 			} catch (err) {
 				setPrice('Error!');
 			}
@@ -80,9 +87,9 @@ const Info = () => {
 								</div>
 							</div>
 						</div>
-						<div className="col-md-6 order-first order-md-last">
+						<div className="col-md-6 order-first order-md-last ps-md-2">
 							<div className="row">
-								<div className="col-12 pe-md-3">
+								<div className="col-12 pe-md-4">
 									<LogoLinks />
 								</div>
 								<div className="col-12">
@@ -90,7 +97,7 @@ const Info = () => {
 										<span className="info-key">Contract</span>
 										<span className="info-value d-md-flex">
 											{copied ? (
-												'Copied to clipboard.'
+												'Copied, 8% Tax 9% Slippage!'
 											) : (
 												<>
 													<svg
@@ -112,8 +119,8 @@ const Info = () => {
 								</div>
 								<div className="col-6">
 									<div className="info-item">
-										<span className="info-key">Tax & Slippage</span>
-										<span className="info-value">8% and 9%</span>
+										<span className="info-key">Market Cap</span>
+										<span className="info-value">{mc ? `$${mc}` : 'loading...'}</span>
 									</div>
 								</div>
 								<div className="col-6">
