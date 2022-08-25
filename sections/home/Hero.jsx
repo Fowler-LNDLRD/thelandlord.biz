@@ -60,11 +60,11 @@ const Hero = () => {
 					<SlideFade animate as="button" delay={0.25} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
 						Buy
 					</SlideFade>
-					<SlideFade animate as="button" delay={0.35} className="hero-btn btn btn-dark ms-1" type="button" onClick={() => toggleContract()}>
-						Contract
+					<SlideFade animate as="button" delay={0.35} className="hero-btn btn btn-link text-muted ms-1" type="button" onClick={() => toggleContract()}>
+						Whitepaper
 					</SlideFade>
 				</section>
-				<LogoLinks />
+				{/* <LogoLinks /> */}
 				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
 					<Image
 						className="hero-cover"

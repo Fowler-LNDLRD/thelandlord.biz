@@ -6,6 +6,7 @@ import Pubs from '../sections/home/Pubs';
 import Pos from '../sections/home/Pos';
 import Earn from '../sections/home/Earn';
 import Certs from '../sections/home/Certs';
+import Info from '../sections/home/Info';
 
 export default function Home() {
 	const pageTitle = process.env.WEBSITE_TITLE + ' - ' + process.env.WEBSITE_SLOGAN;
@@ -37,6 +38,7 @@ export default function Home() {
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLD) }} />
 			</Head>
 			<Hero />
+			<Info />
 			<Tokenomics />
 			<Beers />
 			<Pubs />
