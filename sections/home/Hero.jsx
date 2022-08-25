@@ -1,11 +1,10 @@
-import Modal from 'react-bootstrap/Modal';
-import { useState, useEffect } from 'react';
-import ContractModal from '../../components/ContractModal';
-import LogoLinks from '../../components/LogoLinks';
-import { initEmbr, mount, unmount } from '../../components/EmberScript';
-import SlideFade from '../../components/SlideFade';
-import Image from 'next/image';
 import { motion } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { initEmbr, mount, unmount } from '../../components/EmberScript';
+import Image from 'next/image';
+import Link from 'next/link';
+import Modal from 'react-bootstrap/Modal';
+import SlideFade from '../../components/SlideFade';
 import LinkArrow from '../../components/LinkArrow';
 
 const Hero = () => {
@@ -25,9 +24,6 @@ const Hero = () => {
 		documentHeight();
 		window.addEventListener('resize', documentHeight);
 	}, []);
-
-	const [showContract, setShowContract] = useState(false);
-	const toggleContract = () => setShowContract(!showContract);
 
 	const [showBuy, setShowBuy] = useState(false);
 	const toggleBuy = () => {
@@ -53,16 +49,18 @@ const Hero = () => {
 					<SlideFade animate as="h1" className="hero-title">
 						crypto <span>pubs &amp; beers</span>
 					</SlideFade>
-					<SlideFade animate as="p" className="hero-desc" delay={0.15}>
+					<SlideFade animate as="p" className="hero-desc" delay={0.1}>
 						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
 					</SlideFade>
-					<SlideFade animate as="button" delay={0.25} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
+					<SlideFade animate as="button" delay={0.2} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
 						Buy
 					</SlideFade>
-					<SlideFade animate as="button" delay={0.35} className="hero-btn btn btn-link text-muted ms-1" type="button" onClick={() => toggleContract()}>
-						Whitepaper
-					</SlideFade>
+					<Link href="/#whitepaper">
+						<SlideFade animate as="a" delay={0.3} className="hero-btn btn btn-light ms-1">
+							Whitepaper
+						</SlideFade>
+					</Link>
 				</section>
 				{/* <LogoLinks /> */}
 				<motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -101,15 +99,6 @@ const Hero = () => {
 							Buy from PancakeSwap
 						</LinkArrow>
 					</div>
-				</Modal.Body>
-			</Modal>
-
-			<Modal show={showContract} onHide={toggleContract} centered>
-				<Modal.Header closeButton>
-					<Modal.Title as="h4">Contract</Modal.Title>
-				</Modal.Header>
-				<Modal.Body>
-					<ContractModal />
 				</Modal.Body>
 			</Modal>
 		</>

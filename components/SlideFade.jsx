@@ -20,6 +20,8 @@ const SlideFade = ({ as = 'div', animate, children, y = 50, x = 0, delay = 0, cl
 				<motion.h2 {...motionProps}>{children}</motion.h2>
 			) : as === 'p' ? (
 				<motion.p {...motionProps}>{children}</motion.p>
+			) : as === 'a' ? (
+				<motion.a {...motionProps}>{children}</motion.a>
 			) : as === 'button' ? (
 				<motion.button {...motionProps}>{children}</motion.button>
 			) : as === 'section' ? (

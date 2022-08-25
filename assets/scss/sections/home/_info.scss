@@ -3,47 +3,85 @@
 		position: relative;
 		margin-top: -5rem;
 
-		z-index: 1000;
-		padding: 2rem 2.5rem 0;
+		z-index: 999;
+		padding: 1.75rem 2.125rem 0;
 		border-radius: 0.5rem;
 		background-image: linear-gradient(to bottom, rgba(#fff, 0.05), transparent);
 
 		@media screen and (min-height: 650px) and (max-height: 900px) {
-			margin-top: -7rem;
+			margin-top: -6rem;
+		}
+
+		@media screen and (max-width: 767px) {
+			padding: 3rem;
+			margin: -5rem -2rem 0;
+			border-radius: 0;
 		}
 	}
 
 	//
 	&-item {
-		margin-bottom: 2rem;
+		margin-bottom: 1.5rem;
 		display: block;
+	}
+
+	&-link {
 		&:hover {
 			color: $brand;
+			cursor: pointer;
+			.info-value {
+				opacity: 1;
+			}
 		}
 	}
 	&-key {
 		font-weight: 600;
-		font-size: 1.125rem;
 		line-height: 1.75rem;
+		transition: all ease 0.25s;
 	}
 	&-value {
 		opacity: 0.5;
-		font-weight: 300;
-		line-height: 1.75rem;
+		font-size: 0.875rem;
+		line-height: 1.5rem;
+		transition: all ease 0.25s;
+
+		&-icon {
+			margin-right: 0.5rem;
+			transform: translateY(-1px);
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		&-item {
+			margin-bottom: 1rem;
+		}
+		&-key {
+			font-weight: 600;
+			font-size: 1rem;
+			white-space: nowrap;
+		}
+		&-value {
+			font-size: 0.9875rem;
+		}
 	}
 
 	//
 
 	&-listed {
 		&-swiper {
-			height: 3.5rem;
+			height: 3.25rem;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			margin-bottom: 1.5rem;
 
 			.swiper-wrapper {
 				height: auto;
+			}
+
+			@media screen and (max-width: 767px) {
+				margin-bottom: 1rem;
 			}
 		}
 		&-link {

@@ -8,18 +8,16 @@ const LogoLinks = () => {
 	return (
 		<Swiper
 			autoplay={true}
-			slidesPerView={2}
+			slidesPerView={6}
 			loop={false}
+			// observer={true}
 			breakpoints={{
 				480: {
-					slidesPerView: 3,
-				},
-				800: {
 					slidesPerView: 6,
 				},
 			}}
 			modules={[Autoplay]}
-			spaceBetween={16}
+			spaceBetween={24}
 			className="info-listed-swiper"
 		>
 			<SwiperSlide>
@@ -33,6 +31,14 @@ const LogoLinks = () => {
 				<Link href={process.env.LINK_COINGEKO}>
 					<a target="_blank" rel="noreferrer" className="info-listed-link">
 						<Image quality={100} width={40} height={40} src="/img/listed/coingecko.png" alt="coingecko" className="info-listed-img" />
+					</a>
+				</Link>
+			</SwiperSlide>
+
+			<SwiperSlide>
+				<Link href={process.env.LINK_COINGEKO}>
+					<a target="_blank" rel="noreferrer" className="info-listed-link">
+						<Image quality={100} width={40} height={40} src="/img/listed/pancakeswap.png" alt="coingecko" className="info-listed-img" />
 					</a>
 				</Link>
 			</SwiperSlide>
