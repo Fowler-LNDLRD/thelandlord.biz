@@ -37,6 +37,7 @@ module.exports = {
 		SHILL_URL: 'https://earn.thelandlord.pub',
 
 		FORM_ID: 'x',
+		COINGECKO_PRICE: 'https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694&vs_currencies=usd',
 
 		INFO: {
 			supply: '100 Billion',

@@ -1,0 +1,42 @@
+.page-calc {
+	.form-wallet {
+		position: relative;
+
+		.form-search {
+			width: 2.5rem;
+			height: 2.5rem;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			right: 0;
+
+			svg {
+				height: 100%;
+			}
+		}
+	}
+
+	.form-item {
+		margin-bottom: 1rem;
+	}
+
+	.form-label {
+		opacity: 0.7;
+		font-weight: 400;
+		display: block;
+		margin-bottom: 0.25rem;
+		font-size: 0.875rem;
+	}
+
+	.form-control {
+		background-color: #222;
+		border: 0;
+
+		&:focus,
+		&:hover {
+			background-color: #333;
+		}
+	}
+}
