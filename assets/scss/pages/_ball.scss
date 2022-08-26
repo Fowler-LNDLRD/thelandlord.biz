@@ -1,4 +1,9 @@
-.page-calc {
+.page-ball {
+	.ball-wrap {
+		width: 480px;
+		max-width: 100%;
+	}
+
 	.form-wallet {
 		position: relative;
 
@@ -11,6 +16,14 @@
 			position: absolute;
 			top: 0;
 			right: 0;
+			border: 0 !important;
+
+			outline: none !important;
+
+			&:focus,
+			&:hover {
+				color: $brand;
+			}
 
 			svg {
 				height: 100%;
