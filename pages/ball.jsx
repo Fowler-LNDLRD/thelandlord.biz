@@ -90,8 +90,8 @@ const Calc = () => {
 				<p className="page-desc text-center">How much your Landlord Token worth now, and in the future?</p>
 			</div>
 
-			<div className="container d-flex justify-content-center">
-				<div className="col-6">
+			<div className="container d-md-flex justify-content-center">
+				<div className="col-md-6">
 					<div className="form-item mb-1">
 						<div className="form-wallet">
 							<input value={wallet} onChange={walletHandler} name="wallet" placeholder="Wallet address" type="text" className="form-control pe-3" />
