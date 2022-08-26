@@ -112,7 +112,7 @@ const Calc = () => {
 						<div className="row">
 							<div className="col-6">
 								<div className="form-item mb-1">
-									<label className="from-label">Balance</label>
+									<label className="from-label">LNDLRD</label>
 									<NumberFormat
 										onFocus={() => setFocused('balance')}
 										onValueChange={({ floatValue }) => balanceHandler(floatValue)}
