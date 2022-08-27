@@ -60,9 +60,9 @@ const LogoLinks = () => {
 			</SwiperSlide>
 
 			<SwiperSlide>
-				<Link href="/listings">
-					<a className="info-listed-link">
-						<Image quality={100} width={40} height={40} src="/img/listed/more.png" alt="nomics" className="info-listed-img" />
+				<Link href="https://coinbrain.com/coins/bnb-0xd6da6491a6663b1d413715f4fd8edd74a4b47694">
+					<a target="_blank" rel="noreferrer" className="info-listed-link">
+						<Image quality={100} width={40} height={40} src="/img/listed/coinbrain.png" alt="nomics" className="info-listed-img" />
 					</a>
 				</Link>
 			</SwiperSlide>
