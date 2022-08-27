@@ -3,12 +3,12 @@ const path = require('path');
 module.exports = {
 	// public environment
 	env: {
-		WEBSITE_URL: 'https://thelandlord.pub',
+		WEBSITE_URL: 'https://thelandlord.biz',
 		WEBSITE_TITLE: 'The Landlord Token',
 		WEBSITE_SLOGAN: 'Crypto Pubs & Beers',
 		WEBSITE_DESCRIPTION:
 			'The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, real world utilities, and utility driven NFTs and more.',
-		WEBSITE_IMAGE: 'https://thelandlord.pub/img/meta/website.jpg',
+		WEBSITE_IMAGE: 'https://thelandlord.biz/img/meta/website.jpg',
 
 		CONTRACT: '0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
 		EMBR_API: '01GAM5ASBK0EKDJ2P4KMFE60DY',
@@ -34,8 +34,8 @@ module.exports = {
 		LINK_BOGGED: 'https://charts.bogged.finance/?c=bsc&t=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
 		LINK_POOCOIN: 'https://poocoin.app/tokens/0xd6da6491a6663b1d413715f4fd8edd74a4b47694',
 
-		SHILL_API: 'https://earn.thelandlord.pub/api/board/official',
-		SHILL_URL: 'https://earn.thelandlord.pub',
+		SHILL_API: 'https://earn.thelandlord.biz/api/board/official',
+		SHILL_URL: 'https://earn.thelandlord.biz',
 
 		FORM_ID: 'x',
 		COINGECKO_PRICE: 'https://api.coingecko.com/api/v3/simple/token_price/binance-smart-chain?contract_addresses=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694&vs_currencies=usd',

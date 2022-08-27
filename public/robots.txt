@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://thelandlord.pub
+Host: https://thelandlord.biz
 
 # Sitemaps
-Sitemap: https://thelandlord.pub/sitemap.xml
+Sitemap: https://thelandlord.biz/sitemap.xml
