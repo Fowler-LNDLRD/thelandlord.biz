@@ -37,7 +37,7 @@ const handler = async (req, res) => {
 		const wallet = await fetchWallet(req.query.wallet);
 
 		// if wallet is empty
-		if (wallet.result === '0') return res.status(400).json({ message: `You don't have $LNDLRD in your wallet!` });
+		if (!wallet && wallet?.result === '0') return res.status(400).json({ message: `You don't have $LNDLRD in your wallet!` });
 
 		// get balance
 		const balance = Math.floor(Number(wallet.result) / 1e18);
