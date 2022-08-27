@@ -32,6 +32,7 @@ module.exports = {
 		LINK_NOMICS: 'https://nomics.com/assets/lndlrd-the-landlord',
 		LINK_PANCAKESWAP: 'https://pancakeswap.finance/swap?outputCurrency=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
 		LINK_BOGGED: 'https://charts.bogged.finance/?c=bsc&t=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
+		LINK_POOCOIN: 'https://poocoin.app/tokens/0xd6da6491a6663b1d413715f4fd8edd74a4b47694',
 
 		SHILL_API: 'https://earn.thelandlord.pub/api/board/official',
 		SHILL_URL: 'https://earn.thelandlord.pub',

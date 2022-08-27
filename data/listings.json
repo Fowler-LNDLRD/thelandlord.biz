@@ -1,0 +1,84 @@
+[
+	{
+		"title": "CoinGecko",
+		"url": "https://www.coingecko.com/en/coins/the-landlord",
+		"image": "coingecko"
+	},
+
+	{
+		"title": "Bogged",
+		"url": "https://charts.bogged.finance/?c=bsc&t=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694",
+		"image": "bogged"
+	},
+	{
+		"title": "PooCoin",
+		"url": "https://poocoin.app/tokens/0xd6da6491a6663b1d413715f4fd8edd74a4b47694",
+		"image": "poocoin"
+	},
+	{
+		"title": "gate.io",
+		"url": "https://www.gate.io/price/the-landlord-lndlrd/",
+		"image": "gate"
+	},
+	{
+		"title": "Nomics",
+		"url": "https://nomics.com/assets/lndlrd-the-landlord",
+		"image": "nomics"
+	},
+	{
+		"title": "WatcherGuru",
+		"url": "https://watcher.guru/coin/the-landlord",
+		"image": "watcher"
+	},
+	{
+		"title": "Dex.Guru",
+		"url": "https://dex.guru/token/0xd6da6491a6663b1d413715f4fd8edd74a4b47694-bsc",
+		"image": "dex"
+	},
+	{
+		"title": "CoinMooner",
+		"url": "https://coinmooner.com/coin/13669",
+		"image": "coinmooner"
+	},
+	{
+		"title": "CoinCodex",
+		"url": "https://coincodex.com/crypto/the-landlord/",
+		"image": "coincodex"
+	},
+
+	{
+		"title": "CoinsGem",
+		"url": "https://coinsgem.com/new-born/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694",
+		"image": "coinsgem"
+	},
+	{
+		"title": "LiveCoinWatch",
+		"url": "https://www.livecoinwatch.com/price/TheLandlord-LNDLRD",
+		"image": "livecoinwatch"
+	},
+	{
+		"title": "CoinBrain",
+		"url": "https://coinbrain.com/coins/bnb-0xd6da6491a6663b1d413715f4fd8edd74a4b47694",
+		"image": "coinbrain"
+	},
+	{
+		"title": "CoinVote",
+		"url": "https://coinvote.cc/coin/The-Landlord",
+		"image": "coinvote"
+	},
+	{
+		"title": "TokenInsight",
+		"url": "https://tokeninsight.com/en/coins/the-landlord/",
+		"image": "tokeninsight"
+	},
+	{
+		"title": "SahiCoin",
+		"url": "https://sahicoin.com/en-in/cryptocurrency-the-landlord",
+		"image": "sahicoin"
+	},
+	{
+		"title": "CryptoVoteList",
+		"url": "https://cryptovotelist.com/coin/the-landlord",
+		"image": "cryptovotelist"
+	}
+]

@@ -1,0 +1,23 @@
+.page-chart {
+	.chart-link {
+		padding: 2.75rem 1rem 2rem;
+		text-align: center;
+		display: block;
+		background-color: #000;
+		border-top: 1px solid #333;
+		border-radius: 1rem;
+		transition: all ease 0.25s;
+
+		&-name {
+			display: block;
+			display: block;
+			margin-top: 1rem;
+			opacity: 0.8;
+		}
+
+		&:hover {
+			background-color: #222;
+			border-top: 1px solid #444;
+		}
+	}
+}
