@@ -9,7 +9,7 @@ const Nft = () => {
 		<section className="section nft position-relative" id="NFTs">
 			<div className="container">
 				<div className="row align-items-center">
-					<SlideFade className="col-6 pe-4">
+					<SlideFade className="col-md-6 mb-3 mb-md-0 pe-md-4">
 						<h2 className="section-title">NFT Collections</h2>
 						<p className="section-desc">
 							The Landlord will be releasing its first utility driven NFT collection, these will be available to blind mint from The Landlord website.
@@ -26,7 +26,7 @@ const Nft = () => {
 						</LinkArrow> */}
 					</SlideFade>
 
-					<SlideFade className="col-6 position-relative" delay={0.1}>
+					<SlideFade className="col-md-6 position-relative" delay={0.1}>
 						<Swiper
 							pagination={true}
 							autoplay={true}
