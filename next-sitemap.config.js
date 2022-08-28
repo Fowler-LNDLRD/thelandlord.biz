@@ -15,6 +15,26 @@ module.exports = {
 			};
 		}
 
+		if (path === '/faq') {
+			return {
+				loc: path,
+				priority: 0.9,
+				changefreq: config.changefreq,
+				lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+				alternateRefs: config.alternateRefs ?? [],
+			};
+		}
+
+		if (path === '/roadmap' || path === '/team') {
+			return {
+				loc: path,
+				priority: 0.8,
+				changefreq: config.changefreq,
+				lastmod: config.autoLastmod ? new Date().toISOString() : undefined,
+				alternateRefs: config.alternateRefs ?? [],
+			};
+		}
+
 		return {
 			loc: path,
 			changefreq: config.changefreq,
