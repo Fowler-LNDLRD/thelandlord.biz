@@ -2,13 +2,14 @@ import Image from 'next/image';
 import LinkArrow from '../../components/LinkArrow';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
+import SlideFade from '../../components/SlideFade';
 
 const Nft = () => {
 	return (
 		<section className="section nft position-relative" id="NFTs">
 			<div className="container">
 				<div className="row align-items-center">
-					<div className="col-6 pe-4">
+					<SlideFade className="col-6 pe-4">
 						<h2 className="section-title">NFT Collections</h2>
 						<p className="section-desc">
 							The Landlord will be releasing its first utility driven NFT collection, these will be available to blind mint from The Landlord website.
@@ -23,9 +24,9 @@ const Nft = () => {
 						{/* <LinkArrow href="/nft" className="link-brand" dir="right">
 							Learn About NFTs
 						</LinkArrow> */}
-					</div>
+					</SlideFade>
 
-					<div className="col-6 position-relative">
+					<SlideFade className="col-6 position-relative" delay={0.1}>
 						<Swiper
 							pagination={true}
 							autoplay={true}
@@ -97,7 +98,7 @@ const Nft = () => {
 								/>
 							</SwiperSlide>
 						</Swiper>
-					</div>
+					</SlideFade>
 				</div>
 			</div>
 		</section>

@@ -41,9 +41,9 @@ const Shill = () => {
 							Join Now
 						</LinkArrow>
 					</SlideFade>
-					<SlideFade y={0} x={50} className="col-md-6 col-lg-5 d-flex mt-3 mt-md-0 pe-0 pe-md-4">
+					<SlideFade y={0} x={0} delay={0.1} className="col-md-6 col-lg-5 d-flex mt-3 mt-md-0 pe-0 pe-md-4">
 						<div className="shill-wrap">
-							<Swiper initialSlide={4} effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper">
+							<Swiper initialSlide={3} effect={'cards'} grabCursor={true} modules={[EffectCards]} className="mySwiper">
 								{earnData?.users &&
 									earnData.users.slice(0, 10).map((item, index) => (
 										<SwiperSlide key={index} className={`shill-card shill-card-${index}`}>
