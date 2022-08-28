@@ -12,7 +12,7 @@
 		overflow: visible;
 
 		@media screen and (max-width: 459px) {
-			width: 16rem;
+			width: 14rem;
 		}
 	}
 	&-card {
@@ -71,11 +71,14 @@
 		}
 	}
 }
-
 @media screen and (max-width: 459px) {
 	.shill {
 		&-username {
 			font-size: 1rem;
+		}
+
+		.section-title {
+			font-size: 2rem;
 		}
 
 		&-points,
