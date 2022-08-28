@@ -24,6 +24,7 @@ module.exports = {
 		SOCIAL_TELEGRAM: 'https://t.me/TheLandlordToken',
 		SOCIAL_INSTAGRAM: 'https://instagram.com/thelandlordtoken',
 		SOCIAL_YOUTUBE: 'https://youtube.com/channel/UCPc2NMZdFnDN5rV-_gbpQKg/videos',
+		SOCIAL_FACEBOOK: '',
 
 		LINK_BSCSCAN: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
 		LINK_COINGEKO: 'https://www.coingecko.com/en/coins/the-landlord',

@@ -8,6 +8,10 @@
 		"url": "/#whitepaper"
 	},
 	{
+		"title": "Listings",
+		"url": "/listings"
+	},
+	{
 		"title": "Roadmap",
 		"url": "/roadmap"
 	},
@@ -22,9 +26,5 @@
 	{
 		"title": "FAQ",
 		"url": "/faq"
-	},
-	{
-		"title": "Contact",
-		"url": "/contact"
 	}
 ]
