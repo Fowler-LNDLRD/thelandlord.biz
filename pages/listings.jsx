@@ -12,7 +12,10 @@ const Listings = () => {
 			<section className="container">
 				<SlideFade>
 					<h1 className="page-title text-center">Listings</h1>
-					<div className="page-desc text-center page-desc-limit mb-5">Landlord Token on exchanges and other platforms.</div>
+					<div className="page-desc text-center page-desc-limit mb-5">
+						The Landlord is currently listed on the following exchanges and listing websites. The Landlord team are always actively looking to form listing partnerships
+						and this this will continue to grow as The Landlord continues to grow in additional markets and countries.
+					</div>
 				</SlideFade>
 				<div className="row mb-5 justify-content-center">
 					<SlideFade className="col-6 col-md-3 mb-1" delay={0.05}>

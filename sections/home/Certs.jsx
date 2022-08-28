@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const Certs = () => {
 	return (
-		<section className="certs section section-dark" id="whitepaper">
+		<section className="certs section" id="whitepaper">
 			<div className="container">
 				<div className="row">
 					<SlideFade className="col-md-6 d-flex justify-content-center justify-content-md-start mb-5 mb-md-0">

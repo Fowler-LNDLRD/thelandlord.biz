@@ -1,6 +1,22 @@
 const path = require('path');
 
 module.exports = {
+	reactStrictMode: false,
+	swcMinify: true,
+	poweredByHeader: false,
+
+	// //
+	// i18n: {
+	// 	locales: ['en', 'de'],
+	// 	defaultLocale: 'en',
+	// 	localeDetection: false,
+	// },
+
+	// sass
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'assets/scss')],
+	},
+
 	// public environment
 	env: {
 		WEBSITE_URL: 'https://thelandlord.biz',
@@ -53,13 +69,5 @@ module.exports = {
 			liquidityWallet: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694?a=0xfa1f2cf9fd3465b88889420918b6315b887127fe',
 			pinklockWallet: 'https://bscscan.com/token/0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694?a=0x407993575c91ce7643a4d4ccacc9a98c36ee1bbe',
 		},
-	},
-
-	reactStrictMode: false,
-	swcMinify: true,
-	poweredByHeader: false,
-
-	sassOptions: {
-		includePaths: [path.join(__dirname, 'assets/scss')],
 	},
 };
