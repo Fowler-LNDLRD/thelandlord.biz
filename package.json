@@ -1,14 +1,12 @@
 {
 	"name": "the-landlord-website",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"postbuild": "next-sitemap",
 		"start": "next start"
-	},
-	"prettier": {
-		"printWidth": 180
 	},
 	"dependencies": {
 		"axios": "^0.27.2",
@@ -16,6 +14,7 @@
 		"framer-motion": "^7.2.1",
 		"multicoin-address-validator": "^0.5.10",
 		"next": "^12.2.5",
+		"next-sitemap": "^3.1.21",
 		"react": "^18.2.0",
 		"react-bootstrap": "^2.5.0",
 		"react-dom": "^18.2.0",
@@ -28,5 +27,8 @@
 		"eslint": "^8.22.0",
 		"eslint-config-next": "^12.2.5",
 		"sass": "^1.54.5"
+	},
+	"prettier": {
+		"printWidth": 180
 	}
 }

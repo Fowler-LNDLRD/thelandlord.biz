@@ -34,7 +34,7 @@ const Listings = () => {
 						<Link href={process.env.LINK_TOKPIE}>
 							<a className="chart-link" target="_blank" rel="noreferrer">
 								<Image quality={100} width={48} height={48} src={`/img/listed/tokpie.png`} alt={'The Landlord Token - PancakeSwap'} className="info-listed-img" />
-								<span className="chart-link-name">TokPie Exchange</span>
+								<span className="chart-link-name">TokPie</span>
 							</a>
 						</Link>
 					</SlideFade>
