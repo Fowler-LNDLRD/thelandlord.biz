@@ -6,7 +6,6 @@ import { useTranslations } from 'next-intl';
 
 const Protocols = () => {
 	const t = useTranslations('home.tokenomics');
-	const tc = useTranslations('common');
 
 	return (
 		<section className="tokenomics section section-dark" id="tokenomics">
