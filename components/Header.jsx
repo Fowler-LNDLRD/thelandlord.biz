@@ -46,7 +46,7 @@ const Header = () => {
 					<ul className="header-nav-list">
 						<li className="header-nav-item d-block d-md-none">
 							<Link href="/">
-								<a className="header-nav-link">Home</a>
+								<a className="header-nav-link">{t('home')}</a>
 							</Link>
 						</li>
 						<li className="header-nav-item">
@@ -59,7 +59,7 @@ const Header = () => {
 						{nav.map((item, index) => (
 							<li className={'header-nav-item'} key={index}>
 								<Link href={item.url}>
-									<a className={'header-nav-link' + (currentRoute === item.url ? ' active' : '')}>{item.title}</a>
+									<a className={'header-nav-link' + (currentRoute === item.url ? ' active' : '')}>{t(item.title.toLowerCase())}</a>
 								</Link>
 							</li>
 						))}

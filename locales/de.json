@@ -10,12 +10,73 @@
 		"join_now": "Join Now",
 		"download": "Download",
 		"learn_more": "Learn More",
-		"read_more": "Read More"
+		"read_more": "Read More",
+		"supply": "Supply",
+		"burned": "Burned",
+		"circulating": "Circulating",
+		"liquidity_locked": "Liquidity Locked",
+		"tokens_locked": "Tokens Locked",
+		"total_locked": "Total Locked",
+		"contract": "contract",
+		"market_cap": "Market Cap",
+		"price": "Price",
+		"home": "Home",
+		"roadmap": "Roadmap"
 	},
 	"home": {
-		"hello": "something else"
-	},
-	"buy": {
-		"buynow": "by bye"
+		"hero": {
+			"title": "Crypto Pubs & Beers",
+			"desc": "The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more."
+		},
+		"tokenomics": {
+			"title": "Tokenomics",
+			"desc": "Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.",
+
+			"pub_title": "Pub Protocol",
+			"pub_percent": "3%",
+			"pub_desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
+
+			"pints_title": "Pints Protocol",
+			"pints_percent": "3%",
+			"pints_desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
+
+			"shots_title": "Shots Protocol",
+			"shots_percent": "2%",
+			"shots_desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens."
+		},
+		"beers": {
+			"title": "Landlord Beers",
+			"desc_1": "We have formed a partnership with Crafty Brewery in the UK to release the first Landlord craft beer REKT which is an amazing Pilsner. This will be available in several stores in the UK.",
+			"desc_2": "Additional partnerships in other countries will be established and additional beers will be launched and sold via the online store as well as bars across the world.",
+			"desc_3": "Profits will be used to buy back and burn $LNDLRD tokens and may be added to liquidity as well."
+		},
+		"pubs": {
+			"title": "Landlord Pubs",
+			"desc_1": "Landlord Pubs will be launched initially in the UK and then rolled out worldwide. These will be driven by the $LNDLRD point of sale system providing fast, reliable, and cheap crypto payments.",
+			"desc_2": "All Landlord pubs will accept crypto payments and encourage $LNDLRD holders to pay with their tokens to receive discounted drinks. Holders will also be able to purchase NFTs that unlock additional drink discounts and special offers.",
+			"desc_3": "Landlord Pubs will use cutting edge technology throughout and help drive crypto mass adoption. Profits will be used to buyback and burn tokens and add to liquidity."
+		},
+		"post": {
+			"title": "Point Of Sale System",
+			"desc": "The Landlord have started developing a unique and intuitive crypto Point of Sale system. This will allow bars, pubs, clubs and cafes to successfully take orders, manage inventory and accept payment in various types of crypto currency including $LNDLRD.",
+			"demo": "Take a look at the demo, part of POS system."
+		},
+		"nft": {
+			"title": "NFT Collections",
+			"desc_1": "The Landlord will be releasing its first utility driven NFT collection, these will be available to blind mint from The Landlord website.",
+			"desc_2": "These will be split into 4 variety's with an increasing rarity. Starting with standard(common), Bronze(fairly common) silver(rare) and gold (very rare).",
+			"desc_3": "Each variety will have a different random built in discount or ability % split across 4 areas. The discounts are scaled based on the variety."
+		},
+		"earn": {
+			"title": "{number} $LNDLRD Earned",
+			"desc": "We developed an app to enrich community engagement, and encourage it's users to inviting more investors into The Landlord. You can join the Landlord Army and earn $LNDLRD by just Tweeting about it.",
+			"points": "Points"
+		},
+		"certs": {
+			"whitepaper": "Whitepaper",
+			"whitepaper_desc": "The latest version.",
+			"audit": "Audit",
+			"audit_desc": "Performed by Desert Finance."
+		}
 	}
 }
