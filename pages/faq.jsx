@@ -4,8 +4,10 @@ import LandlordFAQ from '../sections/faq/LandlordFAQ';
 import GeneralFAQ from '../sections/faq/GeneralFAQ';
 import SlideFade from '../components/SlideFade';
 import faqGoogle from '../data/faqGoogle.json';
+import { useTranslations } from 'next-intl';
 
 const Faq = () => {
+	const t = useTranslations('faq');
 	const faqEntity = faqGoogle.map((item) => {
 		return {
 			'@type': 'Question',
@@ -24,22 +26,19 @@ const Faq = () => {
 
 	return (
 		<>
-			<HeadTag
-				title={`FAQ`}
-				desc="Learn about Landlord Token, we have answered many frequently asked questions, and here you can find it. if not, join our telegram group."
-			/>
+			<HeadTag title={t('title')} desc={t('desc')} />
 			<Head>
 				<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 			</Head>
 
 			<SlideFade as="section" className="page page-faq container">
-				<h1 className="page-title text-center">FAQ</h1>
-				<div className="page-desc text-center page-desc-limit mb-5">You can find the answer to your question right here.</div>
+				<h1 className="page-title text-center">{t('title')}</h1>
+				<div className="page-desc text-center page-desc-limit mb-5">{t('desc')}</div>
 
 				<div className="row align-items-center justify-content-center">
 					<div className="col-md-8">
 						<LandlordFAQ />
-						<h4 className="mt-5 mb-2">General Crypto Questions</h4>
+						<h4 className="mt-5 mb-2">{t('general_questions')}</h4>
 						<GeneralFAQ />
 					</div>
 				</div>

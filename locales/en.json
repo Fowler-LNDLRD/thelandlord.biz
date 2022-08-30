@@ -114,5 +114,10 @@
 	"roadmap": {
 		"title": "Roadmap",
 		"desc": "It is important that we outline a paved direction for the project and what we plan to do. This is so our token holders can use this as a yard stick to measure our performance to help reassure them that not only is the project alive, but it is delivering on committed work."
+	},
+	"faq": {
+		"title": "FAQ",
+		"desc": "Learn about Landlord Token, we have answered many frequently asked questions, and here you can find it. if not, join our telegram group.",
+		"general_questions": "General Crypto Questions"
 	}
 }
