@@ -2,10 +2,11 @@ import SlideFade from '../../components/SlideFade';
 import LogoLinks from '../../components/LogoLinks';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
+import { useTranslations } from 'next-intl';
 import axios from 'axios';
 
 const Info = () => {
+	const tc = useTranslations('common');
 	const info = process.env.INFO;
 	const [price, setPrice] = useState(null);
 	const [mc, setMc] = useState(null);
@@ -52,36 +53,36 @@ const Info = () => {
 								<div className="col-6">
 									<Link href={process.env.LINK_BSCSCAN}>
 										<a className="info-item info-link" target="_blank" rel="noreferrer">
-											<span className="info-key">Supply</span>
+											<span className="info-key">{tc('supply')}</span>
 											<span className="info-value">{info?.supply}</span>
 										</a>
 									</Link>
 									<Link href={info.burnedWallet}>
 										<a className="info-item info-link" target="_blank" rel="noreferrer">
-											<span className="info-key">Burned</span>
+											<span className="info-key">{tc('burned')}</span>
 											<span className="info-value">{info?.burned}</span>
 										</a>
 									</Link>
 									<div className="info-item">
-										<span className="info-key">Circulating</span>
+										<span className="info-key">{tc('circulating')}</span>
 										<span className="info-value">{info?.circulating}</span>
 									</div>
 								</div>
 								<div className="col-6">
 									<Link href={info.liquidityWallet}>
 										<a className="info-item info-link" target="_blank" rel="noreferrer">
-											<span className="info-key">Liquidity Locked</span>
+											<span className="info-key">{tc('liquidity_locked')}</span>
 											<span className="info-value">{info?.liquidity}</span>
 										</a>
 									</Link>
 									<Link href={info.pinklockWallet}>
 										<a className="info-item info-link" target="_blank" rel="noreferrer">
-											<span className="info-key">Tokens Locked</span>
+											<span className="info-key">{tc('tokens_locked')}</span>
 											<span className="info-value">{info?.pinklock}</span>
 										</a>
 									</Link>
 									<div className="info-item">
-										<span className="info-key">Total Locked</span>
+										<span className="info-key">{tc('total_locked')}</span>
 										<span className="info-value">{info?.locked}</span>
 									</div>
 								</div>
@@ -94,10 +95,10 @@ const Info = () => {
 								</div>
 								<div className="col-12">
 									<div className="info-item info-link" onClick={() => copyToClipboard()}>
-										<span className="info-key">Contract</span>
+										<span className="info-key">{tc('contract')}</span>
 										<span className="info-value d-md-flex">
 											{copied ? (
-												'Copied, 8% Tax 9% Slippage!'
+												tc('contract_copied')
 											) : (
 												<>
 													<svg
@@ -119,14 +120,14 @@ const Info = () => {
 								</div>
 								<div className="col-6">
 									<div className="info-item">
-										<span className="info-key">Market Cap</span>
-										<span className="info-value">{mc ? `$${mc}` : 'loading...'}</span>
+										<span className="info-key">{tc('market_cap')}</span>
+										<span className="info-value">{mc ? `$${mc}` : `${tc('loading')}...`}</span>
 									</div>
 								</div>
 								<div className="col-6">
 									<div className="info-item">
-										<span className="info-key">Price</span>
-										<span className="info-value">{price ? `$${price}` : 'loading...'}</span>
+										<span className="info-key">{tc('price')}</span>
+										<span className="info-value">{price ? `$${price}` : `${tc('loading')}...`}</span>
 									</div>
 								</div>
 							</div>

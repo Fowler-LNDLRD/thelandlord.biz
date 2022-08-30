@@ -9,6 +9,9 @@ import LinkArrow from '../../components/LinkArrow';
 import { useTranslations } from 'next-intl';
 
 const Hero = () => {
+	const t = useTranslations('home.hero');
+	const tc = useTranslations('common');
+
 	useEffect(() => {
 		const documentHeight = () => {
 			const heroSection = document.getElementById('hero');
@@ -48,14 +51,15 @@ const Hero = () => {
 			<div className="hero" id="hero">
 				<section className="container">
 					<SlideFade animate as="h1" className="hero-title">
-						crypto <span>pubs &amp; beers</span>
+						{t.rich('title', {
+							span: (children) => <span>{children}</span>,
+						})}
 					</SlideFade>
 					<SlideFade animate as="p" className="hero-desc" delay={0.1}>
-						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
-						NFTs and much more.
+						{t('desc')}
 					</SlideFade>
 					<SlideFade animate as="button" delay={0.2} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
-						Buy
+						{tc('buy')}
 					</SlideFade>
 					<Link href="/#whitepaper">
 						<motion.a
@@ -64,7 +68,7 @@ const Hero = () => {
 							transition={{ duration: 0.5, delay: 0.3 }}
 							className="hero-btn btn btn-light ms-1"
 						>
-							Whitepaper
+							{tc('whitepaper')}
 						</motion.a>
 					</Link>
 				</section>
@@ -85,12 +89,12 @@ const Hero = () => {
 
 			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
 				<Modal.Header closeButton>
-					<Modal.Title as="h4">Buy</Modal.Title>
+					<Modal.Title as="h4">{tc('buy')}</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
 					<div id="checkout">
 						<div className="spinner-border m-auto d-block text-brand" role="status">
-							<span className="visually-hidden">Loading...</span>
+							<span className="visually-hidden">{tc('loading')}...</span>
 						</div>
 					</div>
 
@@ -102,7 +106,7 @@ const Hero = () => {
 							dir="right"
 							href={'https://pancakeswap.finance/swap?outputCurrency=' + process.env.CONTRACT}
 						>
-							Buy from PancakeSwap
+							{tc('buy_pancakeswap')}
 						</LinkArrow>
 					</div>
 				</Modal.Body>

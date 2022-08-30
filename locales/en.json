@@ -17,15 +17,18 @@
 		"liquidity_locked": "Liquidity Locked",
 		"tokens_locked": "Tokens Locked",
 		"total_locked": "Total Locked",
-		"contract": "contract",
+		"contract": "Contract",
+		"contract_copied": "Copied, 8% Tax 9% Slippage!",
 		"market_cap": "Market Cap",
 		"price": "Price",
 		"home": "Home",
-		"roadmap": "Roadmap"
+		"roadmap": "Roadmap",
+		"loading": "Loading",
+		"buy_pancakeswap": "Buy from PancakeSwap"
 	},
 	"home": {
 		"hero": {
-			"title": "Crypto Pubs & Beers",
+			"title": "Crypto <span>Pubs & Beers</span>",
 			"desc": "The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more."
 		},
 		"tokenomics": {
