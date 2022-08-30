@@ -87,6 +87,28 @@
 	},
 	"buy": {
 		"title": "Buy $LNDLRD",
-		"desc": "There are many ways that you can buy Landlord Token"
+		"title_meta": "How to buy",
+		"desc": "There are many ways that you can buy Landlord Token."
+	},
+	"listings": {
+		"title": "Listings",
+		"desc": "The Landlord is currently listed on the following exchanges and listing websites. The Landlord team are always actively looking to form listing partnerships and this this will continue to grow as The Landlord continues to grow in additional markets and countries."
+	},
+	"team": {
+		"title": "Team",
+		"desc": "The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition and desire to the project.",
+		"co_founder": "Co-Founder",
+		"lead_dev": "Lead Dev",
+		"vp_operations": "VP Operations",
+		"pub_sme": "Pub SME",
+		"director_of_content": "Director of Content",
+		"head_of_logistics": "Head of Logistics",
+		"community_manager": "Community Manager",
+		"cfo": "CFO"
+	},
+	"ama": {
+		"title": "AMAs",
+		"desc": "Watch our latest AMAs on our YouTube.",
+		"ask_me_anything": "Ask me anything"
 	}
 }

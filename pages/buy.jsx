@@ -3,7 +3,7 @@ import Image from 'next/image';
 import HeadTag from '../components/HeadTag';
 import SlideFade from '../components/SlideFade';
 import { initEmbr, mount, unmount, getEmbr } from '../components/EmberScript';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useTranslations } from 'next-intl';
 
 const Buy = () => {
@@ -33,7 +33,7 @@ const Buy = () => {
 
 	return (
 		<>
-			<HeadTag title={`How To Buy`} desc={t('desc')} />
+			<HeadTag title={t('title_meta')} desc={t('desc')} />
 			<SlideFade as="section" className="page page-buy container">
 				<h1 className="page-title text-center">{t('title')}</h1>
 				<p className="page-desc text-center mb-5">{t('desc')}</p>

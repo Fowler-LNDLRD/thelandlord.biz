@@ -3,11 +3,12 @@ import Link from 'next/link';
 import SlideFade from '../components/SlideFade';
 import listings from '../data/listings.json';
 import HeadTag from '../components/HeadTag';
-
+import { useTranslations } from 'next-intl';
 const Listings = () => {
+	const t = useTranslations('listings');
 	return (
 		<div className="page page-chart">
-			<HeadTag title={`Listings`} desc="Landlord Token on exchanges and other platforms." />
+			<HeadTag title={t('title')} desc={t('desc')} />
 
 			<section className="container">
 				<SlideFade>
