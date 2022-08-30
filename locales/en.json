@@ -26,7 +26,8 @@
 		"roadmap": "Roadmap",
 		"loading": "Loading",
 		"buy_pancakeswap": "Buy from PancakeSwap",
-		"points": "Points"
+		"points": "Points",
+		"from": "from"
 	},
 	"home": {
 		"hero": {
@@ -83,5 +84,9 @@
 			"whitepaper": "The latest version.",
 			"audit": "Performed by Desert Finance."
 		}
+	},
+	"buy": {
+		"title": "Buy $LNDLRD",
+		"desc": "There are many ways that you can buy Landlord Token"
 	}
 }

@@ -1,30 +1,40 @@
 .page-buy-checkout {
-	min-height: 20rem;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	background: #fff;
 	border-radius: 1rem;
 }
-.buy-step {
-	background-color: rgba(#000, 0.5);
-	padding: 2rem;
-	border-radius: 0.5rem;
-	position: relative;
 
-	&:not(:last-child) {
-		margin-bottom: 1rem;
-	}
+.buy-link {
+	padding: 1.875rem 1rem;
+	text-align: center;
+	display: block;
+	background-color: #000;
+	border-top: 1px solid #333;
+	border-radius: 1rem;
+	transition: all ease 0.25s;
+	height: 100%;
 
-	&-number {
-	}
 	&-title {
-		font-size: 1.25rem;
-		font-weight: 600;
-		margin-bottom: 0.5rem;
-	}
-	&-desc {
+		display: block;
+		display: block;
+		margin-top: 1rem;
+		opacity: 0.8;
 		font-size: 0.875rem;
-		opacity: 0.9;
+		span {
+			display: block;
+			font-size: 0.75rem;
+			opacity: 0.8;
+		}
+	}
+
+	&-img {
+	}
+
+	&:hover {
+		background-color: #222;
+		border-top: 1px solid #444;
 	}
 }
