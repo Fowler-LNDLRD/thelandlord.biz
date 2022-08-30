@@ -24,7 +24,8 @@
 		"home": "Home",
 		"roadmap": "Roadmap",
 		"loading": "Loading",
-		"buy_pancakeswap": "Buy from PancakeSwap"
+		"buy_pancakeswap": "Buy from PancakeSwap",
+		"points": "Points"
 	},
 	"home": {
 		"hero": {
@@ -74,9 +75,8 @@
 			"desc_3": "Each variety will have a different random built in discount or ability % split across 4 areas. The discounts are scaled based on the variety."
 		},
 		"earn": {
-			"title": "{number} $LNDLRD Earned",
-			"desc": "We developed an app to enrich community engagement, and encourage it's users to inviting more investors into The Landlord. You can join the Landlord Army and earn $LNDLRD by just Tweeting about it.",
-			"points": "Points"
+			"title": "$LNDLRD Earned",
+			"desc": "We developed an app to enrich community engagement, and encourage it's users to inviting more investors into The Landlord. You can join the Landlord Army and earn $LNDLRD by just Tweeting about it."
 		},
 		"certs": {
 			"whitepaper": "Whitepaper",
