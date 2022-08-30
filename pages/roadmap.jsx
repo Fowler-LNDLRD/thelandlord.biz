@@ -1,19 +1,22 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import HeadTag from '../components/HeadTag';
-import roadmap from '../data/roadmap.json';
+import { en, de } from '../data/roadmap/';
 import SlideFade from '../components/SlideFade';
+import { useTranslations } from 'next-intl';
+import { useRouter } from 'next/router';
 
 const Roadmap = () => {
+	const t = useTranslations('roadmap');
+	const router = useRouter();
+	const { locale } = router;
+	const roadmap = locale === 'en' ? en : locale === 'de' ? de : [];
 	return (
 		<>
-			<HeadTag title={`Roadmap`} desc="Take a look at The Landlord Token roadmap to see what we have been working on and what we have planned for the future." />
+			<HeadTag title={t('title')} desc={t('desc')} />
 			<section as="section" className="page page-roadmap">
 				<SlideFade className="container text-center">
-					<h1 className="page-title">Roadmap</h1>
-					<div className="page-desc page-desc-limit  mb-5">
-						It is important that we outline a paved direction for the project and what we plan to do. This is so our token holders can use this as a yard stick to
-						measure our performance to help reassure them that not only is the project alive, but it is delivering on committed work.
-					</div>
+					<h1 className="page-title">{t('title')}</h1>
+					<div className="page-desc page-desc-limit  mb-5">{t('desc')}</div>
 				</SlideFade>
 				<SlideFade delay={0.1}>
 					<Swiper
