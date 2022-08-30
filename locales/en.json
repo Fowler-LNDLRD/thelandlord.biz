@@ -3,6 +3,7 @@
 		"store": "Store",
 		"buy": "Buy",
 		"whitepaper": "Whitepaper",
+		"audit": "Audit",
 		"listings": "Listings",
 		"team": "Team",
 		"amas": "AMAs",
@@ -79,10 +80,8 @@
 			"desc": "We developed an app to enrich community engagement, and encourage it's users to inviting more investors into The Landlord. You can join the Landlord Army and earn $LNDLRD by just Tweeting about it."
 		},
 		"certs": {
-			"whitepaper": "Whitepaper",
-			"whitepaper_desc": "The latest version.",
-			"audit": "Audit",
-			"audit_desc": "Performed by Desert Finance."
+			"whitepaper": "The latest version.",
+			"audit": "Performed by Desert Finance."
 		}
 	}
 }
