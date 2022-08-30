@@ -4,8 +4,11 @@ import Link from 'next/link';
 import Logo from './Logo';
 import nav from '../data/nav.json';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 const Header = () => {
+	const t = useTranslations('common');
+
 	const router = useRouter();
 	const currentRoute = router.pathname;
 	const [toggle, setToggle] = useState(false);
@@ -49,7 +52,7 @@ const Header = () => {
 						<li className="header-nav-item">
 							<Link href="https://thelandlord.store/">
 								<a className="header-nav-link" target="_blank" rel="noreferrer">
-									Store
+									{t('store')}
 								</a>
 							</Link>
 						</li>

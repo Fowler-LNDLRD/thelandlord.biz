@@ -6,6 +6,7 @@ import Link from 'next/link';
 import Modal from 'react-bootstrap/Modal';
 import SlideFade from '../../components/SlideFade';
 import LinkArrow from '../../components/LinkArrow';
+import { useTranslations } from 'next-intl';
 
 const Hero = () => {
 	useEffect(() => {

@@ -1,0 +1,41 @@
+{
+	"common": {
+		"store": "Store",
+		"buy": "Buy",
+		"whitepaper": "Whitepaper",
+		"listings": "Listings",
+		"team": "Team",
+		"amas": "AMAs",
+		"faq": "FAQ",
+		"join_now": "Join Now",
+		"download": "Download",
+		"learn_more": "Learn More",
+		"read_more": "Read More",
+		"supply": "Supply",
+		"burned": "Burned",
+		"circulating": "Circulating",
+		"liquidity_locked": "Liquidity Locked",
+		"tokens_locked": "Tokens Locked",
+		"total_locked": "Total Locked",
+		"contract": "contract",
+		"market_cap": "Market Cap",
+		"price": "Price"
+	},
+	"home": {
+		"hero": {
+			"title": "Crypto Pubs & Beers",
+			"desc": "The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more."
+		},
+		"tokenmoics": {
+			"title": "Tokenomics",
+			"desc": "Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.",
+
+			"pub_title": "Pub Protocol",
+			"pub_percent": "3%",
+			"pub_desc": ""
+		}
+	},
+	"buy": {
+		"buynow": "by bye"
+	}
+}

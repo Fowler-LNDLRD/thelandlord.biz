@@ -5,12 +5,12 @@ module.exports = {
 	swcMinify: true,
 	poweredByHeader: false,
 
-	// //
-	// i18n: {
-	// 	locales: ['en', 'de'],
-	// 	defaultLocale: 'en',
-	// 	localeDetection: false,
-	// },
+	//
+	i18n: {
+		locales: ['en', 'de'],
+		defaultLocale: 'en',
+		localeDetection: false,
+	},
 
 	// sass
 	sassOptions: {

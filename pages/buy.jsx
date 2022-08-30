@@ -3,8 +3,11 @@ import HeadTag from '../components/HeadTag';
 import { initEmbr, mount, unmount, getEmbr } from '../components/EmberScript';
 import { useState, useEffect } from 'react';
 import SlideFade from '../components/SlideFade';
+import { useTranslations } from 'next-intl';
 
 const Buy = () => {
+	const t = useTranslations('buy');
+
 	const [showSteps, setShowSteps] = useState(false);
 	useEffect(() => {
 		const isEmbr = getEmbr();
@@ -80,3 +83,11 @@ const Buy = () => {
 	);
 };
 export default Buy;
+
+export function getStaticProps({ locale }) {
+	return {
+		props: {
+			messages: require(`../locales/${locale}.json`),
+		},
+	};
+}

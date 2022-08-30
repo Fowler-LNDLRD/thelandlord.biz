@@ -1,0 +1,21 @@
+{
+	"common": {
+		"store": "Store",
+		"buy": "Buy",
+		"whitepaper": "Whitepaper",
+		"listings": "Listings",
+		"team": "Team",
+		"amas": "AMAs",
+		"faq": "FAQ",
+		"join_now": "Join Now",
+		"download": "Download",
+		"learn_more": "Learn More",
+		"read_more": "Read More"
+	},
+	"home": {
+		"hello": "something else"
+	},
+	"buy": {
+		"buynow": "by bye"
+	}
+}
