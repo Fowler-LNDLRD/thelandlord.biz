@@ -97,14 +97,14 @@
 	"team": {
 		"title": "Team",
 		"desc": "The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition and desire to the project.",
-		"co_founder": "Co-Founder",
-		"lead_dev": "Lead Dev",
-		"vp_operations": "VP Operations",
-		"pub_sme": "Pub SME",
-		"director_of_content": "Director of Content",
-		"head_of_logistics": "Head of Logistics",
-		"community_manager": "Community Manager",
-		"cfo": "CFO"
+
+		"fowler_title": "Co-Founder - Lead Dev",
+		"fab_title": "Co-Founder - VP Operations",
+		"harry_title": "Pub SME",
+		"adrian_title": "Director of Content",
+		"alan_title": "Head of Logistics",
+		"alessandro_title": "Community Manager",
+		"jimmy_title": "CFO"
 	},
 	"ama": {
 		"title": "AMAs",
