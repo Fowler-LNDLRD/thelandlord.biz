@@ -34,18 +34,21 @@
 		"tokenomics": {
 			"title": "Tokenomics",
 			"desc": "Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.",
-
-			"pub_title": "Pub Protocol",
-			"pub_percent": "3%",
-			"pub_desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
-
-			"pints_title": "Pints Protocol",
-			"pints_percent": "3%",
-			"pints_desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
-
-			"shots_title": "Shots Protocol",
-			"shots_percent": "2%",
-			"shots_desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens."
+			"pubs": {
+				"title": "Pubs Protocol",
+				"desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
+				"percent": "3%"
+			},
+			"pints": {
+				"title": "Pints Protocol",
+				"desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
+				"percent": "3%"
+			},
+			"shots": {
+				"title": "Shots Protocol",
+				"desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens.",
+				"percent": "2%"
+			}
 		},
 		"beers": {
 			"title": "Landlord Beers",
