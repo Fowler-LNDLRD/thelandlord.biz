@@ -2,14 +2,15 @@ import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import ama from '../data/ama.json';
 import SlideFade from '../components/SlideFade';
-
+import { useTranslations } from 'next-intl';
 const Ama = () => {
+	const t = useTranslations('ama');
 	return (
 		<>
 			<HeadTag title={`AMAs`} desc="Watch the latest Landlord Token AMAs on YouTube, we have AMA every week that you can ask any questions about the project." />
 			<SlideFade as="section" className="page page-ama container">
-				<h1 className="page-title text-center">AMAs</h1>
-				<div className="page-desc text-center mb-5">Watch our latest AMAs on our YouTube.</div>
+				<h1 className="page-title text-center">{t('title')}</h1>
+				<div className="page-desc text-center mb-5">{t('desc')}</div>
 
 				<div className="row g-2">
 					{ama.map((item, index) => (
@@ -18,7 +19,7 @@ const Ama = () => {
 								<a className="ama-item" target="_blank" rel="noreferrer">
 									<div className="ama-item-overlay" style={{ backgroundImage: `url(${item.img})` }}></div>
 									<div className="ama-item-desc p-1 p-md-2">
-										<div className="ama-item-title">Ask me anything</div>
+										<div className="ama-item-title">{t('ask_me_anything')}</div>
 										<div className="ama-item-date">{item.date}</div>
 									</div>
 									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="ama-item-icon" viewBox="0 0 16 16">
