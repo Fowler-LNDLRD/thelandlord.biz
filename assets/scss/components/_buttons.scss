@@ -43,3 +43,15 @@ select:-webkit-autofill {
 	outline: none;
 	border-radius: 0.25rem;
 }
+
+.translate-item {
+	margin-bottom: 1rem;
+	.translate-label {
+		font-size: 0.875rem;
+		display: block;
+		margin-bottom: 0.25rem;
+	}
+	.translate-control:focus + .translate-label {
+		color: $brand;
+	}
+}

@@ -37,21 +37,15 @@
 		"tokenomics": {
 			"title": "Tokenomics",
 			"desc": "Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.",
-			"pubs": {
-				"title": "Pubs Protocol",
-				"desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
-				"percent": "3%"
-			},
-			"pints": {
-				"title": "Pints Protocol",
-				"desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
-				"percent": "3%"
-			},
-			"shots": {
-				"title": "Shots Protocol",
-				"desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens.",
-				"percent": "2%"
-			}
+			"pub_title": "Pubs Protocol",
+			"pub_desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
+			"pub_percent": "3%",
+			"pints_title": "Pints Protocol",
+			"pints_desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
+			"pints_percent": "3%",
+			"shots_title": "Shots Protocol",
+			"shots_desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens.",
+			"shots_percent": "2%"
 		},
 		"beers": {
 			"title": "Landlord Beers",
@@ -97,7 +91,6 @@
 	"team": {
 		"title": "Team",
 		"desc": "The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition and desire to the project.",
-
 		"fowler_title": "Co-Founder - Lead Dev",
 		"fab_title": "Co-Founder - VP Operations",
 		"harry_title": "Pub SME",

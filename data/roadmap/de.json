@@ -1,5 +1,15 @@
 [
 	{
+		"phase": "v1 -Phase 1 -2021/2022",
+		"status": "completed",
+		"items": [
+			{ "status": "done", "title": "Create Socials" },
+			{ "status": "done", "title": "Create Website." },
+			{ "status": "done", "title": "Whitepaper.V1" },
+			{ "status": "done", "title": "The Landlord App beta V0.2." }
+		]
+	},
+	{
 		"phase": "V1-Phase 2 - 2022",
 		"status": "completed",
 

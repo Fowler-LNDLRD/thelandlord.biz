@@ -37,23 +37,23 @@ const Protocols = () => {
 					>
 						<SwiperSlide>
 							<article className="tokenomics-item">
-								<span className="tokenomics-item-percent">{t('pubs.percent')}</span>
-								<h3 className="tokenomics-item-title">{t('pubs.title')}</h3>
-								<p className="tokenomics-item-desc">{t('pubs.desc')}</p>
+								<span className="tokenomics-item-percent">{t('pub_percent')}</span>
+								<h3 className="tokenomics-item-title">{t('pub_title')}</h3>
+								<p className="tokenomics-item-desc">{t('pub_desc')}</p>
 							</article>
 						</SwiperSlide>
 						<SwiperSlide>
 							<article className="tokenomics-item">
-								<span className="tokenomics-item-percent">{t('pints.percent')}</span>
-								<h3 className="tokenomics-item-title">{t('pints.title')}</h3>
-								<p className="tokenomics-item-desc">{t('pints.desc')}</p>
+								<span className="tokenomics-item-percent">{t('pints_percent')}</span>
+								<h3 className="tokenomics-item-title">{t('pints_title')}</h3>
+								<p className="tokenomics-item-desc">{t('pints_desc')}</p>
 							</article>
 						</SwiperSlide>
 						<SwiperSlide>
 							<article className="tokenomics-item">
-								<span className="tokenomics-item-percent">{t('shots.percent')}</span>
-								<h3 className="tokenomics-item-title">{t('shots.title')}</h3>
-								<p className="tokenomics-item-desc">{t('shots.desc')}</p>
+								<span className="tokenomics-item-percent">{t('shots_percent')}</span>
+								<h3 className="tokenomics-item-title">{t('shots_title')}</h3>
+								<p className="tokenomics-item-desc">{t('shots_desc')}</p>
 							</article>
 						</SwiperSlide>
 					</Swiper>
