@@ -1,57 +1,51 @@
 {
 	"common": {
 		"store": "Store",
-		"buy": "Buy",
+		"buy": "Kaufen",
 		"whitepaper": "Whitepaper",
 		"audit": "Audit",
-		"listings": "Listings",
+		"listings": "Listungen",
 		"team": "Team",
 		"amas": "AMAs",
 		"faq": "FAQ",
-		"join_now": "Join Now",
+		"join_now": "Jetzt mitmachen",
 		"download": "Download",
-		"learn_more": "Learn More",
-		"read_more": "Read More",
-		"supply": "Supply",
-		"burned": "Burned",
-		"circulating": "Circulating",
-		"liquidity_locked": "Liquidity Locked",
-		"tokens_locked": "Tokens Locked",
-		"total_locked": "Total Locked",
-		"contract": "Contract",
-		"contract_copied": "Copied, 8% Tax 9% Slippage!",
-		"market_cap": "Market Cap",
-		"price": "Price",
+		"learn_more": "Mehr erfahren",
+		"read_more": "Mehr lesen",
+		"supply": "Maximale Versorgung",
+		"burned": "Verbrannt",
+		"circulating": "Umlaufversorgung",
+		"liquidity_locked": "Verschlossene Liquidität",
+		"tokens_locked": "Verschlossene Tokens",
+		"total_locked": "Insgesamt Verschlossen",
+		"contract": "Vertragsadresse",
+		"contract_copied": "Kopiert, 8% Steuer/9% inkl. Schwankung!",
+		"market_cap": "Marktkapitalisierung",
+		"price": "Preis",
 		"home": "Home",
 		"roadmap": "Roadmap",
-		"loading": "Loading",
-		"buy_pancakeswap": "Buy from PancakeSwap",
-		"points": "Points",
-		"from": "from"
+		"loading": "Lädt",
+		"buy_pancakeswap": "Auf PancakeSwap kaufen",
+		"points": "Punkte",
+		"from": "von"
 	},
 	"home": {
 		"hero": {
 			"title": "Crypto <span>Pubs & Beers</span>",
-			"desc": "The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven NFTs and much more."
+			"desc": "The Landlord ($LNDLRD) ist viel mehr als ein BEP-20 Token. Drei fantastische Protokolle, passives Einkommen, Nutzen in der realen Welt, vorteilhafte NFTs und vieles mehr."
 		},
 		"tokenomics": {
 			"title": "Tokenomics",
-			"desc": "Three key protocols which unlock the potential of The Landlord. All Landlord Token transactions will be subject to an 8% tax or 9% slippage.",
-			"pubs": {
-				"title": "Pubs Protocol",
-				"desc": "This will be used to drive all aspects of The Landlord ecosystem. These tokens will be automatically liquidated into BNB by the contract.",
-				"percent": "3%"
-			},
-			"pints": {
-				"title": "Pints Protocol",
-				"desc": "Automatically growing the liquidity by taking 3% of each transaction and putting it into the liquidity pool adding stability to the $LNDLRD value.",
-				"percent": "3%"
-			},
-			"shots": {
-				"title": "Shots Protocol",
-				"desc": "Rewarding all holders with passive $BUSD income if they are holding at least 100,000 $LNDLRD or $50 worth of Landlord Tokens.",
-				"percent": "2%"
-			}
+			"desc": "Drei Protokolle, die das Potenzial von The Landlord entfesseln. Alle $LNDLRD-Transaktionen unterliegen 8% Steuern bzw. 9% inkl. Schwankung.",
+			"pub_title": "Pubs Protokoll",
+			"pub_desc": "Dieses Protokoll treibt alle Aspekte des The Landlord Ökosystems an. Dieser Anteil wird automatisch durch den Vertrag (smart contract) in BNB liquidiert.",
+			"pub_percent": "3%",
+			"pints_title": "Pints Protokoll",
+			"pints_desc": "Um einen nachhaltigen Wert und Stabilität zu erzielen, werden 3% aller $LNDLRD-Transaktionen automatisch in den Liquiditätspool übertragen.",
+			"pints_percent": "3%",
+			"shots_title": "Shots Protokoll",
+			"shots_desc": "Token-Halter mit min. 100.000 $LNDLRD oder Token im Wert von min. 50$ werden mit passiven Einkommen in $BUSD belohnt. ",
+			"shots_percent": "2%"
 		},
 		"beers": {
 			"title": "Landlord Beers",
@@ -97,7 +91,6 @@
 	"team": {
 		"title": "Team",
 		"desc": "The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition and desire to the project.",
-
 		"fowler_title": "Co-Founder - Lead Dev",
 		"fab_title": "Co-Founder - VP Operations",
 		"harry_title": "Pub SME",
@@ -114,5 +107,10 @@
 	"roadmap": {
 		"title": "Roadmap",
 		"desc": "It is important that we outline a paved direction for the project and what we plan to do. This is so our token holders can use this as a yard stick to measure our performance to help reassure them that not only is the project alive, but it is delivering on committed work."
+	},
+	"faq": {
+		"title": "FAQ",
+		"desc": "Learn about Landlord Token, we have answered many frequently asked questions, and here you can find it. if not, join our telegram group.",
+		"general_questions": "General Crypto Questions"
 	}
 }

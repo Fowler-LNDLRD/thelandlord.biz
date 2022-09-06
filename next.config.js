@@ -7,7 +7,7 @@ module.exports = {
 
 	//
 	i18n: {
-		locales: ['en', 'de'],
+		locales: ['en'],
 		defaultLocale: 'en',
 		localeDetection: false,
 	},
@@ -20,7 +20,7 @@ module.exports = {
 	// public environment
 	env: {
 		WEBSITE_URL: 'https://thelandlord.biz',
-		WEBSITE_TITLE: 'The Landlord Token',
+		WEBSITE_TITLE: 'The Landlord Token - $LNDLRD',
 		WEBSITE_SLOGAN: 'Crypto Pubs & Beers',
 		WEBSITE_DESCRIPTION:
 			'The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, real world utilities, and utility driven NFTs and more.',

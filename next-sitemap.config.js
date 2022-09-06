@@ -4,6 +4,15 @@ module.exports = {
 	generateRobotsTxt: true,
 	changefreq: 'weekly',
 
+	robotsTxtOptions: {
+		policies: [
+			{
+				userAgent: '*',
+				disallow: '/en/',
+			},
+		],
+	},
+
 	transform: async (config, path) => {
 		if (path === '/') {
 			return {
