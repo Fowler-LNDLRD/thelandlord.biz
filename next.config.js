@@ -53,7 +53,7 @@ module.exports = {
 		LINK_BOGGED_SWAP: 'https://app.bogged.finance/bsc/swap?tokenIn=BNB&tokenOut=0xd6dA6491A6663B1d413715f4fD8eDD74a4b47694',
 		LINK_POOCOIN_SWAP: 'https://poocoin.app/tokens/0xd6da6491a6663b1d413715f4fd8edd74a4b47694',
 
-		SHILL_API: 'https://earn.thelandlord.biz/api/board/official',
+		SHILL_API: 'https://earn.thelandlord.biz/api/general/official',
 		SHILL_URL: 'https://earn.thelandlord.biz',
 
 		FORM_ID: 'x',
