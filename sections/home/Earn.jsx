@@ -33,7 +33,7 @@ const Shill = () => {
 					<SlideFade className="col-md-6 col-lg-7 order-last ps-md-4">
 						<h2 className="section-title">
 							{}
-							{earnData?.earned ? earnData?.earned?.toLocaleString() : '140,000,000+'}
+							{earnData?.earned ? (earnData?.earned || 0).toLocaleString() : '140,000,000+'}
 							<br /> {t('title')}
 						</h2>
 						<p className="section-desc">{t('desc')}</p>
@@ -60,9 +60,9 @@ const Shill = () => {
 												/>
 
 												<div className="shill-username">@{item.username}</div>
-												<div className="shill-lndlrd">{item.earned.toLocaleString()} $LNDLRD</div>
+												<div className="shill-lndlrd">{(item.rewards || 0).toLocaleString()} $LNDLRD</div>
 												<div className="shill-points">
-													{item.points.toLocaleString()} {tc('points')}
+													{(item.points || 0).toLocaleString()} {tc('points')}
 												</div>
 											</div>
 										</SwiperSlide>
