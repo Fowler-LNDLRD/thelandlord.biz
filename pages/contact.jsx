@@ -106,11 +106,3 @@ const Contact = () => {
 	);
 };
 export default Contact;
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
 import NumberFormat from 'react-number-format';
-import useLocalStorage from 'use-local-storage';
 import HeadTag from '../components/HeadTag';
 import SlideFade from '../components/SlideFade';
 
@@ -9,7 +8,7 @@ const Calc = () => {
 	const [loading, setLoading] = useState(false);
 	const [success, setSuccess] = useState(false);
 	const [error, setError] = useState(false);
-	const [localWallet, setLocalWallet] = useLocalStorage('wallet', '');
+	const [localWallet, setLocalWallet] = useState('');
 	const [wallet, setWallet] = useState(localWallet);
 
 	const fetchData = async () => {
@@ -206,11 +205,3 @@ const Calc = () => {
 	);
 };
 export default Calc;
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

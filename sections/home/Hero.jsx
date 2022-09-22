@@ -6,12 +6,8 @@ import Link from 'next/link';
 import Modal from 'react-bootstrap/Modal';
 import SlideFade from '../../components/SlideFade';
 import LinkArrow from '../../components/LinkArrow';
-import { useTranslations } from 'next-intl';
 
 const Hero = () => {
-	const t = useTranslations('home.hero');
-	const tc = useTranslations('common');
-
 	useEffect(() => {
 		const documentHeight = () => {
 			const heroSection = document.getElementById('hero');
@@ -51,15 +47,14 @@ const Hero = () => {
 			<div className="hero" id="hero">
 				<section className="container">
 					<SlideFade animate as="h1" className="hero-title">
-						{t.rich('title', {
-							span: (children) => <span>{children}</span>,
-						})}
+						Crypto <span>Pubs & Beers</span>
 					</SlideFade>
 					<SlideFade animate as="p" className="hero-desc" delay={0.1}>
-						{t('desc')}
+						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
+						NFTs and much more.
 					</SlideFade>
 					<SlideFade animate as="button" delay={0.2} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
-						{tc('buy')}
+						Buy
 					</SlideFade>
 					<Link href="/#whitepaper">
 						<motion.a
@@ -68,7 +63,7 @@ const Hero = () => {
 							transition={{ duration: 0.5, delay: 0.3 }}
 							className="hero-btn btn btn-light ms-1"
 						>
-							{tc('whitepaper')}
+							Whitepaper
 						</motion.a>
 					</Link>
 				</section>
@@ -89,12 +84,12 @@ const Hero = () => {
 
 			<Modal className="hero-buy" show={showBuy} onHide={toggleBuy} onExited={unmount} centered>
 				<Modal.Header closeButton>
-					<Modal.Title as="h4">{tc('buy')}</Modal.Title>
+					<Modal.Title as="h4">Buy</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
 					<div id="checkout">
 						<div className="spinner-border m-auto d-block text-brand" role="status">
-							<span className="visually-hidden">{tc('loading')}...</span>
+							<span className="visually-hidden">Loading...</span>
 						</div>
 					</div>
 
@@ -106,7 +101,7 @@ const Hero = () => {
 							dir="right"
 							href={'https://pancakeswap.finance/swap?outputCurrency=' + process.env.CONTRACT}
 						>
-							{tc('buy_pancakeswap')}
+							Buy from PancakeSwap
 						</LinkArrow>
 					</div>
 				</Modal.Body>

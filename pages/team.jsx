@@ -2,22 +2,26 @@ import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
 import teamMembers from '../data/team.json';
 import SlideFade from '../components/SlideFade';
-import { useTranslations } from 'next-intl';
 const Team = () => {
-	const t = useTranslations('team');
 	return (
 		<>
-			<HeadTag title={t('title')} desc={t('desc')} />
+			<HeadTag
+				title="Team"
+				desc="The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition and desire to the project."
+			/>
 			<SlideFade as="section" className="page container">
-				<h1 className="page-title text-center">{t('title')}</h1>
-				<div className="page-desc page-desc-limit text-center">{t('desc')}</div>
+				<h1 className="page-title text-center">Team</h1>
+				<div className="page-desc page-desc-limit text-center">
+					The Landlord has a multi skilled team of technology professionals and successful businesses owners. They bring a wealth of experience, endless energy, ambition
+					and desire to the project.
+				</div>
 				<div className="row  justify-content-center">
 					{teamMembers.map((item, index) => (
 						<SlideFade key={index} className="col-6 col-md-4 col-lg-3" delay={index / 10}>
 							<div className="team-item">
 								<img className="team-img" src={`/img/team/${item.img ? item.name.toLowerCase() : 'default'}.jpg`} alt={item.name + ' - The Landlord'} />
 								<h3 className="team-name">{item.name}</h3>
-								<p className="team-title">{t(item.name.toLowerCase() + '_title')}</p>
+								<p className="team-title">{item.title}</p>
 								<div className="team-social">
 									{item.twitter && (
 										<Link href={item.twitter}>
@@ -47,11 +51,3 @@ const Team = () => {
 	);
 };
 export default Team;
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

@@ -6,11 +6,11 @@ module.exports = {
 	poweredByHeader: false,
 
 	//
-	i18n: {
-		locales: ['en'],
-		defaultLocale: 'en',
-		localeDetection: false,
-	},
+	// i18n: {
+	// 	locales: ['en'],
+	// 	defaultLocale: 'en',
+	// 	localeDetection: false,
+	// },
 
 	// sass
 	sassOptions: {

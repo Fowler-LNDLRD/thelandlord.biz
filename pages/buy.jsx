@@ -4,11 +4,8 @@ import HeadTag from '../components/HeadTag';
 import SlideFade from '../components/SlideFade';
 import { initEmbr, mount, unmount, getEmbr } from '../components/EmberScript';
 import { useEffect } from 'react';
-import { useTranslations } from 'next-intl';
 
 const Buy = () => {
-	const t = useTranslations('buy');
-	const tc = useTranslations('common');
 	useEffect(() => {
 		const isEmbr = getEmbr();
 
@@ -33,10 +30,10 @@ const Buy = () => {
 
 	return (
 		<>
-			<HeadTag title={t('title_meta')} desc={t('desc')} />
+			<HeadTag title="How to buy" desc="There are many ways that you can buy Landlord Token." />
 			<SlideFade as="section" className="page page-buy container">
-				<h1 className="page-title text-center">{t('title')}</h1>
-				<p className="page-desc text-center mb-5">{t('desc')}</p>
+				<h1 className="page-title text-center">Buy $LNDLRD</h1>
+				<p className="page-desc text-center mb-5">There are many ways that you can buy Landlord Token.</p>
 
 				<div className="px-md-5">
 					<div className="row text-center g-2">
@@ -47,7 +44,7 @@ const Buy = () => {
 										<a target="_blank" rel="noreferrer" className="buy-link">
 											<Image quality={100} width={40} height={40} src="/img/listed/pancakeswap.png" alt="PancakeSwap" className="buy-link-img" />
 											<span className="buy-link-title">
-												<span>{tc('from')}</span> PancakeSwap
+												<span>From</span> PancakeSwap
 											</span>
 										</a>
 									</Link>
@@ -57,7 +54,7 @@ const Buy = () => {
 										<a target="_blank" rel="noreferrer" className="buy-link">
 											<Image quality={100} width={40} height={40} src="/img/listed/poocoin.png" alt="PooCoin" className="buy-link-img" />
 											<span className="buy-link-title">
-												<span>{tc('from')}</span> PooCoin
+												<span>From</span> PooCoin
 											</span>
 										</a>
 									</Link>
@@ -67,7 +64,7 @@ const Buy = () => {
 										<a target="_blank" rel="noreferrer" className="buy-link">
 											<Image quality={100} width={40} height={40} src="/img/listed/tokpie.png" alt="TokPie" className="buy-link-img" />
 											<span className="buy-link-title">
-												<span>{tc('from')}</span> TokPie
+												<span>From</span> TokPie
 											</span>
 										</a>
 									</Link>
@@ -77,7 +74,7 @@ const Buy = () => {
 										<a target="_blank" rel="noreferrer" className="buy-link">
 											<Image quality={100} width={40} height={40} src="/img/listed/bogged.png" alt="Bogged" className="buy-link-img" />
 											<span className="buy-link-title">
-												<span>{tc('from')}</span> Bogged
+												<span>From</span> Bogged
 											</span>
 										</a>
 									</Link>
@@ -88,7 +85,7 @@ const Buy = () => {
 						<div className="col-md-5">
 							<div id="checkout" className="page-buy-checkout">
 								<div className="spinner-border m-auto d-block text-brand" role="status">
-									<span className="visually-hidden">{tc('loading')}...</span>
+									<span className="visually-hidden">Loading...</span>
 								</div>
 							</div>
 						</div>
@@ -99,11 +96,3 @@ const Buy = () => {
 	);
 };
 export default Buy;
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

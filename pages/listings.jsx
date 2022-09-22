@@ -3,12 +3,13 @@ import Link from 'next/link';
 import SlideFade from '../components/SlideFade';
 import listings from '../data/listings.json';
 import HeadTag from '../components/HeadTag';
-import { useTranslations } from 'next-intl';
 const Listings = () => {
-	const t = useTranslations('listings');
 	return (
 		<div className="page page-chart">
-			<HeadTag title={t('title')} desc={t('desc')} />
+			<HeadTag
+				title="Listings"
+				desc="The Landlord is currently listed on the following exchanges and listing websites. The Landlord team are always actively looking to form listing partnerships and this this will continue to grow as The Landlord continues to grow in additional markets and countries."
+			/>
 
 			<section className="container">
 				<SlideFade>
@@ -69,11 +70,3 @@ const Listings = () => {
 	);
 };
 export default Listings;
-
-export function getStaticProps({ locale }) {
-	return {
-		props: {
-			messages: require(`../locales/${locale}.json`),
-		},
-	};
-}

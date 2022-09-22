@@ -2,18 +2,23 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import SlideFade from '../../components/SlideFade';
-import { useTranslations } from 'next-intl';
 const Nft = () => {
-	const t = useTranslations('home.nft');
 	return (
 		<section className="section nft position-relative" id="NFTs">
 			<div className="container">
 				<div className="row align-items-center">
 					<SlideFade className="col-md-6 mb-3 mb-md-0 pe-md-4">
-						<h2 className="section-title">{t('title')}</h2>
-						<p className="section-desc">{t('desc_1')}</p>
-						<p className="section-desc">{t('desc_2')}</p>
-						<p className="section-desc mb-0">{t('desc_3')}</p>
+						<h2 className="section-title">NFT Collections</h2>
+						<p className="section-desc">
+							The Landlord will be releasing its first utility driven NFT collection, these will be available to blind mint from The Landlord website.
+						</p>
+						<p className="section-desc">
+							These will be split into 4 variety&apos;s with an increasing rarity. Starting with standard(common), Bronze(fairly common) silver(rare) and gold (very
+							rare).
+						</p>
+						<p className="section-desc mb-0">
+							Each variety will have a different random built in discount or ability % split across 4 areas. The discounts are scaled based on the variety.
+						</p>
 					</SlideFade>
 
 					<SlideFade className="col-md-6 position-relative" delay={0.1}>
@@ -33,7 +38,7 @@ const Nft = () => {
 									quality={75}
 									width={600}
 									height={560}
-									alt={t('title')}
+									alt="NFT Collections"
 									src="/img/nfts/01.jpg"
 									objectFit="cover"
 									objectPosition="center"
@@ -45,7 +50,7 @@ const Nft = () => {
 									quality={75}
 									width={600}
 									height={560}
-									alt={t('title')}
+									alt="NFT Collections"
 									src="/img/nfts/02.jpg"
 									objectFit="cover"
 									objectPosition="center"
@@ -57,7 +62,7 @@ const Nft = () => {
 									quality={75}
 									width={600}
 									height={560}
-									alt={t('title')}
+									alt="NFT Collections"
 									src="/img/nfts/03.jpg"
 									objectFit="cover"
 									objectPosition="center"
@@ -69,7 +74,7 @@ const Nft = () => {
 									quality={75}
 									width={600}
 									height={560}
-									alt={t('title')}
+									alt="NFT Collections"
 									src="/img/nfts/04.jpg"
 									objectFit="cover"
 									objectPosition="center"
@@ -81,7 +86,7 @@ const Nft = () => {
 									quality={75}
 									width={600}
 									height={560}
-									alt={t('title')}
+									alt="NFT Collections"
 									src="/img/nfts/06.jpg"
 									objectFit="cover"
 									objectPosition="center"
