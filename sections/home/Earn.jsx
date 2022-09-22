@@ -10,16 +10,15 @@ const Shill = () => {
 	const t = useTranslations('home.earn');
 	const tc = useTranslations('common');
 	const [earnData, setEarnData] = useState(null);
+	const env = process.env.NODE_ENV;
 	useEffect(() => {
-		if (process.env.NODE_ENV !== 'development') {
+		if (env !== 'development') {
 			const getShillers = async () => {
 				try {
-					const shillApi = process.env.SHILL_API;
-					const resp = await axios.get(shillApi);
-					const data = resp.data;
-					setEarnData(data);
+					const resp = await axios.get(process.env.SHILL_API);
+					setEarnData(resp.data);
 				} catch (err) {
-					console.log(err?.response?.data?.message);
+					console.log('can not load earn');
 				}
 			};
 			getShillers();
@@ -27,7 +26,7 @@ const Shill = () => {
 	}, []);
 
 	return (
-		<section className="shill section section-dark" id="earn" hidden={!earnData?.earned && process.env.NODE_ENV === 'production'}>
+		<section className="shill section section-dark" id="earn">
 			<div className="container">
 				<div className="row align-items-center px-1 px-md-0">
 					<SlideFade className="col-md-6 col-lg-7 order-last ps-md-4">
