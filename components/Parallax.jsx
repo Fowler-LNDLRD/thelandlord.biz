@@ -16,14 +16,14 @@ const Parallax = ({ className, children, offset = 50, ariaHidden }) => {
 	const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
 	useEffect(() => {
-		const element = ref.current;
-		const onResize = () => {
-			setElementTop(element.getBoundingClientRect().top + window.scrollY || window.pageYOffset);
-			setClientHeight(window.innerHeight);
-		};
-		onResize();
-		window.addEventListener('resize', onResize);
-		return () => window.removeEventListener('resize', onResize);
+		// const element = ref.current;
+		// const onResize = () => {
+		// 	setElementTop(element.getBoundingClientRect().top + window.scrollY || window.pageYOffset);
+		// 	setClientHeight(window.innerHeight);
+		// };
+		// onResize();
+		// window.addEventListener('resize', onResize);
+		// return () => window.removeEventListener('resize', onResize);
 	}, [ref]);
 
 	// Don't parallax if the user has "reduced motion" enabled
@@ -32,7 +32,7 @@ const Parallax = ({ className, children, offset = 50, ariaHidden }) => {
 	}
 
 	return (
-		<motion.div aria-hidden={ariaHidden} className={className} ref={ref} style={{ y }}>
+		<motion.div aria-hidden={ariaHidden} className={className}>
 			{children}
 		</motion.div>
 	);
