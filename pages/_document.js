@@ -6,7 +6,6 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-
 					<link rel="icon" href="/img/meta/logo.svg" type="image/svg+xml" />
 					<link rel="apple-touch-icon" sizes="180x180" href="/img/meta/apple-touch-icon.png" />
 					<link rel="manifest" href="/img/meta/site.webmanifest" />

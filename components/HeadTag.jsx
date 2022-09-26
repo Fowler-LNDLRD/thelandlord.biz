@@ -3,12 +3,10 @@ import Head from 'next/head';
 
 const HeadTag = ({ title, desc, img }) => {
 	const router = useRouter();
-
-	const pageTitle = title + ' - ' + process.env.WEBSITE_TITLE;
+	const pageTitle = title ? title + ' - ' + process.env.WEBSITE_TITLE : process.env.WEBSITE_TITLE;
 	const pageDesc = desc || process.env.WEBSITE_DESCRIPTION;
 	const pageImage = img || process.env.WEBSITE_IMAGE;
-	const pageUrl = process.env.WEBSITE_URL + router.pathname;
-
+	const pageUrl = process.env.WEBSITE_URL + router.asPath;
 	return (
 		<Head>
 			<title>{pageTitle}</title>
