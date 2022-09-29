@@ -16,7 +16,7 @@ const Page = ({ data }) => {
 
 	return (
 		<>
-			<HeadTag title={data.title} desc={data.desc} img={data.img ? 'https://earn.thelandlord.biz' + data.img : data.img} />
+			<HeadTag title={data.title} desc={data.desc} img={data.img ? 'https://earn.thelandlord.biz/files/cards/' + data.img : data.img} />
 			<div as="section" className="page page-ama container" style={{ zIndex: -2 }}>
 				<h1 className="page-title text-center">{data.title}</h1>
 				<div className="page-desc text-center mb-5">{data.desc}</div>
