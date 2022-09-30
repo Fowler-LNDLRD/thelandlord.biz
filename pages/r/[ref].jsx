@@ -2,9 +2,16 @@ import HeadTag from '../../components/HeadTag';
 import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import Head from 'next/head';
 
 const Page = ({ data }) => {
 	const router = useRouter();
+
+	const img = data.img ? 'https://earn.thelandlord.biz/files/cards/' + data.img : false;
+	const pageTitle = data.title || process.env.WEBSITE_TITLE;
+	const pageDesc = data.desc || process.env.WEBSITE_DESCRIPTION;
+	const pageImage = img || process.env.WEBSITE_IMAGE;
+	const pageUrl = process.env.WEBSITE_URL + router.asPath;
 
 	useEffect(() => {
 		if (data.url) {
@@ -16,7 +23,18 @@ const Page = ({ data }) => {
 
 	return (
 		<>
-			<HeadTag title={data.title} desc={data.desc} img={data.img ? 'https://earn.thelandlord.biz/files/cards/' + data.img : data.img} />
+			<Head>
+				<title>{pageTitle}</title>
+				<meta name="description" content={pageDesc} />
+				<link rel="canonical" href={pageUrl} />
+				<meta name="twitter:card" content="summary_large_image" />
+				<meta name="twitter:site" content="@Landlord_Token" />
+				<meta property="og:title" content={pageTitle} />
+				<meta property="og:description" content={pageDesc} />
+				<meta property="og:image" content={pageImage} />
+				<meta property="og:url" content={pageUrl} />
+				<meta property="og:type" content="website" />
+			</Head>
 			<div as="section" className="page page-ama container" style={{ zIndex: -2 }}>
 				<h1 className="page-title text-center">{data.title}</h1>
 				<div className="page-desc text-center mb-5">{data.desc}</div>
