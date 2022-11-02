@@ -55,3 +55,20 @@ select:-webkit-autofill {
 		color: $brand;
 	}
 }
+
+#koalamint_div {
+	width: auto !important;
+}
+
+#koalamint_count {
+	font-size: 1.25rem !important;
+	width: 5rem !important;
+}
+
+#koalamint_button {
+	color: #000 !important;
+	background-color: $brand !important;
+	font-size: 1.25rem !important;
+	font-weight: 500 !important;
+	cursor: pointer;
+}

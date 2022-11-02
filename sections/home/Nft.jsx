@@ -2,9 +2,11 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
 import SlideFade from '../../components/SlideFade';
+import Script from 'next/script';
+
 const Nft = () => {
 	return (
-		<section className="section nft position-relative" id="NFTs">
+		<section className="section nft position-relative" id="NFT">
 			<div className="container">
 				<div className="row align-items-center">
 					<SlideFade className="col-md-6 mb-3 mb-md-0 pe-md-4">
@@ -19,6 +21,27 @@ const Nft = () => {
 						<p className="section-desc mb-0">
 							Each variety will have a different random built in discount or ability % split across 4 areas. The discounts are scaled based on the variety.
 						</p>
+
+						<div className="text-left mt-2">
+							<div
+								id="koalamint_div"
+								data-button-text=""
+								data-button-background=""
+								data-button-color=""
+								data-button-border-radius=""
+								data-button-border-style=""
+								data-button-border-color=""
+								data-button-border-width=""
+							></div>
+						</div>
+						<Script
+							src="https://cdn.koalamint.com/koalamint.js"
+							onLoad={() => {
+								KoalaMint.setup(
+									'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjQxZmU0YThiOTljZjczZDM0NjM3ZDc0NDEyYTkzNzUzNDYwZmQ1NWJhMDNmMzlhMzI2MDNhMjAxYjQzZDM4MzQiLCJpYXQiOjE2NjY5NjE5MzksImV4cCI6MTk4MjMyMTkzOX0.MSoTJe3EibR4ik-qqqKJD6ZzRCosFIigh_92iU1kOnE'
+								);
+							}}
+						></Script>
 					</SlideFade>
 
 					<SlideFade className="col-md-6 position-relative" delay={0.1}>
