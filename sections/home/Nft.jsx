@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
 import SlideFade from '../../components/SlideFade';
 import Script from 'next/script';
 
@@ -44,79 +41,12 @@ const Nft = () => {
 						></Script>
 					</SlideFade>
 
-					<SlideFade className="col-md-6 position-relative" delay={0.1}>
-						<Swiper
-							pagination={true}
-							autoplay={true}
-							modules={[Pagination]}
-							className="nft-swiper rounded-4"
-							loop={false}
-							slidesPerView={1}
-							centeredSlides={true}
-							spaceBetween={16}
-						>
-							<SwiperSlide>
-								<Image
-									className="nft-item-cover rounded-4"
-									quality={75}
-									width={600}
-									height={560}
-									alt="NFT Collections"
-									src="/img/nfts/01.jpg"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									className="nft-item-cover rounded-4"
-									quality={75}
-									width={600}
-									height={560}
-									alt="NFT Collections"
-									src="/img/nfts/02.jpg"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									className="nft-item-cover rounded-4"
-									quality={75}
-									width={600}
-									height={560}
-									alt="NFT Collections"
-									src="/img/nfts/03.jpg"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									className="nft-item-cover rounded-4"
-									quality={75}
-									width={600}
-									height={560}
-									alt="NFT Collections"
-									src="/img/nfts/04.jpg"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</SwiperSlide>
-							<SwiperSlide>
-								<Image
-									className="nft-item-cover rounded-4"
-									quality={75}
-									width={600}
-									height={560}
-									alt="NFT Collections"
-									src="/img/nfts/06.jpg"
-									objectFit="cover"
-									objectPosition="center"
-								/>
-							</SwiperSlide>
-						</Swiper>
-					</SlideFade>
+					<div className="col-md-6 position-relative">
+						<video className="mw-100" width="100%" autoPlay muted loop>
+							<source src="/img/home/nft.mp4" type="video/mp4" />
+							Your browser does not support the video tag.
+						</video>
+					</div>
 				</div>
 			</div>
 		</section>
