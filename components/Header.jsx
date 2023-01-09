@@ -53,8 +53,7 @@ const Header = () => {
 								</a>
 							</Link>
 						</li>
-						{nav.map((item, index) => (
-									<li className="header-nav-item">
+							<li className="header-nav-item">
 							<Link href="https://pubswap.net/">
 								<a className="header-nav-link" target="_blank" rel="noreferrer">
 									PubSwap
