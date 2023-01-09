@@ -40,13 +40,13 @@
 			{ "status": "done", "title": "Limited Edition Craft Beers" },
 			{ "status": "done", "title": "1st Landlord Community Day" },
 			{ "status": "done", "title": "Launch shill to earn app" }
-
+		]
 	},
 	{
 		"phase": "V2 - Phase 2 - 2023",
 		"items": [
 			{ "title": "2.5k Telegram Members" },
-			{ "title": "700 Twitter Followers" },
+			{ "status": "done", { "title": "600 Twitter Followers" },
 			{ "title": "500 Holders" },
 			{ "title": "Landlord Sponsorships" },
 			{ "title": "2 Exchange Listings" }
@@ -65,7 +65,7 @@
 		"phase": "V2 - Phase 3 2023",
 		"items": [
 			{ "title": "10k Telegram members" },
-			{ "title": "3k Twitter followers" },
+			{ "title": "2k Twitter followers" },
 			{ "title": "5k Holders" },
 			{ "title": "Batch 2 Landlord Beer REKT" },
 			{ "title": "Launch the Landlord App V1" },
