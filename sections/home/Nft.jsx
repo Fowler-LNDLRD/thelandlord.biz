@@ -9,14 +9,14 @@ const Nft = () => {
 					<SlideFade className="col-md-6 mb-3 mb-md-0 pe-md-4">
 						<h2 className="section-title">NFT Collections</h2>
 						<p className="section-desc">
-							The Landlord will be releasing its first utility driven NFT collection, these will be available to blind mint from The Landlord website.
+							The Landlord have released its first utility driven NFT collection, these can blind minted from The Landlord website for just 0.04 ETH.
 						</p>
 						<p className="section-desc">
 							These will be split into 4 variety&apos;s with an increasing rarity. Starting with standard(common), Bronze(fairly common) silver(rare) and gold (very
 							rare).
 						</p>
 						<p className="section-desc mb-0">
-							Each variety will have a different random built in discount or ability % split across 4 areas. The discounts are scaled based on the variety.
+							Each variety will have a different random built in discount or ability % split across 4 areas, Store,Beer, Pubs and Special Feature. The discounts are scaled based on the variety.
 						</p>
 
 						<div className="text-left mt-2">

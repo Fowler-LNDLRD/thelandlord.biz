@@ -50,7 +50,7 @@ const Hero = () => {
 						Crypto <span>Pubs & Beers</span>
 					</SlideFade>
 					<SlideFade animate as="p" className="hero-desc" delay={0.1}>
-						The Landlord ($LNDLRD) is much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
+						The Landlord ($LNDLRD) is a unique Beer,Pub and Crypto project. Its much more than a BEP-20 token. It has 3 fantastic protocols, passive income, fantastic real world utilities, and utility driven
 						NFTs and much more.
 					</SlideFade>
 					<SlideFade animate as="button" delay={0.2} className="hero-btn btn btn-brand" type="button" onClick={() => toggleBuy()}>
