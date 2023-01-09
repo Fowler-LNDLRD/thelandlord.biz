@@ -25,7 +25,7 @@
 	},
 	{
 		"phase": "V2 - Phase 1 - 2022",
-		"status": "current",
+		"status": "completed",
 		"items": [
 			{ "status": "done", "title": "Shilling Tool" },
 			{ "status": "done", "title": "Whitepaper V3" },
@@ -44,6 +44,7 @@
 	},
 	{
 		"phase": "V2 - Phase 2 - 2023",
+		"status": "current",
 		"items": [
 			{ "title": "2.5k Telegram Members" },
 			{ "status": "done", "title": "600 Twitter Followers" },
