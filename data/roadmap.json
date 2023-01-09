@@ -39,6 +39,7 @@
 			{ "status": "done", "title": "1st LNDLRD Lottery Event" },
 			{ "status": "done", "title": "Limited Edition Craft Beers" },
 			{ "status": "done", "title": "1st Landlord Community Day" },
+			{ "status": "done", "title": "Launch shill to earn app" },
 			{ "title": "2.5k Telegram Members" },
 			{ "title": "700 Twitter Followers" },
 			{ "title": "500 Holders" },
@@ -59,7 +60,7 @@
 			{ "title": "Batch 1 Landlord IPA Beer" },
 			{ "title": "Launch Giftcard app" },
 			{ "status": "done", "title": "1st Staking Period" },
-			{ "title": "Launch PubSwap, staking, farming and swap" },
+			{ "title": "Launch PubSwap with staking, farming and swap" },
 			{ "status": "done","title": "1st The Landlord NFT Collection" },
 			{ "status": "done", "title": "Token community raid" }
 		]
@@ -72,7 +73,7 @@
 			{ "title": "5k Holders" },
 			{ "title": "Batch 2 Landlord Beer REKT" },
 			{ "title": "Launch the Landlord App V1" },
-			{ "title": "1st Landlord Burn Event – 1% of remaining total supply will be burnt in a spectacular burn event."},
+			{ "title": "1st Landlord Burn Event 1% of remaining total supply will be burnt in a spectacular burn event."},
 			{ "title": "First Happy Hour Event" },
 			{ "title": "Medium Exchange Listing" }
 		]
@@ -103,16 +104,10 @@
 	{
 		"phase": "V2 - Phase 6",
 		"items": [
-			{
-				"title": "Craft Beer range expanded to include spirts"
-			},
-			{ "title": "Open further Landlord pubs worldwide." },
-			{
-				"title": "Open up the Landlord App and payment system to other businesses."
-			},
-			{
-				"title": "2nd Landlord Burn Event – 1% of remaining total supply will be burnt in a spectacular burn event."
-			}
+			{ "title": "Craft Beer range expanded to include spirts" },
+			{ "title": "Open further Landlord pubs worldwide." },	
+			{ "title": "Open up the Landlord App and payment system to other businesses."			},
+			{ "title": "2nd Landlord Burn Event – 1% of remaining total supply will be burnt in a spectacular burn event."}
 		]
 	}
 ]
