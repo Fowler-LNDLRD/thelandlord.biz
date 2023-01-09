@@ -54,6 +54,14 @@ const Header = () => {
 							</Link>
 						</li>
 						{nav.map((item, index) => (
+									<li className="header-nav-item">
+							<Link href="https://pubswap.net/">
+								<a className="header-nav-link" target="_blank" rel="noreferrer">
+									PubSwap
+								</a>
+							</Link>
+						</li>
+						{nav.map((item, index) => (
 							<li className={'header-nav-item'} key={index}>
 								<Link href={item.url}>
 									<a className={'header-nav-link' + (currentRoute === item.url ? ' active' : '')}>{item.title}</a>
