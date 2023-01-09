@@ -45,13 +45,21 @@
 		]
 	},
 	{
-		"phase": "V2 - Phase 2 - 2022/23",
+		"phase": "V2 - Phase 2 - 2023",
 		"items": [
+			{ "title": "2.5k Telegram Members" },
+			{ "title": "700 Twitter Followers" },
+			{ "title": "500 Holders" },
+			{ "title": "2 Exchange Listings" }
 			{ "title": "5k Telegram Members" },
 			{ "title": "1k Twitter Followers" },
 			{ "title": "1k Holders" },
+			{ "title": "Batch 1 Landlord IPA Beer" },
+			{ "title": "Launch Giftcard/Voucher app" },
+			{ "status": "done", "title": "1st Staking Period" },
+			{ "title": "Launch PubSwap:staking, farming and swap" },
 			{ "status": "done","title": "1st The Landlord NFT Collection" },
-			{"status": "done", "title": "Token community raid" }
+			{ "status": "done", "title": "Token community raid" }
 		]
 	},
 	{
@@ -60,11 +68,9 @@
 			{ "title": "10k Telegram members" },
 			{ "title": "3k Twitter followers" },
 			{ "title": "5k Holders" },
-			{ "title": "Full Craft Beer range released" },
+			{ "title": "Batch 2 Landlord Beer REKT" },
 			{ "title": "Launch the Landlord App V1" },
-			{
-				"title": "1st Landlord Burn Event – 1% of remaining total supply will be burnt in a spectacular burn event."
-			},
+			{ "title": "1st Landlord Burn Event – 1% of remaining total supply will be burnt in a spectacular burn event."},
 			{ "title": "First Happy Hour Event" },
 			{ "title": "Medium Exchange Listing" }
 		]
@@ -88,9 +94,7 @@
 			{ "title": "50k Telegram members" },
 			{ "title": "10k Twitter followers" },
 			{ "title": "50k Holders" },
-			{
-				"title": "Landlord Pub Payment Dapp- Pay for merch, bar tab, pay for drinks, pay with BSC, BUSD, LNDLRD, and other top trending tokens."
-			},
+			{ "title": "Landlord Pub Payment Dapp- Pay for merch, bar tab, pay for drinks, pay with BSC, BUSD, LNDLRD, and other top trending tokens."},
 			{ "title": "Open UK Landlord Pub" }
 		]
 	},
