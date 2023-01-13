@@ -14,8 +14,8 @@ const Beers = () => {
 					<div className="col-md-6">
 						<h2 className="section-title">Landlord Beers</h2>
 						<p className="section-desc mb-1">
-							We have formed a partnership with Crafty Brewery in the UK to release the first Landlord craft beer REKT which is an amazing Pilsner. This will be
-							available in several stores in the UK.
+							We have formed a partnership with Crafty Brewery in the UK to release the first Landlord craft beer REKT which is an amazing Pilsner. This is
+							available in several stores in the UK. There are many other drinks including Stouts, IPA's and Ciders planned for the future.
 						</p>
 						<p className="section-desc mb-1">
 							Additional partnerships in other countries will be established and additional beers will be launched and sold via the online store as well as bars
