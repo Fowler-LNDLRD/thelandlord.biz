@@ -9,6 +9,7 @@ import Certs from '../sections/home/Certs';
 import Info from '../sections/home/Info';
 import Nft from '../sections/home/Nft';
 
+
 export default function Home() {
 	const pageTitle = process.env.WEBSITE_TITLE + ' - ' + process.env.WEBSITE_SLOGAN;
 	const pageDesc = process.env.WEBSITE_DESCRIPTION;
@@ -47,6 +48,7 @@ export default function Home() {
 			<Nft />
 			<Earn />
 			<Certs />
+			<Ball />
 		</>
 	);
 }
