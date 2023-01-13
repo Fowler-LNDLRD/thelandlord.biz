@@ -13,8 +13,8 @@ const Pubs = () => {
 							fast, reliable, and cheap crypto payments.
 						</p>
 						<p className="section-desc">
-							All Landlord pubs will accept crypto payments and encourage $LNDLRD holders to pay with their tokens to receive discounted drinks. Holders can also be
-							 purchase NFTs for 0.04 ETH that unlock additional drink discounts and special offers.
+							All Landlord pubs will accept crypto payments and encourage $LNDLRD holders to pay with their tokens to receive discounted drinks. Holders can 
+							 purchase NFTs for 0.04 ETH that unlock additional drink discounts and special offers. These include two for one drinks on specific days and access to the Burn event.
 						</p>
 						<p className="section-desc mb-0">
 							Landlord Pubs will use cutting edge technology throughout and help drive crypto mass adoption. Profits will be used to buyback and burn tokens and add
