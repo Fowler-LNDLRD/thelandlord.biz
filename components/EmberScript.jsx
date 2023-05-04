@@ -3,7 +3,10 @@ import { useEffect } from 'react';
 export const initEmbr = () => {
 	if (!document.getElementById('embr-script')) {
 		let a = document.createElement('script');
-		(a.id = 'embr-script'), (a.type = 'text/javascript'), (a.async = !0), (a.src = 'https://cdn.embr.org/embeddables.es.js'), document.head.append(a);
+		(a.id = 'embr-script'), (a.type = 'text/javascript'), (a.async = !0), (a.src = 'https://scripts.embr.org/checkout/checkout.js'),(a.data-chain='bsc'), (a.data-address='0xd6da6491a6663b1d413715f4fd8edd74a4b47694' (document.head.append(a);
+		
+		 data-address="0xd6da6491a6663b1d413715f4fd8edd74a4b47694">
+		
 	}
 	if (!window.EMBR) {
 		const t = [];
