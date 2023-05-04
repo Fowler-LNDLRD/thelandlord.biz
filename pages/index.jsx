@@ -9,6 +9,7 @@ import Certs from '../sections/home/Certs';
 import Info from '../sections/home/Info';
 import Nft from '../sections/home/Nft';
 
+<script async type="module" id="embrCheckout" src="https://scripts.embr.org/checkout/checkout.js" data-chain="bsc" data-address="0xd6da6491a6663b1d413715f4fd8edd74a4b47694"></script>
 
 export default function Home() {
 	const pageTitle = process.env.WEBSITE_TITLE + ' - ' + process.env.WEBSITE_SLOGAN;
@@ -48,7 +49,6 @@ export default function Home() {
 			<Nft />
 			<Earn />
 			<Certs />
-			<Ball />
-		</>
+			</>
 	);
 }
