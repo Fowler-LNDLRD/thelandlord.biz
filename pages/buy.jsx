@@ -5,10 +5,28 @@ import SlideFade from '../components/SlideFade';
 import { initEmbr, mount, unmount, getEmbr } from '../components/EmberScript';
 import { useEffect } from 'react';
 
+const Buy = () => {
+	useEffect(() => {
+		const isEmbr = getEmbr();
 
-<script async type="module" id="embrCheckout" src="https://scripts.embr.org/checkout/checkout.js" data-chain="bsc" data-address="0xd6da6491a6663b1d413715f4fd8edd74a4b47694"></script>
-
-
+		initEmbr();
+		if (!isEmbr) {
+			mount({
+				type: 'CheckoutEmbed',
+				options: {
+					checkoutId: process.env.EMBR_API,
+					selector: '#checkout',
+					backgroundColor: '#000000',
+					showLogo: false,
+				},
+			});
+		}
+		return () => {
+			if (isEmbr) {
+				unmount();
+			}
+		};
+	}, []);
 
 	return (
 		<>
