@@ -35,9 +35,7 @@ const Shill = () => {
 							We developed an app to enrich community engagement, and encourage it&apos;s users to inviting more investors into The Landlord. You can join the
 							Landlord Army and earn $LNDLRD by just Tweeting about it.
 						</p>
-						<LinkArrow href={process.env.SHILL_URL} target="_blank" rel="noreferrer" dir="right" className="link link-brand">
-							Join Now
-						</LinkArrow>
+						
 					</SlideFade>
 					<SlideFade y={0} x={0} delay={0.1} className="col-md-6 col-lg-5 d-flex mb-3 mb-md-0 pe-0 pe-md-4">
 						<div className="shill-wrap">
