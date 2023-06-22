@@ -15,13 +15,13 @@ const Beers = () => {
 						<h2 className="section-title">Landlord Beers</h2>
 						<p className="section-desc mb-1">
 							We have formed a partnership with Crafty Brewery in the UK to release the Landlord Beers and Cider. 
-							There are currently three drinks available from our store;REKT - A excellent Pilsner, FOMO - A refreshing Cider and	PUMP - A hoppy IPA
+							There are currently three drinks available from our store. These include REKT - A excellent Pilsner, FOMO - A refreshing Cider and PUMP - A hoppy IPA
 						</p>
 						<p className="section-desc mb-1">
 							Additional partnerships in other countries will be established and additional beers will be launched and sold via the online store as well as bars
 							across the world.
 						</p>
-						<p className="section-desc">Profits will be used to buy back and burn $LNDLRD tokens and may be added to liquidity as well.</p>
+						<p className="section-desc">Profits will be used to do BEERBACKS (we used the funds to buy back and burn $LNDLRD tokens.</p>
 					</div>
 				</SlideFade>
 			</div>
