@@ -3,7 +3,7 @@ import Beers from '../sections/home/Beers';
 import Hero from '../sections/home/Hero';
 import Tokenomics from '../sections/home/Tokenomics';
 import Pubs from '../sections/home/Pubs';
-import Earn from '../sections/home/Earn';
+import Pos from '../sections/home/Pos';
 import Certs from '../sections/home/Certs';
 import Info from '../sections/home/Info';
 import Nft from '../sections/home/Nft';
