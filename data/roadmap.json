@@ -54,9 +54,8 @@
 			{ "title": "5k Telegram Members" },
 			{ "title": "1k Twitter Followers" },
 			{ "title": "1k Holders" },
-			{ "status": "done", "title": "Batch 1 Landlord CIDER Beer-FOMO" },
-			{ "status": "done", "title": "Batch 1 Landlord IPA Beer- PUMP" },
-			{ "title": "Launch Giftcard app" },
+			{ "status": "done", "title": "Batch 1 Landlord CIDER - FOMO" },
+			{ "status": "done", "title": "Batch 1 Landlord IPA - PUMP" },			
 			{ "status": "done", "title": "1st Staking Period" },
 			{ "title": "Launch PubSwap with staking, farming and swap" },
 			{ "status": "done","title": "1st The Landlord NFT Collection" },
@@ -73,6 +72,7 @@
 			{ "title": "Launch the Landlord App V1" },
 			{ "title": "1st Landlord Burn Event 1% of remaining total supply will be burnt in a spectacular burn event."},
 			{ "title": "First Happy Hour Event" },
+			{ "title": "Launch Giftcard app" },
 			{ "title": "Medium Exchange Listing" }
 		]
 	},
