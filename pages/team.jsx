@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import HeadTag from '../components/HeadTag';
-import teamMembers from '../data/team.json';
 import SlideFade from '../components/SlideFade';
 const Team = () => {
 	return (
