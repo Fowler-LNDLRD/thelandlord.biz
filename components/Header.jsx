@@ -47,7 +47,7 @@ const Header = () => {
 							</Link>
 						</li>
 						<li className="header-nav-item">
-							<Link href="https://thelandlord.store/">
+							<Link href="">
 								<a className="header-nav-link" target="_blank" rel="noreferrer">
 									Store
 								</a>
